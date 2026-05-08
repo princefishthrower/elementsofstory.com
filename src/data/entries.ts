@@ -1712,6 +1712,2316 @@ export const entries: CraftEntry[] = [
   },
 
   // ─────────────────────────────────────────────────────────
+  // PUBLISHING
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "literary-agent",
+    title: "Literary Agent",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "A professional representative who submits, negotiates, and advocates for an author's work.",
+    principle:
+      "An agent is not a gate to fame; they are a business representative for rights, strategy, and leverage.",
+    takeaways: [
+      "Agents usually earn commission only when the author earns money.",
+      "They submit manuscripts to editors the author often cannot reach directly.",
+      "The strongest agent relationship is editorial, strategic, and contractual.",
+    ],
+    overview:
+      "A literary agent represents an author and their work to publishers, usually by selecting submission targets, managing auctions or offers, negotiating contract terms, and tracking the long tail of rights and payments. For most large trade publishers, an agented submission is the standard path into acquisition.",
+    examples: [
+      "An agent revises a pitch package before sending it to editors.",
+      "An agent negotiates royalty escalators and subsidiary rights language.",
+      "An agent advises an author to decline a weak offer and revise instead.",
+    ],
+    related: ["query-letter", "submission-package", "book-auction"],
+  },
+  {
+    slug: "query-letter",
+    title: "Query Letter",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "A short professional pitch used to interest an agent or editor in a manuscript.",
+    principle:
+      "A query sells the reading experience, not the author's hope for it.",
+    takeaways: [
+      "It should identify the project, category, word count, and central hook.",
+      "The pitch should make conflict, stakes, and audience legible quickly.",
+      "Personalisation helps only when it is specific and relevant.",
+    ],
+    overview:
+      "A query letter is the first formal approach many writers make to literary agents. It usually contains a concise pitch, essential market information, brief author credentials, and sometimes comparable titles. Its job is not to explain the whole book; its job is to earn a request for more material.",
+    examples: [
+      "A novel query names the protagonist, problem, stakes, and genre in one compact pitch.",
+      "A nonfiction query foregrounds platform, argument, audience, and authority.",
+      "A query mentions a comparable title to clarify shelf and readership.",
+    ],
+    related: ["literary-agent", "submission-package", "comp-titles"],
+  },
+  {
+    slug: "synopsis",
+    title: "Synopsis",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "A compressed account of the whole work, including the ending.",
+    principle:
+      "A synopsis proves the story has shape; it is not teaser copy.",
+    takeaways: [
+      "It should reveal the ending rather than preserve suspense.",
+      "Emotional and causal turns matter more than scene inventory.",
+      "A synopsis exposes structural weakness quickly.",
+    ],
+    overview:
+      "A synopsis is a practical publishing document that summarises the full arc of a manuscript for an agent, editor, or acquisitions process. Unlike jacket copy, it does not conceal the resolution. Its usefulness lies in showing whether the premise, escalation, character arc, and ending cohere.",
+    examples: [
+      "A one-page synopsis tracks the protagonist from initial desire to final choice.",
+      "A mystery synopsis identifies the culprit and the discovery path.",
+      "A romance synopsis shows why the central relationship fails and then earns repair.",
+    ],
+    related: ["submission-package", "query-letter", "character-arc"],
+  },
+  {
+    slug: "submission-package",
+    title: "Submission Package",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "The materials sent to an agent or editor for consideration.",
+    principle:
+      "The package should answer the recipient's practical questions before they have to ask.",
+    takeaways: [
+      "Fiction packages often include a query, sample pages, and sometimes a synopsis.",
+      "Nonfiction packages may require a proposal, chapter outline, sample chapter, and platform notes.",
+      "Instructions matter; ignoring stated guidelines is an avoidable rejection risk.",
+    ],
+    overview:
+      "A submission package is the assembled set of materials used to evaluate a project. Its contents vary by category, recipient, and stage, but the function is constant: it lets the industry reader assess premise, prose, market position, completeness, and author fit efficiently.",
+    examples: [
+      "An agent asks for the query, first ten pages, and a one-page synopsis.",
+      "An editor receives a proposal, sample chapter, and author platform summary.",
+      "A small press requests the full manuscript and a brief cover letter.",
+    ],
+    related: ["query-letter", "synopsis", "comp-titles"],
+  },
+  {
+    slug: "comp-titles",
+    title: "Comp Titles",
+    category: "Publishing",
+    level: "Intermediate",
+    summary:
+      "Comparable books used to position a project for audience, shelf, and market.",
+    principle:
+      "A comp title clarifies the promise of a book without claiming equivalence to its success.",
+    takeaways: [
+      "Useful comps are recent, specific, and plausible for the same readership.",
+      "Comps can identify tone, structure, audience, or sales channel.",
+      "Overlarge comps can make a project seem naive or unfocused.",
+    ],
+    overview:
+      "Comp titles are published works used to help agents, editors, sales teams, and booksellers understand where a new project belongs. They are a market-positioning tool, not a literary ranking. Good comps create a fast, credible map of audience expectation.",
+    examples: [
+      "A pitch frames a novel as the intimacy of one book with the premise engine of another.",
+      "A nonfiction proposal uses comps to show the audience already buys in the category.",
+      "A weak comp compares a quiet debut to a once-in-a-decade bestseller without explaining fit.",
+    ],
+    related: ["query-letter", "submission-package", "reader-contract"],
+  },
+  {
+    slug: "acquiring-editor",
+    title: "Acquiring Editor",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "The editor who champions a manuscript inside a publishing house and seeks approval to buy it.",
+    principle:
+      "An acquiring editor must persuade the house, not only love the manuscript.",
+    takeaways: [
+      "Acquisition depends on editorial enthusiasm and internal business support.",
+      "The editor often prepares the project for an acquisitions meeting.",
+      "After the deal, the editor usually leads developmental revision.",
+    ],
+    overview:
+      "An acquiring editor is the publishing-house editor who evaluates submissions, decides whether to pursue a project, and advocates for it internally. Their role combines literary judgement with market argument: they must make the manuscript intelligible to editorial, sales, marketing, publicity, and finance stakeholders.",
+    examples: [
+      "An editor reads an agented manuscript and asks for a second read from colleagues.",
+      "An editor presents the project at an acquisitions meeting.",
+      "An editor buys a book and then sends a developmental edit letter.",
+    ],
+    related: ["literary-agent", "imprint", "developmental-edit"],
+  },
+  {
+    slug: "imprint",
+    title: "Imprint",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "A publishing brand within a larger house, often with its own editorial identity.",
+    principle:
+      "An imprint is a promise about taste, category, and audience.",
+    takeaways: [
+      "Large publishers may contain many imprints with different missions.",
+      "Imprints help readers, agents, and booksellers understand a book's positioning.",
+      "The imprint name can carry reputation even when the parent company is less visible.",
+    ],
+    overview:
+      "An imprint is a named publishing line within a company. It may specialise by genre, audience, literary sensibility, format, or commercial lane. For writers, imprints matter because they shape editorial fit, sales expectations, and how a book is presented to the market.",
+    examples: [
+      "A literary imprint publishes prize-oriented fiction inside a larger trade house.",
+      "A genre imprint focuses its list on romance, horror, or science fiction.",
+      "A children's imprint handles picture books, middle grade, or young adult work.",
+    ],
+    related: ["acquiring-editor", "the-big-five", "independent-press"],
+  },
+  {
+    slug: "the-big-five",
+    title: "The Big Five",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "Industry shorthand for the largest corporate trade-publishing groups.",
+    principle:
+      "The phrase names market concentration, not a guarantee of quality or success.",
+    takeaways: [
+      "Big Five houses contain many imprints with distinct editorial identities.",
+      "They tend to have broad distribution, sales, marketing, and rights infrastructure.",
+      "Access is commonly mediated through literary agents.",
+    ],
+    overview:
+      "The Big Five is a publishing-industry shorthand for the dominant corporate trade publishers. The term is useful because it describes scale: large lists, many imprints, national distribution, and integrated sales and rights operations. It should not be mistaken for the whole publishing ecosystem.",
+    examples: [
+      "A novel sells to a Big Five imprint after a multi-editor submission.",
+      "An author compares a Big Five offer with one from an independent press.",
+      "A book benefits from wide distribution but still depends on positioning and support.",
+    ],
+    related: ["imprint", "book-auction", "independent-press"],
+  },
+  {
+    slug: "independent-press",
+    title: "Independent Press",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "A publisher operating outside the largest corporate trade groups.",
+    principle:
+      "Independence changes scale; it does not automatically define quality, taste, or ambition.",
+    takeaways: [
+      "Independent presses can be highly selective and editorially distinctive.",
+      "Some accept unagented submissions; many still use agents or reading periods.",
+      "Distribution, advances, print runs, and marketing capacity vary widely.",
+    ],
+    overview:
+      "An independent press is a publishing house outside the largest corporate groups. Independent presses often build reputation through focused lists, strong editorial identity, regional or genre specialisation, literary risk, or close author relationships. Their business terms and reach differ widely from press to press.",
+    examples: [
+      "A poetry collection finds its audience through a small literary press.",
+      "A regional nonfiction book fits an independent publisher's list better than a conglomerate imprint.",
+      "A genre press builds a loyal readership through careful curation.",
+    ],
+    related: ["imprint", "the-big-five", "rights"],
+  },
+  {
+    slug: "advance",
+    title: "Advance",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "Money paid upfront against future royalties.",
+    principle:
+      "An advance is not a bonus; it is prepaid royalty income tied to expected sales.",
+    takeaways: [
+      "The author usually keeps the advance even if the book does not earn out.",
+      "Payments are often split across contract milestones.",
+      "A larger advance can bring pressure as well as opportunity.",
+    ],
+    overview:
+      "An advance is the amount a publisher pays an author before royalties are earned through sales. It is normally paid against future royalties, meaning royalty payments begin only after the book has earned back the advance under the contract's accounting terms.",
+    examples: [
+      "An advance is paid in portions on signing, delivery, and publication.",
+      "A book earns out when accumulated royalties exceed the advance.",
+      "A publisher offers a smaller advance but better rights terms.",
+    ],
+    related: ["royalties", "rights", "book-auction"],
+  },
+  {
+    slug: "royalties",
+    title: "Royalties",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "The author's contractual share of revenue from book sales or licensed rights.",
+    principle:
+      "Royalty language determines how success is converted into author income.",
+    takeaways: [
+      "Rates can differ by format, territory, channel, and sales threshold.",
+      "Royalty payments may not begin until an advance earns out.",
+      "Statements are part of the relationship; understanding them matters.",
+    ],
+    overview:
+      "Royalties are the author's contractual earnings from sales or licensing after the accounting rules in the contract are applied. They may be calculated on list price, net receipts, or another defined base, and they interact closely with advances, reserves, discounts, and rights grants.",
+    examples: [
+      "Hardcover, paperback, ebook, and audiobook royalties use different rates.",
+      "A royalty escalator increases the percentage after a sales threshold.",
+      "A statement shows that a book has sold well but has not yet earned out.",
+    ],
+    related: ["advance", "rights", "subsidiary-rights"],
+  },
+  {
+    slug: "rights",
+    title: "Rights",
+    category: "Publishing",
+    level: "Intermediate",
+    summary:
+      "The legal permissions to publish, adapt, translate, distribute, or otherwise exploit a work.",
+    principle:
+      "Rights are the book's future uses; granting them casually can be expensive.",
+    takeaways: [
+      "Contracts define which rights are granted, reserved, or shared.",
+      "Territory, language, format, and term are central rights questions.",
+      "A smaller advance can be outweighed by retaining valuable rights.",
+    ],
+    overview:
+      "Rights are the bundle of permissions attached to a literary work: print, ebook, audio, translation, territory, film, television, dramatic, merchandising, and more. Publishing contracts are largely rights documents, because they determine who may do what with the work, where, for how long, and for what compensation.",
+    examples: [
+      "An author grants North American print and ebook rights but reserves translation.",
+      "An agent sells audio rights separately from print rights.",
+      "A contract asks for broad rights the publisher is unlikely to exploit.",
+    ],
+    related: ["subsidiary-rights", "royalties", "option-clause"],
+  },
+  {
+    slug: "subsidiary-rights",
+    title: "Subsidiary Rights",
+    category: "Publishing",
+    level: "Intermediate",
+    summary:
+      "Secondary rights that allow a work to be licensed beyond its primary publication.",
+    principle:
+      "A book can have more than one market life if its rights are managed well.",
+    takeaways: [
+      "Translation, audio, book club, film, television, and serial rights can be subsidiary rights.",
+      "Rights splits determine how income is shared between author and publisher.",
+      "Retained rights may be sold separately by the agent or author.",
+    ],
+    overview:
+      "Subsidiary rights are rights beyond the main edition or primary publishing grant. They can create additional revenue and readership through translation, audio, adaptation, excerpt, educational, or other licensing channels. Their value depends on contract language and active exploitation.",
+    examples: [
+      "A translation deal brings a novel into a new territory.",
+      "A magazine buys first serial rights to excerpt a nonfiction book.",
+      "A production company options dramatic rights.",
+    ],
+    related: ["rights", "royalties", "literary-agent"],
+  },
+  {
+    slug: "option-clause",
+    title: "Option Clause",
+    category: "Publishing",
+    level: "Intermediate",
+    summary:
+      "A contract term giving a publisher first opportunity to consider the author's next work.",
+    principle:
+      "An option clause is future leverage written into the present contract.",
+    takeaways: [
+      "Scope matters: the clause should define what kind of next work is covered.",
+      "Timing matters: a broad or slow option can delay the author's next sale.",
+      "Negotiation often narrows the clause to protect the author's flexibility.",
+    ],
+    overview:
+      "An option clause gives a publisher a contractual first look at a future work by the same author. The practical importance lies in its limits: which work, how soon, under what response period, and what happens if the publisher declines or makes an offer the author rejects.",
+    examples: [
+      "A publisher asks to see the author's next novel in the same genre.",
+      "An agent narrows an option from any next work to the next adult thriller.",
+      "An overly broad option complicates a separate nonfiction proposal.",
+    ],
+    related: ["rights", "advance", "literary-agent"],
+  },
+  {
+    slug: "book-auction",
+    title: "Book Auction",
+    category: "Publishing",
+    level: "Intermediate",
+    summary:
+      "A competitive submission process in which multiple publishers bid for a project.",
+    principle:
+      "An auction is designed to turn editorial enthusiasm into comparable offers.",
+    takeaways: [
+      "Auctions can raise advances, clarify rights terms, and reveal editorial vision.",
+      "The highest offer is not always the best publishing home.",
+      "Auction structure is usually managed by the agent.",
+    ],
+    overview:
+      "A book auction occurs when more than one publisher wants to acquire the same project. The agent sets rules for bidding, deadlines, rounds, and information flow. The author then compares money, rights, editorial fit, publication plan, and long-term relationship.",
+    examples: [
+      "Several editors bid after reading the same manuscript over a short submission window.",
+      "One publisher offers less money but stronger editorial and marketing commitments.",
+      "An auction ends in a pre-empt when a publisher offers enough to stop competition.",
+    ],
+    related: ["literary-agent", "acquiring-editor", "advance"],
+  },
+  {
+    slug: "developmental-edit",
+    title: "Developmental Edit",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "A large-scale editorial pass focused on structure, argument, character, and reader experience.",
+    principle:
+      "Developmental editing works on the book's architecture before polishing its surfaces.",
+    takeaways: [
+      "It may address plot, pacing, character, theme, structure, or market fit.",
+      "A developmental edit letter diagnoses patterns rather than only marking lines.",
+      "Line-level polish before developmental clarity can waste effort.",
+    ],
+    overview:
+      "A developmental edit is an editorial stage concerned with the manuscript's largest working parts: premise, structure, argument, escalation, audience, clarity, character, and emotional logic. In traditional publishing, the acquiring editor often leads this stage after acquisition.",
+    examples: [
+      "An editor asks for a clearer midpoint reversal and a stronger ending choice.",
+      "A nonfiction edit reshapes the chapter order around the reader's learning path.",
+      "A memoir edit identifies where chronology obscures emotional causality.",
+    ],
+    related: ["acquiring-editor", "copyedit", "pacing"],
+  },
+  {
+    slug: "copyedit",
+    title: "Copyedit",
+    category: "Publishing",
+    level: "Foundational",
+    summary:
+      "An editorial pass for correctness, consistency, clarity, and house style.",
+    principle:
+      "A copyedit protects the reader from avoidable friction.",
+    takeaways: [
+      "Copyediting addresses grammar, usage, continuity, factual queries, and style consistency.",
+      "It does not usually solve large structural problems.",
+      "Author responses to queries are part of the edit, not an interruption of it.",
+    ],
+    overview:
+      "A copyedit is the editorial stage that checks the manuscript's surface and consistency after the major shape is settled. It may catch grammar, spelling, punctuation, timeline slips, repeated words, unclear antecedents, factual issues, style-guide conflicts, and internal contradictions.",
+    examples: [
+      "A copyeditor queries whether a character's age conflicts with an earlier date.",
+      "A copyedit standardises spelling, capitalization, and treatment of invented terms.",
+      "A sentence is edited for clarity without changing the scene's intent.",
+    ],
+    related: ["developmental-edit", "proofs-and-galleys", "continuity-error"],
+  },
+  {
+    slug: "proofs-and-galleys",
+    title: "Proofs and Galleys",
+    category: "Publishing",
+    level: "Intermediate",
+    summary:
+      "Late-stage page proofs or advance copies used for correction, review, and production.",
+    principle:
+      "Proofs are for catching errors in the nearly finished book, not for rewriting it.",
+    takeaways: [
+      "Page proofs check typeset pages before final printing or release.",
+      "Galleys or advance reader copies can circulate before final correction.",
+      "Late changes are constrained because production has already begun.",
+    ],
+    overview:
+      "Proofs and galleys are late production forms of a book. Page proofs let the author, proofreader, and production team catch remaining errors in layout and text. Galleys or advance reader copies may be sent to reviewers, booksellers, librarians, or media before publication, sometimes before every correction is final.",
+    examples: [
+      "An author reviews page proofs and marks only true errors.",
+      "A galley is sent to booksellers months before publication.",
+      "A proofread catches a missing line break introduced during typesetting.",
+    ],
+    related: ["copyedit", "developmental-edit", "chapter-hook"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // NARRATOLOGY
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "focalization",
+    title: "Focalization",
+    category: "Narratology",
+    level: "Advanced",
+    summary: "The perspective through which narrative information is filtered.",
+    principle: "Who sees is different from who speaks.",
+    takeaways: [
+      "A narrator may tell while a character supplies the field of perception.",
+      "Shifts in focalization change what counts as knowable.",
+      "Control of focalization is control of reader access.",
+    ],
+    overview:
+      "Focalization names the perceptual and cognitive lens through which narrated events are selected, limited, and interpreted. It is useful because point of view describes the grammar of narration, while focalization describes the source of perception.",
+    examples: [
+      "A third-person chapter narrated in neutral prose but limited to one child's misunderstanding.",
+      "An omniscient narrator briefly focalizes through a servant to expose class blindness.",
+    ],
+    related: ["point-of-view", "narrative-distance", "free-indirect-discourse"],
+  },
+  {
+    slug: "implied-author",
+    title: "Implied Author",
+    category: "Narratology",
+    level: "Advanced",
+    summary: "The authorial presence inferred from the work itself.",
+    principle: "The implied author is built by choices on the page, not by biography.",
+    takeaways: [
+      "It is distinct from the real historical author.",
+      "It helps explain tone, selection, ethics, and design.",
+      "Readers infer it from pattern, omission, emphasis, and judgement.",
+    ],
+    overview:
+      "The implied author is the organising intelligence a reader reconstructs from a text. It is not the narrator and not the living writer, but the version of authorship created by the work's total arrangement.",
+    examples: [
+      "A cruel narrator can still imply an authorial intelligence that condemns cruelty.",
+      "A fragmented novel implies an author who values fracture as form.",
+    ],
+    related: ["voice", "tone", "unreliable-narrator"],
+  },
+  {
+    slug: "narratee",
+    title: "Narratee",
+    category: "Narratology",
+    level: "Advanced",
+    summary: "The listener or reader addressed inside the narrative situation.",
+    principle: "Every act of telling implies someone being told.",
+    takeaways: [
+      "A narratee may be named, implied, or invisible.",
+      "The narratee shapes what the narrator explains, hides, or assumes.",
+      "Confusing narratee with actual reader flattens the narration.",
+    ],
+    overview:
+      "The narratee is the recipient of a narrative within the fiction's communicative structure. Attending to the narratee clarifies why a narrator chooses certain explanations, defenses, omissions, or forms of intimacy.",
+    examples: [
+      "A confession addressed to a judge has a different narratee than one addressed to a lover.",
+      "A second-person novel may invent a narratee who is not identical to the reader holding the book.",
+    ],
+    related: ["frame-narrative", "unreliable-narrator", "point-of-view"],
+  },
+  {
+    slug: "mimesis-vs-diegesis",
+    title: "Mimesis vs Diegesis",
+    category: "Narratology",
+    level: "Advanced",
+    summary: "Showing enacted action versus telling narrated account.",
+    principle: "A story can present events directly or report them through telling.",
+    takeaways: [
+      "Mimesis imitates action as if unfolding before us.",
+      "Diegesis mediates events through narration and report.",
+      "Most prose moves constantly between the two.",
+    ],
+    overview:
+      "Mimesis and diegesis distinguish between represented action and narrated telling. The pair is older and broader than the workshop rule of showing versus telling, and it helps describe how narrative mediates experience.",
+    examples: [
+      "A fight rendered blow by blow leans mimetic.",
+      "A paragraph summarising a decade of exile leans diegetic.",
+    ],
+    related: ["show-dont-tell", "scene-vs-summary", "narrative-distance"],
+  },
+  {
+    slug: "fabula-vs-syuzhet",
+    title: "Fabula vs Syuzhet",
+    category: "Narratology",
+    level: "Advanced",
+    summary: "The chronological story versus the arranged plot as presented.",
+    principle: "What happened and how it is told are different structures.",
+    takeaways: [
+      "Fabula is the inferred sequence of events.",
+      "Syuzhet is the order and manner of presentation.",
+      "Suspense, mystery, and irony often depend on their gap.",
+    ],
+    overview:
+      "Fabula and syuzhet are formalist terms for the raw story chronology and the shaped presentation the reader receives. The distinction explains why two works with the same events can produce entirely different effects.",
+    examples: [
+      "A murder mystery's fabula begins with the crime; its syuzhet begins with the discovery.",
+      "A memoir may arrange childhood late to make adult behaviour legible first.",
+    ],
+    related: ["in-medias-res", "mystery-and-curiosity", "reversal"],
+  },
+  {
+    slug: "analepsis",
+    title: "Analepsis",
+    category: "Narratology",
+    level: "Advanced",
+    summary: "A backward movement in narrative time.",
+    principle: "A flashback should alter the present, not merely explain it.",
+    takeaways: [
+      "Analepsis retrieves earlier material from a later narrative moment.",
+      "It can reveal cause, trauma, motive, or contradiction.",
+      "Poorly placed analepsis stalls present-tense pressure.",
+    ],
+    overview:
+      "Analepsis is the technical term for flashback or retrospective narration. It changes the reader's understanding of the present by inserting prior events into the current sequence of telling.",
+    examples: [
+      "A trial scene pauses for the childhood event that made testimony impossible.",
+      "A present argument is reinterpreted by a memory from the marriage's first week.",
+    ],
+    related: ["timeline-integrity", "scene-vs-summary", "backstory"],
+  },
+  {
+    slug: "prolepsis",
+    title: "Prolepsis",
+    category: "Narratology",
+    level: "Advanced",
+    summary: "A forward movement that anticipates later events.",
+    principle: "Foreshadowing hints; prolepsis reaches forward.",
+    takeaways: [
+      "It can create dread by naming a future consequence early.",
+      "It changes suspense by making outcome partially known.",
+      "Used carelessly, it spends tension before the scene earns it.",
+    ],
+    overview:
+      "Prolepsis is an anticipatory leap in narrative time, ranging from a brief future-tense aside to a structural flash-forward. It lets the text make the future exert pressure on the present.",
+    examples: [
+      "The narrator notes that this was the last ordinary morning.",
+      "A novel opens with the execution and then returns to the events that caused it.",
+    ],
+    related: ["foreshadowing", "suspense", "fabula-vs-syuzhet"],
+  },
+  {
+    slug: "ellipsis",
+    title: "Ellipsis",
+    category: "Narratology",
+    level: "Intermediate",
+    summary: "A deliberate omission or gap in narrated time or information.",
+    principle: "What is skipped can become as meaningful as what is shown.",
+    takeaways: [
+      "Ellipsis compresses time by leaving events unnarrated.",
+      "A gap can create mystery, tact, speed, or trauma.",
+      "The reader must still understand the shape of what was omitted.",
+    ],
+    overview:
+      "Ellipsis is the narrative gap produced when the telling skips material. It may be a simple time jump, a strategic withholding of information, or a formal absence that the reader must interpret.",
+    examples: [
+      "A chapter ends before the verdict and the next begins years later.",
+      "A memoir leaves a family rupture unnamed until the final third.",
+    ],
+    related: ["scene-break", "transitions", "mystery-and-curiosity"],
+  },
+  {
+    slug: "stream-of-consciousness",
+    title: "Stream of Consciousness",
+    category: "Narratology",
+    level: "Advanced",
+    summary: "Narration shaped to resemble the flow of thought.",
+    principle: "Consciousness has logic, but not always orderly syntax.",
+    takeaways: [
+      "It privileges association, perception, memory, and interruption.",
+      "It can dissolve the boundary between narration and thought.",
+      "Unreadability is not depth; pressure still needs shape.",
+    ],
+    overview:
+      "Stream of consciousness attempts to render mental life as it moves, often through association, fragments, sensory impressions, and unstable syntax. It is a hallmark of modernist experimentation but appears in many degrees.",
+    examples: [
+      "A character walking through a city moves from shop signs to childhood memory to dread.",
+      "A chapter follows thought rather than external sequence.",
+    ],
+    related: ["interior-monologue", "free-indirect-discourse", "syntax"],
+  },
+  {
+    slug: "interior-monologue",
+    title: "Interior Monologue",
+    category: "Narratology",
+    level: "Intermediate",
+    summary: "Direct representation of a character's inner speech.",
+    principle: "Inner speech is dramatic when it is pressured, partial, and alive.",
+    takeaways: [
+      "It can be quoted, unquoted, orderly, or fragmentary.",
+      "It differs from summary of thought because it gives thought a present-tense surface.",
+      "Too much undirected interiority can dissolve scene pressure.",
+    ],
+    overview:
+      "Interior monologue presents a character's thought as a kind of inward speech. It may be grammatically controlled or fragmentary, but its purpose is to put the reader inside the movement of thought rather than outside it.",
+    examples: [
+      "A character silently rehearses a confession while saying nothing aloud.",
+      "A commuter's fear appears as repeated fragments rather than explanation.",
+    ],
+    related: ["stream-of-consciousness", "narrative-distance", "identification"],
+  },
+  {
+    slug: "metalepsis",
+    title: "Metalepsis",
+    category: "Narratology",
+    level: "Advanced",
+    summary: "A transgression between narrative levels.",
+    principle: "Metalepsis breaks the border between frame and framed world.",
+    takeaways: [
+      "It can be playful, uncanny, comic, or philosophically destabilising.",
+      "It often exposes narration as constructed.",
+      "A small breach can reframe the whole work's reality rules.",
+    ],
+    overview:
+      "Metalepsis occurs when a narrative crosses levels that normally remain separate: author and character, narrator and story-world, frame and embedded tale. It is a boundary violation that makes the act of telling visible.",
+    examples: [
+      "A character notices the narrator's description.",
+      "A frame narrator appears to alter events inside the framed tale.",
+    ],
+    related: ["frame-narrative", "defamiliarization", "reader-contract"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // EXPANDED STRUCTURE
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "exposition",
+    title: "Exposition",
+    category: "Structure",
+    level: "Foundational",
+    summary: "The delivery of background information the reader needs.",
+    principle: "Exposition works best when information arrives under pressure.",
+    takeaways: [
+      "It should answer a live reader question.",
+      "It can be dramatized through conflict, discovery, or consequence.",
+      "Explaining too early creates drag before need.",
+    ],
+    overview:
+      "Exposition supplies context: history, world, relationship, rules, and prior events. Its craft problem is timing, because information retains when the reader has a reason to want it.",
+    examples: [
+      "A political system is explained only when a character is punished by it.",
+      "Family history emerges during a contested inheritance meeting.",
+    ],
+    failureModes: ["over-exposition", "info-dump"],
+    related: ["scene-vs-summary", "reader-memory-decay", "verisimilitude"],
+  },
+  {
+    slug: "rising-action",
+    title: "Rising Action",
+    category: "Structure",
+    level: "Foundational",
+    summary: "The sequence of complications that intensifies the central problem.",
+    principle: "Rising action must change the situation, not merely extend it.",
+    takeaways: [
+      "Each step should raise stakes, narrow options, or reveal new knowledge.",
+      "Escalation can be emotional, social, moral, or physical.",
+      "Repetition without transformation produces sag.",
+    ],
+    overview:
+      "Rising action is the structural movement from disturbance toward crisis. It converts premise into pressure through complications that make the old solution less available.",
+    examples: [
+      "A detective's suspects vanish one by one as the inquiry grows dangerous.",
+      "A family argument spreads from private grievance to public rupture.",
+    ],
+    failureModes: ["saggy-middle"],
+    related: ["try-fail-cycle", "escalation", "stakes"],
+  },
+  {
+    slug: "crisis",
+    title: "Crisis",
+    category: "Structure",
+    level: "Intermediate",
+    summary: "The decisive pressure point where evasion stops working.",
+    principle: "Crisis forces choice under maximum meaningful pressure.",
+    takeaways: [
+      "A crisis is not just danger; it is a decision point.",
+      "It should expose the story's deepest value conflict.",
+      "The crisis prepares the climax by making the final action necessary.",
+    ],
+    overview:
+      "Crisis is the moment when the protagonist must choose, reveal, confess, act, or refuse. It is often near the climax, but its defining quality is decision rather than spectacle.",
+    examples: [
+      "A leader must choose between victory and the person victory was meant to protect.",
+      "A witness must decide whether truth is worth exile.",
+    ],
+    related: ["climax", "want-vs-need", "stakes"],
+  },
+  {
+    slug: "climax",
+    title: "Climax",
+    category: "Structure",
+    level: "Foundational",
+    summary: "The peak moment where the central conflict reaches decisive expression.",
+    principle: "The climax should answer the story's governing pressure.",
+    takeaways: [
+      "It need not be loud, but it must be consequential.",
+      "The strongest climaxes join outer event to inner change.",
+      "A climax without prior pressure feels arbitrary.",
+    ],
+    overview:
+      "Climax is the point of highest structural consequence: the central conflict becomes unavoidable and produces the action, revelation, or refusal that determines the ending's shape.",
+    examples: [
+      "A duel resolves a political conflict and a private fear at once.",
+      "A quiet confession changes the terms of every earlier scene.",
+    ],
+    related: ["crisis", "denouement", "character-arc"],
+  },
+  {
+    slug: "denouement",
+    title: "Denouement",
+    category: "Structure",
+    level: "Intermediate",
+    summary: "The unwinding after the climax.",
+    principle: "After consequence, the reader needs changed order made visible.",
+    takeaways: [
+      "Denouement shows what the climax has altered.",
+      "It can settle plot, emotion, theme, or social arrangement.",
+      "Too much denouement explains what consequence should reveal.",
+    ],
+    overview:
+      "Denouement is the post-climactic settling of the story's threads. It lets the reader see the new equilibrium, the remaining wound, or the price of resolution.",
+    examples: [
+      "A village returns to ritual, but the absent chair remains.",
+      "A final conversation shows the relationship cannot return to its old terms.",
+    ],
+    related: ["climax", "closure", "weak-payoff"],
+  },
+  {
+    slug: "anagnorisis",
+    title: "Anagnorisis",
+    category: "Structure",
+    level: "Advanced",
+    summary: "A moment of recognition or discovery that changes understanding.",
+    principle: "Recognition matters when knowledge arrives too late to be innocent.",
+    takeaways: [
+      "It is central to many tragic and revelatory structures.",
+      "The discovery should reorganise prior events.",
+      "Recognition without consequence is only information.",
+    ],
+    overview:
+      "Anagnorisis is the movement from ignorance to knowledge, often a recognition of identity, guilt, kinship, truth, or self. In strong stories it changes action because the old interpretation can no longer hold.",
+    examples: [
+      "A ruler discovers the criminal they hunt is themselves.",
+      "A daughter recognises the enemy's story as her own family history.",
+    ],
+    related: ["revelation", "reversal", "dramatic-irony"],
+  },
+  {
+    slug: "parallel-plot",
+    title: "Parallel Plot",
+    category: "Structure",
+    level: "Intermediate",
+    summary: "Two or more plot lines arranged to echo, contrast, or converge.",
+    principle: "Parallel plots earn their space by producing comparison.",
+    takeaways: [
+      "They can mirror theme across different circumstances.",
+      "Convergence should feel prepared, not mechanically convenient.",
+      "A parallel line that adds no pressure becomes a detached subplot.",
+    ],
+    overview:
+      "A parallel plot runs alongside another plot so that the reader reads them in relation. The parallel may create irony, contrast, foreshadowing, thematic argument, or eventual convergence.",
+    examples: [
+      "A parent's courtship and a child's courtship test the same idea of loyalty.",
+      "A political collapse and a marriage collapse unfold in alternating chapters.",
+    ],
+    related: ["subplot", "juxtaposition", "theme"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // EXPANDED PLOT MECHANICS
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "causality",
+    title: "Causality",
+    category: "Plot Mechanics",
+    level: "Foundational",
+    summary: "The chain by which events produce other events.",
+    principle: "Because is stronger than and then.",
+    takeaways: [
+      "Causality lets readers feel inevitability rather than sequence.",
+      "Weak causal links make plot feel episodic.",
+      "Coincidence can begin trouble, but should rarely solve it.",
+    ],
+    overview:
+      "Causality is the logic by which one event leads to another. It is the difference between incidents arranged in order and a plot whose pressures accumulate.",
+    examples: [
+      "A lie forces a cover story, which creates the alibi that later traps the liar.",
+      "A mercy shown early leaves alive the witness who changes the trial.",
+    ],
+    related: ["setup-and-payoff", "conflict", "coincidence"],
+  },
+  {
+    slug: "coincidence",
+    title: "Coincidence",
+    category: "Plot Mechanics",
+    level: "Intermediate",
+    summary: "An unlikely event not caused by the story's prior chain.",
+    principle: "Coincidence may create problems more easily than it may solve them.",
+    takeaways: [
+      "Readers tolerate chance that complicates.",
+      "Chance that rescues often feels like cheating.",
+      "The more consequential the coincidence, the more framing it needs.",
+    ],
+    overview:
+      "Coincidence is the arrival of an event without clear causal preparation. It can feel lifelike, comic, tragic, or contrived depending on whether it increases pressure or removes it.",
+    examples: [
+      "A missed train forces two enemies into the same inn.",
+      "A lost letter appears at the climax with no prior path and solves everything badly.",
+    ],
+    failureModes: ["deus-ex-machina", "contrivance"],
+    related: ["causality", "reader-contract", "deus-ex-machina"],
+  },
+  {
+    slug: "complication",
+    title: "Complication",
+    category: "Plot Mechanics",
+    level: "Foundational",
+    summary: "A development that makes the current problem harder or richer.",
+    principle: "A complication changes the problem's shape.",
+    takeaways: [
+      "It can add obstacle, cost, knowledge, urgency, or moral pressure.",
+      "Good complications narrow easy choices.",
+      "Random difficulty is not the same as complication.",
+    ],
+    overview:
+      "A complication is any development that alters the protagonist's path by making the goal harder, stranger, more costly, or more morally charged.",
+    examples: [
+      "The witness agrees to testify but asks for protection the protagonist cannot provide.",
+      "The treasure exists, but retrieving it will flood the only safe town.",
+    ],
+    related: ["try-fail-cycle", "rising-action", "stakes"],
+  },
+  {
+    slug: "revelation",
+    title: "Revelation",
+    category: "Plot Mechanics",
+    level: "Intermediate",
+    summary: "New information that changes the meaning of prior events.",
+    principle: "A revelation should reorganise the story, not merely add data.",
+    takeaways: [
+      "It is strongest when surprising and retrospectively prepared.",
+      "It can alter motive, identity, cause, or stakes.",
+      "A revelation without aftermath is trivia.",
+    ],
+    overview:
+      "Revelation is the disclosure of information that changes what the reader or character understands. It often functions as a hinge between mystery and consequence.",
+    examples: [
+      "The victim was protecting the accused, not fearing them.",
+      "A family story turns out to be a cover for an act of mercy.",
+    ],
+    related: ["anagnorisis", "reversal", "mystery-and-curiosity"],
+  },
+  {
+    slug: "recognition-scene",
+    title: "Recognition Scene",
+    category: "Plot Mechanics",
+    level: "Intermediate",
+    summary: "A scene built around the discovery of identity, truth, or relation.",
+    principle: "Recognition lands when the audience sees both old ignorance and new consequence.",
+    takeaways: [
+      "It often joins revelation to emotional reversal.",
+      "The scene should change what characters can do next.",
+      "Recognition can be private, public, comic, or tragic.",
+    ],
+    overview:
+      "A recognition scene stages the moment when a character recognises what or whom they have been misreading. It is the dramatic embodiment of anagnorisis.",
+    examples: [
+      "A scar identifies the stranger as the lost heir.",
+      "A repeated phrase reveals that two enemies share the same teacher.",
+    ],
+    related: ["anagnorisis", "dramatic-irony", "revelation"],
+  },
+  {
+    slug: "twist",
+    title: "Twist",
+    category: "Plot Mechanics",
+    level: "Intermediate",
+    summary: "A turn that sharply reorients the reader's understanding.",
+    principle: "A twist should reveal hidden order, not replace order with shock.",
+    takeaways: [
+      "It must be possible to reread as prepared.",
+      "It should change stakes, meaning, or character position.",
+      "A twist that exists only to surprise is quickly consumed.",
+    ],
+    overview:
+      "A twist is a designed reorientation of expectation. It differs from a random surprise because the new information makes the earlier material more coherent, not less.",
+    examples: [
+      "The apparent rescuer has been arranging the danger.",
+      "The narrator's addressee is revealed to be dead.",
+    ],
+    failureModes: ["unearned-twist"],
+    related: ["reversal", "setup-and-payoff", "reader-contract"],
+  },
+  {
+    slug: "escalation",
+    title: "Escalation",
+    category: "Plot Mechanics",
+    level: "Foundational",
+    summary: "The increase of pressure, cost, danger, intimacy, or consequence.",
+    principle: "Escalation is change in pressure, not just more events.",
+    takeaways: [
+      "It can move inward as well as outward.",
+      "Escalation should alter available choices.",
+      "Without escalation, pacing feels flat even when events are busy.",
+    ],
+    overview:
+      "Escalation is the rising intensity of a narrative problem. It may increase physical risk, emotional exposure, social cost, moral compromise, or informational urgency.",
+    examples: [
+      "A private lie becomes a public accusation.",
+      "A small theft forces an alliance with the person most likely to expose it.",
+    ],
+    related: ["rising-action", "stakes", "try-fail-cycle"],
+  },
+  {
+    slug: "constraint",
+    title: "Constraint",
+    category: "Plot Mechanics",
+    level: "Intermediate",
+    summary: "A limit that shapes what characters can do.",
+    principle: "Constraint creates invention by removing easy exits.",
+    takeaways: [
+      "Constraints can be physical, social, legal, moral, formal, or temporal.",
+      "A clear limit makes choices legible.",
+      "Changing constraints can refresh a middle act.",
+    ],
+    overview:
+      "Constraint is any boundary that limits action and therefore sharpens drama. It makes agency visible because characters must choose within pressure rather than from infinite possibility.",
+    examples: [
+      "A rescue must happen before the tide covers the causeway.",
+      "A diplomat can tell the truth only in a room where every word is recorded.",
+    ],
+    related: ["conflict", "stakes", "active-vs-reactive-protagonist"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // EXPANDED CHARACTER
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "antagonist",
+    title: "Antagonist",
+    category: "Character",
+    level: "Foundational",
+    summary: "The force or figure that actively opposes the protagonist's desire.",
+    principle: "An antagonist is defined by opposition, not villainy.",
+    takeaways: [
+      "The antagonist may be a person, system, environment, or self.",
+      "Strong antagonists pressure the protagonist's weakness.",
+      "A villain without structural opposition is only decoration.",
+    ],
+    overview:
+      "An antagonist is the opposing force that makes the protagonist's pursuit difficult and meaningful. The role is structural before it is moral.",
+    examples: [
+      "A loving parent antagonises a protagonist's need for independence.",
+      "A bureaucracy blocks a rescue without any single evil official.",
+    ],
+    related: ["conflict", "foil", "fatal-flaw"],
+  },
+  {
+    slug: "motivation",
+    title: "Motivation",
+    category: "Character",
+    level: "Foundational",
+    summary: "The reason a character acts.",
+    principle: "Action convinces when desire has cause.",
+    takeaways: [
+      "Motivation can be conscious, hidden, contradictory, or mistaken.",
+      "Readers need enough motive to read choice as character.",
+      "Unmotivated action feels like authorial manipulation.",
+    ],
+    overview:
+      "Motivation is the causal interior of character action: what a person wants, fears, believes, owes, or refuses. It gives behaviour continuity without making it predictable.",
+    examples: [
+      "A character steals not from greed but from terror of being useless.",
+      "A public betrayal is motivated by a private debt.",
+    ],
+    related: ["want-vs-need", "lie-the-character-believes", "backstory"],
+  },
+  {
+    slug: "backstory",
+    title: "Backstory",
+    category: "Character",
+    level: "Foundational",
+    summary: "Prior events that shape the present character or conflict.",
+    principle: "Backstory matters when it changes present action.",
+    takeaways: [
+      "It should be deployed by need, not chronology.",
+      "The reader does not need everything the writer knows.",
+      "Backstory becomes dramatic when it returns as pressure.",
+    ],
+    overview:
+      "Backstory is the earlier life, history, wound, training, or relationship that informs the story's present. Its craft problem is placement: too soon and it burdens, too late and it cannot deepen.",
+    examples: [
+      "A childhood oath explains why an adult refuses an easy compromise.",
+      "A former friendship makes the current betrayal hurt in two time periods.",
+    ],
+    failureModes: ["info-dump"],
+    related: ["analepsis", "motivation", "iceberg-theory"],
+  },
+  {
+    slug: "character-web",
+    title: "Character Web",
+    category: "Character",
+    level: "Intermediate",
+    summary: "The network of characters arranged around shared pressures and contrasts.",
+    principle: "A cast is strongest when each major figure tests the story's central question differently.",
+    takeaways: [
+      "Foils, allies, rivals, and doubles can all belong to the web.",
+      "Each major character should reveal another angle of the theme.",
+      "A web prevents secondary characters from feeling interchangeable.",
+    ],
+    overview:
+      "A character web is the designed relationship among a cast's desires, wounds, roles, and thematic positions. It lets the story argue through multiple lives rather than one protagonist alone.",
+    examples: [
+      "Three siblings each answer inheritance with loyalty, greed, and escape.",
+      "A mentor, rival, and lover each pressure a different version of courage.",
+    ],
+    related: ["foil", "subplot", "theme"],
+  },
+  {
+    slug: "round-vs-flat-character",
+    title: "Round vs Flat Character",
+    category: "Character",
+    level: "Intermediate",
+    summary: "A distinction between psychologically complex and functionally simple characters.",
+    principle: "Flatness is not always failure; mismatch is.",
+    takeaways: [
+      "Round characters can surprise convincingly.",
+      "Flat characters may serve comedy, allegory, satire, or economy.",
+      "A major role written flatter than its function requires feels thin.",
+    ],
+    overview:
+      "Round and flat character are terms for degrees of complexity and dimensionality. The useful question is not whether every character is round, but whether the degree of complexity fits the role.",
+    examples: [
+      "A comic messenger can be flat without harming the story.",
+      "A protagonist whose choices never exceed one trait feels underbuilt.",
+    ],
+    failureModes: ["flat-character"],
+    related: ["characterization", "stock-character", "archetype"],
+  },
+  {
+    slug: "stock-character",
+    title: "Stock Character",
+    category: "Character",
+    level: "Intermediate",
+    summary: "A conventional character type recognised by role and pattern.",
+    principle: "A stock character trades individuality for speed of recognition.",
+    takeaways: [
+      "Stock types can serve comedy, genre, and social satire.",
+      "They become weak when the story needs inner life they do not have.",
+      "Refreshing a stock role requires pressure, specificity, or inversion.",
+    ],
+    overview:
+      "A stock character is a familiar type whose traits and function are quickly legible: miser, braggart, ingenue, confidant, hardboiled detective. The type can be efficient or lazy depending on use.",
+    examples: [
+      "A pompous official appears briefly to embody institutional vanity.",
+      "A genre mentor begins as stock but gains force through a private contradiction.",
+    ],
+    related: ["archetype", "stereotype", "round-vs-flat-character"],
+  },
+  {
+    slug: "stereotype",
+    title: "Stereotype",
+    category: "Character",
+    level: "Intermediate",
+    summary: "A reductive character pattern based on inherited social assumptions.",
+    principle: "Stereotype replaces observation with received simplification.",
+    takeaways: [
+      "It narrows character into a cultural shortcut.",
+      "It can harm both craft and ethics.",
+      "Subversion requires more than reversing a single trait.",
+    ],
+    overview:
+      "A stereotype is a flattened representation that relies on social cliché rather than particularity. Unlike an archetype or stock role, it often imports unexamined assumptions about identity, class, gender, race, age, or culture.",
+    examples: [
+      "A character's entire personality is reduced to accent and occupation.",
+      "A supposed subversion keeps the same assumptions while changing only competence.",
+    ],
+    failureModes: ["flat-character"],
+    related: ["characterization", "stock-character", "verisimilitude"],
+  },
+  {
+    slug: "double",
+    title: "Double",
+    category: "Character",
+    level: "Advanced",
+    summary: "A character who mirrors, splits, or externalises another self.",
+    principle: "The double makes identity visible by dividing it.",
+    takeaways: [
+      "Doubles can express repression, fate, rivalry, or alternate possibility.",
+      "They often operate through uncanny resemblance and difference.",
+      "A double should pressure identity, not merely duplicate it.",
+    ],
+    overview:
+      "The double is a character pattern in which one figure mirrors, shadows, or splits another. It is common in gothic, psychological, modernist, and mythic forms because it externalises internal conflict.",
+    examples: [
+      "A rival lives the life the protagonist refused.",
+      "A stranger's resemblance forces a character to confront their hidden violence.",
+    ],
+    related: ["foil", "archetype", "gothic"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // EXPANDED THEME & SYMBOL
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "allegory",
+    title: "Allegory",
+    category: "Theme & Symbol",
+    level: "Intermediate",
+    summary: "A narrative whose literal elements systematically carry abstract meaning.",
+    principle: "Allegory turns story into a second-order argument.",
+    takeaways: [
+      "Characters, places, and events often correspond to ideas or institutions.",
+      "It differs from symbol by its sustained system of meaning.",
+      "Too rigid an allegory can become diagram rather than drama.",
+    ],
+    overview:
+      "Allegory is an extended mode of meaning in which the visible story points consistently toward another level of moral, political, spiritual, or philosophical significance.",
+    examples: [
+      "A journey through named temptations stages a spiritual education.",
+      "An animal society represents political revolution and its betrayals.",
+    ],
+    related: ["symbol", "theme", "satire"],
+  },
+  {
+    slug: "ambiguity",
+    title: "Ambiguity",
+    category: "Theme & Symbol",
+    level: "Intermediate",
+    summary: "A meaningful openness that permits more than one reading.",
+    principle: "Ambiguity is productive when the alternatives matter.",
+    takeaways: [
+      "It is not the same as confusion.",
+      "Strong ambiguity is bounded by textual evidence.",
+      "It can preserve moral, emotional, or metaphysical complexity.",
+    ],
+    overview:
+      "Ambiguity occurs when a text sustains multiple plausible interpretations without collapsing into a single answer. Its power lies in pressure between meanings, not in vagueness.",
+    examples: [
+      "A ghost story never fully decides whether the haunting is supernatural or psychological.",
+      "A final gesture can be read as forgiveness or surrender.",
+    ],
+    related: ["subtext", "reader-contract", "closure"],
+  },
+  {
+    slug: "paradox",
+    title: "Paradox",
+    category: "Theme & Symbol",
+    level: "Intermediate",
+    summary: "An apparent contradiction that reveals a deeper truth or tension.",
+    principle: "Paradox makes thought move by refusing easy resolution.",
+    takeaways: [
+      "It can operate in phrase, character, theme, or plot.",
+      "The contradiction should be meaningful rather than merely clever.",
+      "Paradox often preserves complexity that thesis would flatten.",
+    ],
+    overview:
+      "Paradox is a statement or structure that appears contradictory but discloses a more complex relation. Literature often uses paradox to hold incompatible truths in active tension.",
+    examples: [
+      "A character gains freedom only by accepting obligation.",
+      "A comic ending reveals the seriousness of the social wound.",
+    ],
+    related: ["theme", "irony", "oxymoron"],
+  },
+  {
+    slug: "countertheme",
+    title: "Countertheme",
+    category: "Theme & Symbol",
+    level: "Advanced",
+    summary: "A competing thematic claim that tests the story's dominant concern.",
+    principle: "Theme grows stronger when the story gives its opposition real force.",
+    takeaways: [
+      "Countertheme prevents the work from becoming sermon.",
+      "It may be carried by a foil, subplot, or antagonist.",
+      "The ending need not destroy the countertheme; it may leave residue.",
+    ],
+    overview:
+      "A countertheme is the rival argument or value system inside a work. It pressures the main theme by showing what a serious alternative would cost, achieve, or reveal.",
+    examples: [
+      "A novel about mercy gives vengeance its strongest case through a wronged survivor.",
+      "A romance about openness lets a guarded character be right about danger.",
+    ],
+    related: ["theme", "foil", "subplot"],
+  },
+  {
+    slug: "moral-premise",
+    title: "Moral Premise",
+    category: "Theme & Symbol",
+    level: "Intermediate",
+    summary: "The value proposition that links inner error to outer consequence.",
+    principle: "A story's moral logic is strongest when tested through action.",
+    takeaways: [
+      "It can guide arcs without becoming a stated moral.",
+      "The premise should be dramatised by choices and consequences.",
+      "Overly neat moral premise reduces complexity.",
+    ],
+    overview:
+      "Moral premise names the underlying value logic by which a story connects belief, action, consequence, and change. It is a tool for reading how a story judges choices.",
+    examples: [
+      "A story tests whether control protects love or destroys it.",
+      "A tragedy links prideful certainty to social and personal ruin.",
+    ],
+    related: ["theme", "lie-the-character-believes", "character-arc"],
+  },
+  {
+    slug: "intertextuality",
+    title: "Intertextuality",
+    category: "Theme & Symbol",
+    level: "Advanced",
+    summary: "The way a text derives meaning through relation to other texts.",
+    principle: "No text speaks entirely alone.",
+    takeaways: [
+      "It includes allusion, adaptation, quotation, genre memory, and revision.",
+      "Readers may recognise different intertexts at different depths.",
+      "Intertextuality can honour, argue with, or undo its sources.",
+    ],
+    overview:
+      "Intertextuality describes the network of prior texts, forms, myths, genres, and phrases through which a work makes meaning. It expands allusion into a broader theory of textual relation.",
+    examples: [
+      "A modern novel rewrites a myth from the silenced character's view.",
+      "A detective story gains force by violating rules older detective stories trained readers to expect.",
+    ],
+    related: ["allusion", "genre", "parody"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // RHETORIC & FIGURES
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "metonymy",
+    title: "Metonymy",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary: "A figure that names something by an associated thing.",
+    principle: "Association can stand in for identity.",
+    takeaways: [
+      "Metonymy relies on contiguity rather than resemblance.",
+      "It can compress institutions, places, and powers into concrete terms.",
+      "It works when the association is culturally or textually legible.",
+    ],
+    overview:
+      "Metonymy substitutes an associated term for the thing meant: crown for monarchy, press for journalism, stage for theatre. Unlike metaphor, it does not claim likeness; it uses relation.",
+    examples: [
+      "The crown refuses the petition.",
+      "The whole room waited for the bench to speak.",
+    ],
+    related: ["synecdoche", "metaphor", "symbol"],
+  },
+  {
+    slug: "synecdoche",
+    title: "Synecdoche",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary: "A figure in which part stands for whole, or whole for part.",
+    principle: "Scale can concentrate meaning.",
+    takeaways: [
+      "It is often treated as a subtype of metonymy.",
+      "The chosen part should reveal the whole's pressure.",
+      "It can humanise abstraction or reduce people to function.",
+    ],
+    overview:
+      "Synecdoche uses a part-whole relation to carry meaning. It can make an army into hands, a ship into sails, or a nation into a crowd of faces.",
+    examples: [
+      "All hands on deck.",
+      "A city of hungry mouths waited outside the bakery.",
+    ],
+    related: ["metonymy", "imagery", "diction"],
+  },
+  {
+    slug: "hyperbole",
+    title: "Hyperbole",
+    category: "Rhetoric & Figures",
+    level: "Foundational",
+    summary: "Deliberate exaggeration for force, humour, or emphasis.",
+    principle: "Exaggeration reveals feeling by exceeding fact.",
+    takeaways: [
+      "Hyperbole is not meant to be literal.",
+      "It can signal voice, scale, comedy, or emotional intensity.",
+      "Uncontrolled hyperbole weakens stakes by inflating everything.",
+    ],
+    overview:
+      "Hyperbole is purposeful overstatement. It can enlarge emotion, sharpen satire, or make a voice memorable, provided the reader understands the excess as expressive.",
+    examples: [
+      "He had apologised a thousand times before breakfast.",
+      "The silence weighed more than the house.",
+    ],
+    related: ["voice", "satire", "tone"],
+  },
+  {
+    slug: "litotes",
+    title: "Litotes",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary: "Understatement through negating the opposite.",
+    principle: "Saying less can imply more.",
+    takeaways: [
+      "Litotes often produces irony, restraint, or social coding.",
+      "It depends on the reader hearing the suppressed positive claim.",
+      "It can make emotion more powerful by refusing display.",
+    ],
+    overview:
+      "Litotes is a rhetorical understatement such as not bad for good or not unkind for kind. Its force lies in indirection, often making the speaker's restraint part of the meaning.",
+    examples: [
+      "The ruined wedding was not ideal.",
+      "She was not unaware of his fear.",
+    ],
+    related: ["irony", "subtext", "tone"],
+  },
+  {
+    slug: "oxymoron",
+    title: "Oxymoron",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary: "A compressed phrase joining contradictory terms.",
+    principle: "Contradiction can make a state newly visible.",
+    takeaways: [
+      "It is the local phrase-level cousin of paradox.",
+      "It should disclose tension, not merely decorate.",
+      "Strong oxymoron makes the contradiction feel exact.",
+    ],
+    overview:
+      "Oxymoron brings apparently incompatible words together in a single phrase. It is useful when an experience is best captured by contradiction rather than description.",
+    examples: [
+      "A terrible mercy.",
+      "The room was filled with eloquent silence.",
+    ],
+    related: ["paradox", "diction", "compression"],
+  },
+  {
+    slug: "apostrophe",
+    title: "Apostrophe",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary: "Direct address to an absent, dead, abstract, or nonhuman addressee.",
+    principle: "Address can make absence theatrically present.",
+    takeaways: [
+      "It turns lyric or rhetorical pressure outward.",
+      "The addressee need not be able to answer.",
+      "It can heighten grief, praise, accusation, or invocation.",
+    ],
+    overview:
+      "Apostrophe occurs when a speaker turns to address someone or something not literally present or responsive. It is common in poetry, drama, prayer, elegy, and heightened prose.",
+    examples: [
+      "O memory, leave the room for once.",
+      "A mourner speaks directly to the dead child.",
+    ],
+    related: ["speaker", "soliloquy", "personification"],
+  },
+  {
+    slug: "anaphora",
+    title: "Anaphora",
+    category: "Rhetoric & Figures",
+    level: "Foundational",
+    summary: "Repetition at the beginning of successive phrases or clauses.",
+    principle: "Initial repetition builds rhythm, emphasis, and expectation.",
+    takeaways: [
+      "It can create momentum, ceremony, insistence, or argument.",
+      "Variation after the repeated opening keeps it alive.",
+      "Overuse turns emphasis into monotony.",
+    ],
+    overview:
+      "Anaphora is the repeated beginning of successive units. It is one of the most visible ways prose and poetry turn repetition into pattern.",
+    examples: [
+      "We waited for rain. We waited for news. We waited for the door.",
+      "I remember the road, I remember the smoke, I remember nothing after.",
+    ],
+    related: ["repetition", "cadence", "sentence-rhythm"],
+  },
+  {
+    slug: "epistrophe",
+    title: "Epistrophe",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary: "Repetition at the end of successive phrases or clauses.",
+    principle: "Final repetition makes each unit land on the same pressure point.",
+    takeaways: [
+      "It creates closure, insistence, and accumulating force.",
+      "It can sound ceremonial, comic, obsessive, or accusatory.",
+      "The repeated ending should gain weight through return.",
+    ],
+    overview:
+      "Epistrophe repeats the ending of successive units. Where anaphora launches each phrase from the same place, epistrophe drives each phrase toward the same destination.",
+    examples: [
+      "They lied in spring, they lied in court, they lied at the grave.",
+      "No money for bread, no money for coal, no money for mercy.",
+    ],
+    related: ["anaphora", "repetition", "cadence"],
+  },
+  {
+    slug: "chiasmus",
+    title: "Chiasmus",
+    category: "Rhetoric & Figures",
+    level: "Advanced",
+    summary: "A mirrored reversal of grammatical or conceptual structure.",
+    principle: "Reversal in form can reveal reversal in thought.",
+    takeaways: [
+      "Chiasmus often follows an ABBA pattern.",
+      "It can make a line feel balanced, aphoristic, or inevitable.",
+      "Clever symmetry without necessity sounds ornamental.",
+    ],
+    overview:
+      "Chiasmus arranges terms or structures in mirrored order. It is a rhetorical figure of crossing, useful for showing reciprocity, inversion, irony, or conceptual balance.",
+    examples: [
+      "She left the city for freedom and found freedom leaving the city.",
+      "He shaped the law, and the law shaped him.",
+    ],
+    related: ["inversion", "sentence-rhythm", "paradox"],
+  },
+  {
+    slug: "ekphrasis",
+    title: "Ekphrasis",
+    category: "Rhetoric & Figures",
+    level: "Advanced",
+    summary: "Verbal representation of visual art or visual object.",
+    principle: "Ekphrasis turns looking into interpretation.",
+    takeaways: [
+      "It is never only description; it stages the act of seeing.",
+      "The described artwork can mirror, resist, or judge the observer.",
+      "It can create dialogue between media.",
+    ],
+    overview:
+      "Ekphrasis is writing that represents a visual artwork, image, or object. Its interest lies in how language translates visual form and how the act of description exposes the viewer.",
+    examples: [
+      "A poem addresses a painted figure who cannot answer.",
+      "A novel describes a portrait until the observer's desire becomes the subject.",
+    ],
+    related: ["imagery", "symbol", "objective-correlative"],
+  },
+  {
+    slug: "satire",
+    title: "Satire",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary: "Ridicule or distortion used to expose vice, folly, or corruption.",
+    principle: "Satire entertains by judging.",
+    takeaways: [
+      "It needs a target and a standard of judgement.",
+      "Satire may be comic, savage, playful, or bleak.",
+      "If the target is unclear, satire can look like endorsement.",
+    ],
+    overview:
+      "Satire uses humour, exaggeration, irony, parody, or grotesque distortion to criticize people, institutions, habits, or systems. It depends on a felt gap between what is and what should be.",
+    examples: [
+      "A bureaucracy is exaggerated until its cruelty becomes visible as procedure.",
+      "A polite dinner scene exposes an entire class system.",
+    ],
+    related: ["irony", "parody", "allegory"],
+  },
+  {
+    slug: "parody",
+    title: "Parody",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary: "Imitation that exposes, mocks, or refunctions a recognizable style or form.",
+    principle: "Parody depends on the reader hearing the original through the imitation.",
+    takeaways: [
+      "It can mock, homage, critique, or renew its source.",
+      "The target must be recognisable enough to be activated.",
+      "Parody without transformation is only mimicry.",
+    ],
+    overview:
+      "Parody imitates the features of a text, genre, style, or discourse in order to create critical or comic distance. It is intertextual by design.",
+    examples: [
+      "A mock-epic style is applied to a petty household dispute.",
+      "A detective formula is exaggerated until its assumptions become comic.",
+    ],
+    related: ["intertextuality", "satire", "pastiche"],
+  },
+  {
+    slug: "pastiche",
+    title: "Pastiche",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary: "Imitation or assemblage of recognizable styles without necessary mockery.",
+    principle: "Pastiche borrows style as material.",
+    takeaways: [
+      "It may be homage, collage, exercise, or critique.",
+      "Unlike parody, it need not ridicule its source.",
+      "The borrowed style should do work beyond display.",
+    ],
+    overview:
+      "Pastiche imitates or combines prior styles, genres, or voices. Its effect can be affectionate, decorative, postmodern, critical, or archival depending on how the borrowing is framed.",
+    examples: [
+      "A novel chapter adopts the style of a Victorian newspaper report.",
+      "A story assembles noir, fairy tale, and academic prose into one surface.",
+    ],
+    related: ["parody", "intertextuality", "voice"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // GENRE & FORM
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "genre",
+    title: "Genre",
+    category: "Genre & Form",
+    level: "Foundational",
+    summary: "A category of works organised by shared conventions and reader expectations.",
+    principle: "Genre is a contract before it is a label.",
+    takeaways: [
+      "Genres teach readers what to expect and how to read.",
+      "A work can belong to several genres at once.",
+      "Innovation depends on knowing what convention is being bent.",
+    ],
+    overview:
+      "Genre names a recognisable field of conventions, forms, settings, plots, affects, and expectations. It is both a market category and a literary structure of reading.",
+    examples: [
+      "A mystery promises an inquiry and some form of answer.",
+      "A gothic novel trains the reader to read setting as psychological pressure.",
+    ],
+    related: ["reader-contract", "convention", "trope"],
+  },
+  {
+    slug: "mode",
+    title: "Mode",
+    category: "Genre & Form",
+    level: "Intermediate",
+    summary: "A manner or tonal logic that can appear across genres.",
+    principle: "Mode describes how a work operates, not just where it shelves.",
+    takeaways: [
+      "Modes include tragic, comic, pastoral, gothic, satiric, and elegiac patterns.",
+      "A mode can inflect many genres.",
+      "Mode helps describe works that cross market categories.",
+    ],
+    overview:
+      "Mode is a broader formal or tonal way of organising experience. Unlike genre, it need not define a shelf; it describes the work's operating logic.",
+    examples: [
+      "A science-fiction novel may operate in pastoral mode.",
+      "A realist family story may turn gothic in its treatment of the house.",
+    ],
+    related: ["genre", "tone", "gothic"],
+  },
+  {
+    slug: "convention",
+    title: "Convention",
+    category: "Genre & Form",
+    level: "Foundational",
+    summary: "An expected pattern, device, or rule within a form or genre.",
+    principle: "Convention is shared knowledge between writer and reader.",
+    takeaways: [
+      "Conventions create legibility and expectation.",
+      "Breaking convention works only when the convention is felt.",
+      "A convention can be refreshed through context or consequence.",
+    ],
+    overview:
+      "A convention is a recognised formal or genre practice: the detective's reveal, the comedy's social repair, the lyric's speaker, the gothic house. Conventions are not automatically clichés; they are tools with history.",
+    examples: [
+      "A romance convention promises emotional resolution around the central relationship.",
+      "A tragedy convention prepares the reader for recognition and irreversible cost.",
+    ],
+    related: ["genre", "trope", "reader-contract"],
+  },
+  {
+    slug: "trope",
+    title: "Trope",
+    category: "Genre & Form",
+    level: "Foundational",
+    summary: "A recurring pattern of situation, image, character, or turn.",
+    principle: "A trope is raw material; execution decides freshness.",
+    takeaways: [
+      "Tropes create fast recognition.",
+      "They can be fulfilled, inverted, combined, or interrogated.",
+      "Calling something a trope does not make it weak.",
+    ],
+    overview:
+      "Trope is a broad term for recurring patterns readers recognise: enemies to lovers, the haunted house, the chosen one, the locked room. A trope becomes stale only when the work stops particularising it.",
+    examples: [
+      "A chosen-one story asks what communal cost creates the chosen figure.",
+      "A locked-room mystery uses the old pattern to test digital surveillance.",
+    ],
+    related: ["archetype", "convention", "inversion"],
+  },
+  {
+    slug: "tragedy",
+    title: "Tragedy",
+    category: "Genre & Form",
+    level: "Intermediate",
+    summary: "A form organised around irreversible loss, recognition, and consequence.",
+    principle: "Tragedy makes suffering intelligible without making it small.",
+    takeaways: [
+      "It often joins error, fate, character, and social order.",
+      "Recognition may arrive too late to prevent cost.",
+      "The ending should feel necessary, not merely unhappy.",
+    ],
+    overview:
+      "Tragedy is a major dramatic and narrative form in which conflict leads toward serious, often irreversible consequence. Its force lies in necessity, recognition, and the dignity or terror of loss.",
+    examples: [
+      "A ruler's strength becomes the error that destroys the city.",
+      "A family curse is fulfilled through choices meant to escape it.",
+    ],
+    related: ["fatal-flaw", "anagnorisis", "catharsis"],
+  },
+  {
+    slug: "comedy",
+    title: "Comedy",
+    category: "Genre & Form",
+    level: "Intermediate",
+    summary: "A form oriented toward social release, exposure, and renewal.",
+    principle: "Comedy reveals disorder by arranging a return, repair, or release.",
+    takeaways: [
+      "Comedy is not simply anything funny.",
+      "It often ends in recognition, reintegration, marriage, feast, or restored community.",
+      "Comic form can carry severe social criticism.",
+    ],
+    overview:
+      "Comedy is a literary and dramatic form that moves through confusion, exposure, and constraint toward some kind of release or reordering. Its laughter often depends on social diagnosis.",
+    examples: [
+      "A mistaken identity plot exposes class performance before ending in marriage.",
+      "A satire uses comic absurdity to reveal institutional violence.",
+    ],
+    related: ["satire", "irony", "genre"],
+  },
+  {
+    slug: "romance",
+    title: "Romance",
+    category: "Genre & Form",
+    level: "Intermediate",
+    summary: "A mode or genre of desire, adventure, idealisation, and eventual fulfilment.",
+    principle: "Romance tests whether longing can find a livable form.",
+    takeaways: [
+      "As a mode, romance reaches beyond the modern love genre.",
+      "It often uses quest, separation, recognition, and restoration.",
+      "Modern genre romance carries strong reader-contract expectations.",
+    ],
+    overview:
+      "Romance can mean a market genre centred on a love relationship, but in literary history it also names a broader mode of adventure, wonder, quest, and idealised desire.",
+    examples: [
+      "A medieval romance sends a knight through tests of identity and loyalty.",
+      "A contemporary romance structures its plot around the central relationship's earned union.",
+    ],
+    related: ["genre", "reader-contract", "recognition-scene"],
+  },
+  {
+    slug: "gothic",
+    title: "Gothic",
+    category: "Genre & Form",
+    level: "Intermediate",
+    summary: "A mode of haunted spaces, buried histories, dread, and unstable boundaries.",
+    principle: "The gothic makes the past architectural.",
+    takeaways: [
+      "Setting often carries repressed history.",
+      "Fear may be supernatural, psychological, social, or all three.",
+      "The gothic thrives on uncertainty between explanation and haunting.",
+    ],
+    overview:
+      "Gothic is a genre and mode built from enclosure, dread, inheritance, secrets, ruins, doubles, and haunted space. It turns setting into pressure from the past.",
+    examples: [
+      "A house seems to remember what the family refuses to say.",
+      "A double appears as both supernatural threat and psychological truth.",
+    ],
+    related: ["setting-as-character", "double", "ambiguity"],
+  },
+  {
+    slug: "bildungsroman",
+    title: "Bildungsroman",
+    category: "Genre & Form",
+    level: "Intermediate",
+    summary: "A novel of formation, education, and maturation.",
+    principle: "The form asks what kind of self society makes possible.",
+    takeaways: [
+      "It tracks development across youth, education, work, love, and social entry.",
+      "The ending may reconcile the self to society or expose the cost of doing so.",
+      "Formation can be intellectual, moral, artistic, sexual, or political.",
+    ],
+    overview:
+      "The Bildungsroman is the novel of formation: a protagonist grows into, against, or away from a social world. Its central drama is development under social pressure.",
+    examples: [
+      "A young artist discovers that vocation requires exile from home.",
+      "A student learns the language of class mobility and its cost.",
+    ],
+    related: ["character-arc", "genre", "motivation"],
+  },
+  {
+    slug: "pastoral",
+    title: "Pastoral",
+    category: "Genre & Form",
+    level: "Intermediate",
+    summary: "A mode that imagines rural simplicity against social complexity.",
+    principle: "Pastoral is never only about the countryside; it is about contrast.",
+    takeaways: [
+      "It can idealise, critique, mourn, or expose rural life.",
+      "The city-country contrast often carries moral and political weight.",
+      "Anti-pastoral works reveal what idealisation hides.",
+    ],
+    overview:
+      "Pastoral is a literary mode centred on rural life, retreat, shepherds, landscape, and simplicity, often as a way to think about labour, class, desire, art, and the corruption of social worlds.",
+    examples: [
+      "A courtly poem imagines shepherd life as freedom from politics.",
+      "A modern novel breaks pastoral fantasy by showing rural labour and poverty.",
+    ],
+    related: ["setting-as-character", "mode", "verisimilitude"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // POETRY
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "speaker",
+    title: "Speaker",
+    category: "Poetry",
+    level: "Foundational",
+    summary: "The voice or persona uttering a poem.",
+    principle: "The speaker is not automatically the poet.",
+    takeaways: [
+      "A poem constructs a speaking position.",
+      "Speaker, poet, and narrator should not be collapsed too quickly.",
+      "Tone, diction, address, and knowledge define the speaker.",
+    ],
+    overview:
+      "The speaker is the implied voice within a poem, the one who says the words. Reading the speaker as constructed allows poems to use masks, irony, performance, and dramatic situation.",
+    examples: [
+      "A love poem is spoken by a persona whose confidence the poem quietly undermines.",
+      "An elegy constructs a speaker who cannot decide whether to praise or accuse.",
+    ],
+    related: ["voice", "apostrophe", "tone"],
+  },
+  {
+    slug: "line-break",
+    title: "Line Break",
+    category: "Poetry",
+    level: "Foundational",
+    summary: "The point where a poetic line ends.",
+    principle: "A line break is a unit of meaning, timing, and pressure.",
+    takeaways: [
+      "It can create emphasis, hesitation, surprise, or double meaning.",
+      "Lineation shapes how syntax is experienced.",
+      "Bad line breaks merely chop prose into pieces.",
+    ],
+    overview:
+      "A line break is one of poetry's basic formal decisions. It controls pause, visual shape, suspense, rhythm, and the relation between syntax and line.",
+    examples: [
+      "A line ends on a verb and suspends the object until the next line.",
+      "A break isolates a word so the reader feels its double meaning.",
+    ],
+    related: ["enjambment", "caesura", "syntax"],
+  },
+  {
+    slug: "enjambment",
+    title: "Enjambment",
+    category: "Poetry",
+    level: "Intermediate",
+    summary: "A sentence or phrase running over the end of a poetic line.",
+    principle: "Enjambment makes line and syntax pull against each other.",
+    takeaways: [
+      "It can create speed, suspense, ambiguity, or surprise.",
+      "The line ending still matters even when syntax continues.",
+      "Strong enjambment rewards the moment of crossing.",
+    ],
+    overview:
+      "Enjambment occurs when a syntactic unit continues beyond the line break. It lets poetry create a temporary meaning at line end, then alter it as the sentence continues.",
+    examples: [
+      "A line ending on I wanted lets desire hang before the object appears.",
+      "A harmless phrase turns threatening after the next line completes it.",
+    ],
+    related: ["line-break", "syntax", "volta"],
+  },
+  {
+    slug: "caesura",
+    title: "Caesura",
+    category: "Poetry",
+    level: "Intermediate",
+    summary: "A pause or break within a poetic line.",
+    principle: "A pause inside the line can be as forceful as the line ending.",
+    takeaways: [
+      "Caesura can be marked by punctuation, rhythm, or syntax.",
+      "It interrupts, balances, or turns the line's movement.",
+      "Its placement affects breath and emphasis.",
+    ],
+    overview:
+      "Caesura is an internal pause within a line of verse. It can create formal balance, emotional interruption, dramatic hesitation, or rhythmic complexity.",
+    examples: [
+      "A dash splits a confession before the speaker can finish it.",
+      "A midline pause lets two images weigh against each other.",
+    ],
+    related: ["line-break", "meter", "cadence"],
+  },
+  {
+    slug: "meter",
+    title: "Meter",
+    category: "Poetry",
+    level: "Intermediate",
+    summary: "A patterned arrangement of stressed and unstressed syllables.",
+    principle: "Meter gives rhythm a system the poem can fulfil or disturb.",
+    takeaways: [
+      "It creates expectation through recurring stress patterns.",
+      "Variation against meter can carry expressive force.",
+      "Meter is heard, not merely counted.",
+    ],
+    overview:
+      "Meter is the patterned rhythm of verse, traditionally described through feet and line lengths. Its value lies not in mechanical counting but in the tension between pattern and living speech.",
+    examples: [
+      "A regular line breaks pattern at the word death.",
+      "A comic poem uses heavy meter to make trivial complaints grand.",
+    ],
+    related: ["sentence-rhythm", "cadence", "caesura"],
+  },
+  {
+    slug: "rhyme",
+    title: "Rhyme",
+    category: "Poetry",
+    level: "Foundational",
+    summary: "Repetition of corresponding sounds, often at line endings.",
+    principle: "Rhyme links words by sound before argument explains the link.",
+    takeaways: [
+      "It can create closure, memory, wit, song, or inevitability.",
+      "Slant rhyme creates relation without full resolution.",
+      "Forced rhyme exposes the poet's hand.",
+    ],
+    overview:
+      "Rhyme is sound correspondence between words. It organises expectation, pattern, emphasis, and memory, whether in strict schemes or looser echoes.",
+    examples: [
+      "A perfect rhyme closes a comic couplet like a latch.",
+      "A slant rhyme leaves grief slightly unresolved.",
+    ],
+    related: ["sound-patterning", "refrain", "stanza"],
+  },
+  {
+    slug: "stanza",
+    title: "Stanza",
+    category: "Poetry",
+    level: "Foundational",
+    summary: "A grouped unit of lines within a poem.",
+    principle: "A stanza is a room of thought, rhythm, or image.",
+    takeaways: [
+      "Stanzas organise progression and pause.",
+      "They can function like paragraphs, scenes, turns, or refrains.",
+      "Stanza shape affects reading pace and expectation.",
+    ],
+    overview:
+      "A stanza is a formal grouping of lines. It gives poems architecture, allowing shifts in argument, image, voice, time, or emotional pressure.",
+    examples: [
+      "A poem's final one-line stanza isolates the admission everything avoided.",
+      "Repeated quatrains create ritual expectation.",
+    ],
+    related: ["line-break", "volta", "refrain"],
+  },
+  {
+    slug: "volta",
+    title: "Volta",
+    category: "Poetry",
+    level: "Intermediate",
+    summary: "A turn in argument, feeling, image, or perspective.",
+    principle: "A poem often comes alive where it turns.",
+    takeaways: [
+      "The volta may reverse, deepen, answer, or reframe.",
+      "Sonnets traditionally foreground the volta, but any poem can turn.",
+      "A turn should alter the reader's relation to what came before.",
+    ],
+    overview:
+      "Volta is the poetic turn: a shift in thought, address, tone, image, or argument. It is one of the clearest ways a poem creates movement.",
+    examples: [
+      "A praise poem turns into accusation.",
+      "A landscape description turns into self-recognition.",
+    ],
+    related: ["reversal", "stanza", "line-break"],
+  },
+  {
+    slug: "refrain",
+    title: "Refrain",
+    category: "Poetry",
+    level: "Foundational",
+    summary: "A repeated line, phrase, or sound pattern in a poem or song.",
+    principle: "Return changes meaning by changing context.",
+    takeaways: [
+      "A refrain gathers force through recurrence.",
+      "It can provide structure, memory, lament, or ritual.",
+      "Unchanged words can mean differently each time they return.",
+    ],
+    overview:
+      "A refrain is repeated language or sound that recurs across a poem. Its craft power lies in how repetition accumulates difference.",
+    examples: [
+      "A repeated line of mourning becomes accusation by the final stanza.",
+      "A comic refrain turns darker as the situation worsens.",
+    ],
+    related: ["motif", "repetition", "rhyme"],
+  },
+  {
+    slug: "sound-patterning",
+    title: "Sound Patterning",
+    category: "Poetry",
+    level: "Intermediate",
+    summary: "The organised use of sound effects such as alliteration, assonance, and consonance.",
+    principle: "Sound carries meaning before paraphrase catches up.",
+    takeaways: [
+      "Sound can bind images, intensify mood, or create friction.",
+      "Patterns should serve the poem's pressure, not merely ornament it.",
+      "Subtle sound design often works below conscious notice.",
+    ],
+    overview:
+      "Sound patterning is the deliberate arrangement of repeated or contrasting sounds. It includes rhyme, alliteration, assonance, consonance, euphony, cacophony, and rhythmic echo.",
+    examples: [
+      "Soft sibilants make a scene feel hushed and secretive.",
+      "Hard consonants make a comic insult snap.",
+    ],
+    related: ["rhyme", "euphony", "cacophony"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // DRAMA
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "soliloquy",
+    title: "Soliloquy",
+    category: "Drama",
+    level: "Intermediate",
+    summary: "A speech in which a character speaks their thought aloud, often alone.",
+    principle: "A soliloquy makes interior conflict public without making it ordinary conversation.",
+    takeaways: [
+      "It reveals mind under theatrical conditions.",
+      "It can persuade, confess, rationalise, or fracture.",
+      "A strong soliloquy changes the audience's relation to action.",
+    ],
+    overview:
+      "Soliloquy is a dramatic convention in which a character speaks inward thought aloud for the audience. It turns private deliberation into staged action.",
+    examples: [
+      "A prince argues with himself before choosing delay.",
+      "A villain explains the logic they would hide from every other character.",
+    ],
+    related: ["monologue", "interior-monologue", "aside"],
+  },
+  {
+    slug: "aside",
+    title: "Aside",
+    category: "Drama",
+    level: "Foundational",
+    summary: "A brief speech to the audience unheard by other characters.",
+    principle: "An aside creates selective knowledge in the theatre.",
+    takeaways: [
+      "It can generate comedy, complicity, irony, or suspense.",
+      "It momentarily changes the audience's knowledge state.",
+      "It depends on theatrical convention rather than realism.",
+    ],
+    overview:
+      "An aside is a short address that other characters onstage do not hear. It lets drama create a private channel between character and audience.",
+    examples: [
+      "A servant mocks the master while standing beside him.",
+      "A conspirator reveals the false meaning of a polite speech.",
+    ],
+    related: ["dramatic-irony", "soliloquy", "reader-contract"],
+  },
+  {
+    slug: "monologue",
+    title: "Monologue",
+    category: "Drama",
+    level: "Foundational",
+    summary: "An extended speech by one character.",
+    principle: "A monologue is action when speech changes pressure.",
+    takeaways: [
+      "It may persuade, confess, accuse, narrate, seduce, or delay.",
+      "Length alone does not make it dramatic.",
+      "The listener's presence or absence changes its function.",
+    ],
+    overview:
+      "A monologue is an extended speech by a single character. In drama and prose, it works when the speech itself is an event with stakes.",
+    examples: [
+      "A witness's testimony becomes a self-indictment.",
+      "A parent tells a family history to prevent a child leaving.",
+    ],
+    related: ["dialogue", "soliloquy", "voice"],
+  },
+  {
+    slug: "chorus",
+    title: "Chorus",
+    category: "Drama",
+    level: "Intermediate",
+    summary: "A collective voice that comments, witnesses, or frames action.",
+    principle: "The chorus turns individual action into public meaning.",
+    takeaways: [
+      "It may represent community, memory, ritual, conscience, or audience.",
+      "It can interpret events without controlling them.",
+      "Modern works often adapt choral function outside formal chorus.",
+    ],
+    overview:
+      "The chorus is a dramatic device inherited from ancient theatre: a group or collective voice that responds to action, frames meaning, and mediates between stage and audience.",
+    examples: [
+      "A town's women narrate what the hero refuses to see.",
+      "A repeated group voice turns private grief into civic indictment.",
+    ],
+    related: ["frame-narrative", "voice", "tragedy"],
+  },
+  {
+    slug: "stage-business",
+    title: "Stage Business",
+    category: "Drama",
+    level: "Foundational",
+    summary: "Physical activity onstage that supports character, rhythm, and meaning.",
+    principle: "Bodies think onstage.",
+    takeaways: [
+      "Stage business prevents speech from floating free of action.",
+      "It can reveal subtext, status, and tension.",
+      "Random activity distracts from dramatic pressure.",
+    ],
+    overview:
+      "Stage business is the meaningful physical action actors perform around or within dialogue: pouring tea, folding clothes, crossing a room, failing to sit. It gives drama embodied texture.",
+    examples: [
+      "A character polishes a glass through an entire accusation.",
+      "Two people negotiate a breakup while setting a table.",
+    ],
+    related: ["dialogue", "subtext", "confused-blocking"],
+  },
+  {
+    slug: "dramatic-action",
+    title: "Dramatic Action",
+    category: "Drama",
+    level: "Intermediate",
+    summary: "What a character is trying to do in a scene.",
+    principle: "Drama lives in pursued action, not spoken topic.",
+    takeaways: [
+      "A character may flatter in order to threaten.",
+      "The action can differ from the literal words.",
+      "Clear dramatic action gives actors and readers a pressure line.",
+    ],
+    overview:
+      "Dramatic action names the active verb beneath a scene: to confess, to corner, to seduce, to evade, to punish, to recruit. It turns dialogue into conflict.",
+    examples: [
+      "A polite invitation is really an attempt to exile someone.",
+      "A joke is used to test whether betrayal has been discovered.",
+    ],
+    related: ["dialogue", "subtext", "conflict"],
+  },
+  {
+    slug: "beat",
+    title: "Beat",
+    category: "Drama",
+    level: "Intermediate",
+    summary: "A small unit of changed action, tactic, or emotional pressure.",
+    principle: "A beat turns when the tactic changes.",
+    takeaways: [
+      "Beats help track scene movement below plot level.",
+      "A beat can shift on a silence, gesture, or line.",
+      "Unchanging beats make scenes feel static.",
+    ],
+    overview:
+      "A beat is a practical unit of dramatic movement. It marks the moment when a character's tactic, knowledge, status, or emotional pressure changes inside a scene.",
+    examples: [
+      "A plea becomes a threat after the door is locked.",
+      "A joke fails, and the scene turns from charm to desperation.",
+    ],
+    related: ["scene-vs-summary", "dramatic-action", "pacing"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // EXPANDED PROSE & STYLE
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "syntax",
+    title: "Syntax",
+    category: "Prose & Style",
+    level: "Foundational",
+    summary: "The arrangement of words, phrases, and clauses.",
+    principle: "Syntax controls how thought moves.",
+    takeaways: [
+      "Sentence structure shapes pace, emphasis, hierarchy, and voice.",
+      "Syntax can clarify, delay, fracture, or overwhelm.",
+      "Repeated syntactic habits become style.",
+    ],
+    overview:
+      "Syntax is the structural ordering of language. In prose, it determines how information arrives, how pressure accumulates, and what kind of mind the sentence seems to enact.",
+    examples: [
+      "A sentence withholds its main verb until the final word.",
+      "Fragments make panic feel immediate rather than described.",
+    ],
+    related: ["sentence-rhythm", "voice", "diction"],
+  },
+  {
+    slug: "paragraphing",
+    title: "Paragraphing",
+    category: "Prose & Style",
+    level: "Foundational",
+    summary: "The organisation of prose into visual and rhetorical units.",
+    principle: "A paragraph is a unit of attention.",
+    takeaways: [
+      "Paragraph breaks control pacing, emphasis, and readability.",
+      "Long paragraphs can immerse or exhaust.",
+      "Short paragraphs can accelerate or overdramatize.",
+    ],
+    overview:
+      "Paragraphing shapes how readers receive prose. It organises thought, time, image, dialogue, and emphasis into units that guide breath and attention.",
+    examples: [
+      "A one-sentence paragraph isolates the moment a character understands.",
+      "A long paragraph traps the reader inside an anxious mind.",
+    ],
+    related: ["prose-movement", "pacing", "compression"],
+  },
+  {
+    slug: "repetition",
+    title: "Repetition",
+    category: "Prose & Style",
+    level: "Foundational",
+    summary: "The return of words, structures, images, or sounds.",
+    principle: "Repetition creates pattern; variation creates meaning.",
+    takeaways: [
+      "It can build rhythm, obsession, motif, or argument.",
+      "Exact repetition and transformed repetition do different work.",
+      "Accidental repetition feels slack; designed repetition gathers force.",
+    ],
+    overview:
+      "Repetition is one of literature's basic ordering devices. It makes language memorable, creates expectation, and lets change become visible against return.",
+    examples: [
+      "A phrase of comfort returns later as accusation.",
+      "A paragraph repeats the same syntactic opening until the final sentence breaks it.",
+    ],
+    related: ["motif", "anaphora", "refrain"],
+  },
+  {
+    slug: "punctuation",
+    title: "Punctuation",
+    category: "Prose & Style",
+    level: "Foundational",
+    summary: "Marks that govern rhythm, relation, pause, and clarity.",
+    principle: "Punctuation is scored breath and logic.",
+    takeaways: [
+      "It controls speed, interruption, hierarchy, and ambiguity.",
+      "Style emerges in punctuation choices as much as vocabulary.",
+      "Overpunctuation can overexplain rhythm.",
+    ],
+    overview:
+      "Punctuation is not merely correctness; it is a system for pacing thought and managing syntactic relation. It tells the reader how to move through language.",
+    examples: [
+      "A dash interrupts a confession before grammar can finish it.",
+      "Commas slow a sentence until hesitation becomes audible.",
+    ],
+    related: ["syntax", "sentence-rhythm", "cadence"],
+  },
+  {
+    slug: "euphony",
+    title: "Euphony",
+    category: "Prose & Style",
+    level: "Intermediate",
+    summary: "Pleasant, smooth, or harmonious sound in language.",
+    principle: "Beauty of sound can become part of meaning.",
+    takeaways: [
+      "Euphony often uses liquid consonants, open vowels, and flowing rhythm.",
+      "It can soothe, seduce, elegize, or idealize.",
+      "Too much sweetness can falsify harsh material.",
+    ],
+    overview:
+      "Euphony is the pleasing quality of sound in language. It matters in prose as well as poetry because sonic texture shapes emotional reception.",
+    examples: [
+      "A lullaby-like sentence softens a scene of farewell.",
+      "Liquid sounds make a river description feel continuous.",
+    ],
+    related: ["sound-patterning", "cadence", "tone"],
+  },
+  {
+    slug: "cacophony",
+    title: "Cacophony",
+    category: "Prose & Style",
+    level: "Intermediate",
+    summary: "Harsh, jarring, or discordant sound in language.",
+    principle: "Ugly sound can tell the truth of ugly pressure.",
+    takeaways: [
+      "Cacophony often uses hard stops, clusters, and broken rhythm.",
+      "It can create violence, comedy, disgust, or anxiety.",
+      "It should be controlled enough to read as designed.",
+    ],
+    overview:
+      "Cacophony is the rough or abrasive sound quality of language. It lets style embody conflict rather than merely describe it.",
+    examples: [
+      "Clipped consonants make an argument feel brittle.",
+      "A battlefield sentence uses harsh clusters to resist lyric beauty.",
+    ],
+    related: ["sound-patterning", "tone", "diction"],
+  },
+  {
+    slug: "cadence",
+    title: "Cadence",
+    category: "Prose & Style",
+    level: "Intermediate",
+    summary: "The rise, fall, and felt movement of phrasing.",
+    principle: "Cadence is how prose carries the reader's ear.",
+    takeaways: [
+      "It is larger than meter and subtler than sentence length.",
+      "Cadence can create authority, intimacy, comedy, or grief.",
+      "A weak cadence often makes good content feel inert.",
+    ],
+    overview:
+      "Cadence is the musical movement of language through stress, pause, syntax, and phrasing. It is one of the main ways prose develops a recognisable surface.",
+    examples: [
+      "A sentence falls slowly into a final monosyllable.",
+      "A comic narrator uses elaborate cadence to deliver a petty complaint.",
+    ],
+    related: ["sentence-rhythm", "voice", "punctuation"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // EXPANDED READER PSYCHOLOGY
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "closure",
+    title: "Closure",
+    category: "Reader Psychology",
+    level: "Foundational",
+    summary: "The felt sense that a narrative pressure has been sufficiently settled.",
+    principle: "Closure satisfies the question the story trained the reader to hold.",
+    takeaways: [
+      "Closure can be emotional, causal, thematic, or formal.",
+      "It does not require total explanation.",
+      "False closure settles the wrong question.",
+    ],
+    overview:
+      "Closure is the reader's sense that a pattern has completed enough to release attention. It may arrive through answer, image, rhythm, decision, or accepted uncertainty.",
+    examples: [
+      "A mystery names the killer but leaves grief unresolved by design.",
+      "A final image closes the emotional arc without summarising it.",
+    ],
+    related: ["denouement", "reader-contract", "ambiguity"],
+  },
+  {
+    slug: "deferral",
+    title: "Deferral",
+    category: "Reader Psychology",
+    level: "Intermediate",
+    summary: "The postponement of answer, fulfilment, or release.",
+    principle: "Delay creates desire when the reader trusts the delay has purpose.",
+    takeaways: [
+      "Deferral fuels suspense, mystery, longing, and interpretation.",
+      "It must refresh attention rather than merely withhold.",
+      "Over-deferral turns curiosity into fatigue.",
+    ],
+    overview:
+      "Deferral is the controlled delay of information, resolution, contact, or payoff. It keeps a reader oriented toward what has not yet arrived.",
+    examples: [
+      "A letter is mentioned repeatedly before its contents are revealed.",
+      "A reunion is delayed until both characters have changed enough to make it matter.",
+    ],
+    related: ["suspense", "mystery-and-curiosity", "reader-memory-decay"],
+  },
+  {
+    slug: "estrangement",
+    title: "Estrangement",
+    category: "Reader Psychology",
+    level: "Advanced",
+    summary: "The effect of making familiar experience seem strange or newly visible.",
+    principle: "Estrangement renews perception by interrupting habit.",
+    takeaways: [
+      "It is the reader-facing effect of defamiliarization.",
+      "It can be political, aesthetic, comic, or uncanny.",
+      "Too much estrangement without anchor becomes opacity.",
+    ],
+    overview:
+      "Estrangement describes the altered perception produced when ordinary things are presented as unfamiliar. It slows automatic recognition so the reader can see again.",
+    examples: [
+      "A workplace is described as a ritual system by someone who has never seen one.",
+      "A common social custom appears grotesque when narrated from outside its assumptions.",
+    ],
+    related: ["defamiliarization", "gothic", "cognitive-load"],
+  },
+  {
+    slug: "catharsis",
+    title: "Catharsis",
+    category: "Reader Psychology",
+    level: "Advanced",
+    summary: "Emotional release or clarification produced by dramatic resolution.",
+    principle: "Catharsis releases pressure by giving feeling form.",
+    takeaways: [
+      "It is associated with tragedy but not limited to it.",
+      "Release depends on prior accumulation.",
+      "Cheap catharsis asks for feeling the story has not earned.",
+    ],
+    overview:
+      "Catharsis names the purgation, clarification, or release of emotion produced by art, especially through pity, fear, recognition, and consequence. It is an effect of structure on feeling.",
+    examples: [
+      "A tragic recognition lets grief and understanding arrive together.",
+      "A final act of mercy releases tension the plot has held for the whole book.",
+    ],
+    related: ["tragedy", "climax", "closure"],
+  },
+  {
+    slug: "cognitive-load",
+    title: "Cognitive Load",
+    category: "Reader Psychology",
+    level: "Intermediate",
+    summary: "The amount of mental work a reader must do to track the text.",
+    principle: "Complexity is welcome when the work pays for the effort.",
+    takeaways: [
+      "Load can come from names, timelines, syntax, world rules, or withheld context.",
+      "High load is not inherently bad; unmanaged load is.",
+      "Readers need anchors when complexity rises.",
+    ],
+    overview:
+      "Cognitive load is the burden placed on the reader's working attention. It matters because confusion, memory decay, and fatigue can block otherwise strong material.",
+    examples: [
+      "A fantasy opening introduces six invented terms before any desire is clear.",
+      "A complex timeline remains readable because each shift has a strong date and voice anchor.",
+    ],
+    failureModes: ["info-dump", "over-exposition"],
+    related: ["reader-memory-decay", "exposition", "pov-discipline"],
+  },
+
+  // ─────────────────────────────────────────────────────────
   // FAILURE MODES
   // ─────────────────────────────────────────────────────────
   {
@@ -2047,5 +4357,185 @@ export const entries: CraftEntry[] = [
       "A chapter that strives for lyricism the scene does not earn.",
     ],
     related: ["voice", "compression", "diction"],
+  },
+  {
+    slug: "melodrama",
+    title: "Melodrama",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary: "Emotion, conflict, or moral contrast exaggerated beyond what the story has earned.",
+    principle: "Intensity without proportion becomes inflation.",
+    takeaways: [
+      "Melodrama often substitutes volume for pressure.",
+      "It can be a legitimate mode when the work frames it deliberately.",
+      "Unintended melodrama makes characters feel less real at the moment they should matter most.",
+    ],
+    overview:
+      "Melodrama becomes a failure mode when heightened feeling, villainy, coincidence, or suffering exceeds the story's established scale. The result is not strong emotion but unearned emotional instruction.",
+    examples: [
+      "A minor disagreement is scored as if it were a death scene.",
+      "An antagonist becomes purely evil because the plot needs easier outrage.",
+    ],
+    related: ["tone", "stakes", "tragedy"],
+  },
+  {
+    slug: "bathos",
+    title: "Bathos",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary: "An unintended drop from seriousness or grandeur into triviality.",
+    principle: "A fall in tone is comic only when the work controls the fall.",
+    takeaways: [
+      "Bathos can puncture emotion before it lands.",
+      "It often comes from misjudged diction, timing, or image.",
+      "Deliberate bathos can be satire or comedy; accidental bathos is collapse.",
+    ],
+    overview:
+      "Bathos is the sudden descent from the elevated to the trivial. As a failure mode, it occurs when a moment meant to be moving or grave becomes unintentionally comic or deflated.",
+    examples: [
+      "A deathbed confession is followed by a clumsy joke the scene does not absorb.",
+      "A grand metaphor ends on an oddly petty object.",
+    ],
+    related: ["tone", "comedy", "diction"],
+  },
+  {
+    slug: "tonal-incoherence",
+    title: "Tonal Incoherence",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary: "Tone shifts in ways the story has not prepared or integrated.",
+    principle: "Tonal range needs tonal logic.",
+    takeaways: [
+      "A tonal shift is not a problem when the work earns the turn.",
+      "Incoherence makes readers unsure how to value events.",
+      "Genre contracts make tonal promises early.",
+    ],
+    overview:
+      "Tonal incoherence occurs when the prose or structure asks the reader to feel incompatible things without giving a frame for the change. It can make comedy cruel, tragedy silly, or sincerity manipulative.",
+    examples: [
+      "A farcical chapter follows a massacre with no acknowledgement of changed stakes.",
+      "A narrator mocks a trauma the rest of the book treats as sacred.",
+    ],
+    related: ["tone", "reader-contract", "bathos"],
+  },
+  {
+    slug: "contrivance",
+    title: "Contrivance",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary: "A plot movement that exposes author convenience instead of story logic.",
+    principle: "The reader should feel design, not manipulation.",
+    takeaways: [
+      "Contrivance often appears as convenient timing, behaviour, or coincidence.",
+      "It weakens causality by making the author's need visible.",
+      "Setup can turn apparent contrivance into inevitability.",
+    ],
+    overview:
+      "Contrivance is the sense that events happen because the writer needs them to, not because character, world, pressure, or prior setup produce them. It damages trust in the story's causal contract.",
+    examples: [
+      "A character forgets an obvious skill only so the danger can continue.",
+      "Two necessary strangers meet in a vast city with no causal bridge.",
+    ],
+    related: ["causality", "coincidence", "deus-ex-machina"],
+  },
+  {
+    slug: "false-mystery",
+    title: "False Mystery",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary: "A question created by withholding what the viewpoint or scene should naturally reveal.",
+    principle: "Mystery should come from the story, not from artificial concealment.",
+    takeaways: [
+      "It often violates POV, knowledge state, or natural scene logic.",
+      "Readers resent being kept ignorant by authorial hand-covering.",
+      "Legitimate mystery respects what the viewpoint can know and say.",
+    ],
+    overview:
+      "False mystery occurs when suspense or curiosity is manufactured by hiding information that the narration has no good reason to hide. The result feels less like intrigue than evasion.",
+    examples: [
+      "A first-person narrator repeatedly refers to what happened without naming what they plainly know.",
+      "A scene cuts away exactly when a visible fact would answer the central question.",
+    ],
+    related: ["mystery-and-curiosity", "pov-discipline", "unreliable-narrator"],
+  },
+  {
+    slug: "unearned-twist",
+    title: "Unearned Twist",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary: "A surprise turn that lacks preparation, consequence, or retrospective logic.",
+    principle: "A twist should make the prior story more coherent.",
+    takeaways: [
+      "Shock is not the same as payoff.",
+      "A twist needs fair planting even if the reader misses it.",
+      "The aftermath must matter as much as the reveal.",
+    ],
+    overview:
+      "An unearned twist reverses understanding without giving the reader enough prior material to accept the new pattern. It surprises at the cost of trust.",
+    examples: [
+      "The villain is revealed as a character with no prior meaningful presence.",
+      "A dream explanation erases the consequences the story trained the reader to care about.",
+    ],
+    related: ["twist", "setup-and-payoff", "weak-payoff"],
+  },
+  {
+    slug: "flat-character",
+    title: "Flat Character",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary: "A character lacks the dimensionality their role requires.",
+    principle: "A character is flat when the story asks for depth it has not built.",
+    takeaways: [
+      "Not every minor character needs roundness.",
+      "Major roles need contradiction, pressure, desire, or specificity.",
+      "Flatness often appears as trait without behaviour.",
+    ],
+    overview:
+      "Flat character becomes a failure when a figure central to conflict, theme, or emotional investment remains a single function, attitude, or label. The issue is mismatch between role and depth.",
+    examples: [
+      "A love interest exists only to admire the protagonist.",
+      "A villain has cruelty but no motive, method, limit, or self-understanding.",
+    ],
+    related: ["round-vs-flat-character", "characterization", "motivation"],
+  },
+  {
+    slug: "white-room-syndrome",
+    title: "White-Room Syndrome",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary: "A scene lacks enough setting, sensory detail, or physical context to feel embodied.",
+    principle: "Dialogue and thought need a world to push against.",
+    takeaways: [
+      "It often appears in scenes of conversation or introspection.",
+      "Specific physical anchors restore orientation.",
+      "The cure is meaningful environment, not decorative inventory.",
+    ],
+    overview:
+      "White-room syndrome occurs when characters seem to speak or think in an empty, featureless space. The scene loses embodiment because place, objects, weather, gesture, and sensory pressure are absent.",
+    examples: [
+      "Two characters argue for pages with no room, body, or object in view.",
+      "A tense decision occurs without any sense of where the character is standing.",
+    ],
+    related: ["sensory-specificity", "talking-heads", "setting-as-character"],
+  },
+  {
+    slug: "accidental-theme",
+    title: "Accidental Theme",
+    category: "Failure Modes",
+    level: "Advanced",
+    summary: "A work implies a thematic argument it does not seem to recognise.",
+    principle: "Patterns argue, even when the author does not mean them to.",
+    takeaways: [
+      "Repeated outcomes can create unintended moral logic.",
+      "The ending often determines which pattern feels endorsed.",
+      "Accidental theme is usually a revision problem, not a sentence problem.",
+    ],
+    overview:
+      "Accidental theme happens when recurring choices, consequences, exclusions, or rewards imply a value system the work has not consciously shaped. Readers may trust the pattern more than the stated message.",
+    examples: [
+      "A story praises community but rewards only solitary self-protection.",
+      "A novel condemns cruelty while giving cruel characters all the narrative glamour.",
+    ],
+    related: ["theme", "countertheme", "moral-premise"],
   },
 ];

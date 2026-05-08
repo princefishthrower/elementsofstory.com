@@ -13,8 +13,8 @@ export function Hero({ entryCount }: HeroProps) {
           The Elements of Story
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-neutral-600">
-          A field guide to literary devices, narrative principles, and
-          reader-facing effects.
+          A field guide to story craft, literary terms, reader-facing effects,
+          and publishing vocabulary.
         </p>
 
         <blockquote className="mt-10 max-w-2xl border-l-2 border-neutral-300 pl-5 text-lg italic text-neutral-700">

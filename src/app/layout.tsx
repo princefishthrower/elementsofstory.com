@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "The Elements of Story",
   description:
-    "A field guide to literary devices, narrative principles, and reader-facing effects.",
+    "A field guide to story craft, literary terms, reader-facing effects, and publishing vocabulary.",
 };
 
 export default function RootLayout({

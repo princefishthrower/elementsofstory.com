@@ -2,14 +2,20 @@ export type CraftCategory =
   | "Structure"
   | "Plot Mechanics"
   | "Devices"
+  | "Rhetoric & Figures"
   | "Character"
   | "Theme & Symbol"
   | "Narrative Delivery"
+  | "Narratology"
   | "Worldbuilding"
   | "Reader Psychology"
   | "Continuity"
   | "Prose & Style"
+  | "Genre & Form"
+  | "Poetry"
+  | "Drama"
   | "Mechanical"
+  | "Publishing"
   | "Failure Modes";
 
 export type CraftLevel = "Foundational" | "Intermediate" | "Advanced";
