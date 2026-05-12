@@ -191,6 +191,624 @@ export const entries: CraftEntry[] = [
   },
 
   // ─────────────────────────────────────────────────────────
+  // OPENINGS & THRESHOLDS
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "incipit",
+    title: "Incipit",
+    category: "Openings & Thresholds",
+    level: "Advanced",
+    summary: "The formal opening words or passage of a text.",
+    principle:
+      "An incipit is a threshold: it teaches rhythm, world, voice, and attention before plot has room to move.",
+    takeaways: [
+      "It may establish voice, premise, situation, theme, or texture.",
+      "Its first job is orientation, not explanation.",
+      "A memorable incipit often sounds inevitable after the whole work is known.",
+    ],
+    overview:
+      "Incipit is the formal term for the opening words or opening passage of a work. It matters because the reader's first experience of syntax, pressure, confidence, and mystery becomes a contract for how to read what follows.",
+    examples: [
+      "A first sentence presents a family fact whose implications will unfold for the whole novel.",
+      "An opening phrase announces a voice so distinctive that plot can arrive more slowly.",
+    ],
+    failureModes: ["throat-clearing", "false-start"],
+    related: ["hook", "reader-contract", "voice"],
+  },
+  {
+    slug: "hook",
+    title: "Hook",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary: "The first pressure that makes the reader want the next sentence.",
+    principle:
+      "A hook works by creating appetite, not by shouting for attention.",
+    takeaways: [
+      "A hook can be question, danger, voice, image, contradiction, or desire.",
+      "The hook should belong to the story's real contract.",
+      "A hook that promises the wrong book becomes a liability.",
+    ],
+    overview:
+      "A hook is the initial force that catches reader attention and converts browsing into reading. It is often confused with action, but the deeper craft issue is pressure: the reader senses that something meaningful is already in motion.",
+    examples: [
+      "A narrator begins with a confession they do not yet explain.",
+      "A quiet breakfast contains one impossible object on the table.",
+    ],
+    failureModes: ["false-start", "generic-action-opening"],
+    related: ["incipit", "reader-contract", "chapter-hook"],
+  },
+  {
+    slug: "cold-open",
+    title: "Cold Open",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "An opening that begins in a charged scene before full context is supplied.",
+    principle: "A cold open borrows momentum against a debt of orientation.",
+    takeaways: [
+      "It can delay names, rules, or backstory while pressure carries the reader.",
+      "The scene still needs legible stakes, desire, or threat.",
+      "Context must arrive before excitement turns into confusion.",
+    ],
+    overview:
+      "A cold open drops the reader directly into a charged moment before explaining the larger situation. It is related to in medias res, but often has a sharper threshold function: begin with heat, then widen into context.",
+    examples: [
+      "A chapter starts during the escape before naming the prison.",
+      "A fantasy opens with a ritual failing before the reader knows the rules.",
+    ],
+    failureModes: ["overloaded-opening", "generic-action-opening"],
+    related: ["in-medias-res", "hook", "disruption-opening"],
+  },
+  {
+    slug: "prologue",
+    title: "Prologue",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "A threshold section before the main narrative sequence or primary frame.",
+    principle:
+      "A prologue earns its place when it changes how the reader enters the main story.",
+    takeaways: [
+      "It can establish scale, danger, myth, mystery, or historical cause.",
+      "It should not merely withhold the real first chapter.",
+      "A prologue makes a promise the book must remember.",
+    ],
+    overview:
+      "A prologue is opening material that stands before the main narrative, often separated by time, point of view, scale, or mode. It is useful when the reader needs a threshold experience different from the story's ordinary first chapter.",
+    examples: [
+      "A mythic disaster centuries earlier frames the political story that follows.",
+      "A murder scene precedes the detective's quieter first chapter.",
+    ],
+    failureModes: ["throat-clearing", "false-start"],
+    related: ["frame-opening", "paratextual-promise", "reader-contract"],
+  },
+  {
+    slug: "epigraph",
+    title: "Epigraph",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "A quoted threshold text that frames the reader's interpretation.",
+    principle:
+      "An epigraph should tune attention rather than explain the work in advance.",
+    takeaways: [
+      "It can establish theme, lineage, irony, mood, or argument.",
+      "Its meaning may change after the chapter or book is complete.",
+      "Decorative epigraphs can feel like borrowed importance.",
+    ],
+    overview:
+      "An epigraph is a quoted passage placed at the opening of a book, part, or chapter. It functions as a threshold signal, inviting the reader to hear the following material through another voice or context.",
+    examples: [
+      "A scientific quotation frames a family drama as an experiment in inheritance.",
+      "A poem before a chapter makes the coming scene feel elegiac before anyone speaks.",
+    ],
+    failureModes: ["reader-nudge-failure", "false-start"],
+    related: ["paratextual-promise", "theme", "intertextuality"],
+  },
+  {
+    slug: "ordinary-world-opening",
+    title: "Ordinary World Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "The story begins in baseline life before the major disruption arrives.",
+    principle:
+      "The ordinary world matters only if it shows what disruption will threaten or expose.",
+    takeaways: [
+      "Baseline should contain desire, lack, tension, or pattern.",
+      "Ordinary does not mean inert.",
+      "The reader should feel what will be lost, broken, or outgrown.",
+    ],
+    overview:
+      "An ordinary world opening establishes the protagonist's starting condition before the central disturbance changes it. It is common in quest, coming-of-age, romance, fantasy, and character-driven fiction because it gives transformation a visible before.",
+    examples: [
+      "A farm morning reveals the protagonist's skill, restlessness, and social constraint before the summons arrives.",
+      "A workplace scene shows the compromises a character has mistaken for stability.",
+    ],
+    failureModes: ["dead-air-opening", "context-before-pressure"],
+    related: ["heros-journey", "inciting-incident", "character-arc"],
+  },
+  {
+    slug: "disruption-opening",
+    title: "Disruption Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "The story begins with the event that breaks an existing order.",
+    principle:
+      "A disruption opening gives the reader change first and lets baseline be inferred.",
+    takeaways: [
+      "It is useful when momentum matters more than settled orientation.",
+      "The disruption should reveal what kind of order existed before it.",
+      "Aftershock can carry exposition more cleanly than preface.",
+    ],
+    overview:
+      "A disruption opening begins with a death, arrival, message, betrayal, accident, discovery, or other break in the prior equilibrium. It pulls the reader into consequence immediately, then lets the old world appear through reaction.",
+    examples: [
+      "The first page is the letter announcing bankruptcy.",
+      "A village wakes to find the bridge gone.",
+    ],
+    failureModes: ["overloaded-opening", "generic-action-opening"],
+    related: ["inciting-incident", "cold-open", "aftermath-opening"],
+  },
+  {
+    slug: "mystery-opening",
+    title: "Mystery Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "The opening is built around a question, absence, anomaly, or puzzle.",
+    principle:
+      "A mystery opening succeeds when curiosity has stakes, not just obscurity.",
+    takeaways: [
+      "The reader needs enough known ground to care about the unknown.",
+      "Absence is strongest when someone responds to it.",
+      "The question should point toward the book's real inquiry.",
+    ],
+    overview:
+      "A mystery opening uses a gap in knowledge as its threshold: a body, a missing person, an impossible object, a strange rule, a contradiction, or a silence. Its power comes from directing reader attention toward an answer the story intends to earn.",
+    examples: [
+      "A locked room contains everything except the person who entered it.",
+      "A child notices that every adult avoids one name.",
+    ],
+    failureModes: ["false-mystery", "bait-and-switch-opening"],
+    related: ["mystery-and-curiosity", "hook", "revelation"],
+  },
+  {
+    slug: "voice-first-opening",
+    title: "Voice-First Opening",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "The opening sells the narrator's voice before plot takes priority.",
+    principle: "Voice can be the hook when it carries pressure, angle, and trust.",
+    takeaways: [
+      "A strong voice implies worldview, distance, rhythm, and stakes.",
+      "Plot can arrive later if the voice is already making meaning.",
+      "Voice without pressure becomes performance without direction.",
+    ],
+    overview:
+      "A voice-first opening asks the reader to follow because the telling intelligence is compelling. The first pleasure is not necessarily event, but personality, diction, judgement, rhythm, or contradiction.",
+    examples: [
+      "A narrator begins by denying the version of events everyone else believes.",
+      "A comic voice turns a minor inconvenience into a complete moral universe.",
+    ],
+    failureModes: ["throat-clearing", "dead-air-opening"],
+    related: ["voice", "diction", "intrusive-narrator"],
+  },
+  {
+    slug: "image-opening",
+    title: "Image Opening",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "The opening begins with a vivid image that carries mood, theme, or pressure.",
+    principle:
+      "An image opening works when the image is already charged with relation or change.",
+    takeaways: [
+      "The image should be more than scenic description.",
+      "It can establish tone, symbol, world, or emotional weather.",
+      "The reader should sense why attention has landed there.",
+    ],
+    overview:
+      "An image opening leads with a visual, sensory, or symbolic object of attention. Its strength is concentration: before the reader knows the whole situation, they feel the story's atmosphere and interpretive pressure.",
+    examples: [
+      "A single shoe floats in floodwater before the family is introduced.",
+      "A city gate is shown sealed at dawn, making the world feel closed before anyone speaks.",
+    ],
+    failureModes: ["dead-air-opening", "context-before-pressure"],
+    related: ["imagery", "symbol", "objective-correlative"],
+  },
+  {
+    slug: "world-first-opening",
+    title: "World-First Opening",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "The opening foregrounds setting, rules, milieu, or social order.",
+    principle:
+      "World-first openings need immediate human pressure inside the system.",
+    takeaways: [
+      "The reader can absorb unfamiliar rules when someone needs something inside them.",
+      "World texture should imply conflict, cost, or wonder.",
+      "Naming too much too soon turns discovery into glossary.",
+    ],
+    overview:
+      "A world-first opening begins by making place, system, institution, era, or speculative rule the threshold experience. It is common in fantasy, science fiction, historical fiction, and social novels where milieu is not backdrop but engine.",
+    examples: [
+      "The first scene shows a city obeying a strange curfew before explaining its origin.",
+      "A school, court, spaceship, or monastery is introduced through the rule a character breaks.",
+    ],
+    failureModes: ["overloaded-opening", "info-dump"],
+    related: ["verisimilitude", "setting-as-character", "exposition"],
+  },
+  {
+    slug: "character-in-motion-opening",
+    title: "Character-in-Motion Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "The opening shows a character already pursuing something small but revealing.",
+    principle:
+      "Early action convinces when it reveals desire, competence, pressure, or flaw.",
+    takeaways: [
+      "The immediate goal can be modest if it exposes the person.",
+      "Action should produce inference about character.",
+      "Movement without desire is only blocking.",
+    ],
+    overview:
+      "A character-in-motion opening starts with a character doing something legible: hiding, bargaining, fixing, stealing, rehearsing, escaping, arriving late, or trying not to cry. The action gives the reader a living handle on who this person is before larger plot arrives.",
+    examples: [
+      "A protagonist lies to get into a room, revealing need and skill at once.",
+      "A character repairs a machine while hiding the repair from their employer.",
+    ],
+    failureModes: ["generic-action-opening", "dead-air-opening"],
+    related: ["active-vs-reactive-protagonist", "motivation", "stakes"],
+  },
+  {
+    slug: "aftermath-opening",
+    title: "Aftermath Opening",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary: "The story begins just after a major unseen event.",
+    principle:
+      "Aftermath lets consequence imply cause before explanation arrives.",
+    takeaways: [
+      "The unseen event becomes a pressure field around the present.",
+      "Reaction can orient the reader more efficiently than backstory.",
+      "The cause must eventually matter, not merely decorate the opening.",
+    ],
+    overview:
+      "An aftermath opening begins in the residue of something already happened: a funeral, ruined room, missing person, public scandal, failed battle, or changed relationship. The reader enters through consequence and reconstructs cause by watching what the characters cannot ignore.",
+    examples: [
+      "The first page is the morning after the failed coup.",
+      "A family cleans a room before the reader knows who died there.",
+    ],
+    failureModes: ["false-mystery", "context-before-pressure"],
+    related: ["analepsis", "mystery-opening", "revelation"],
+  },
+  {
+    slug: "arrival-opening",
+    title: "Arrival Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "A character enters a new place, institution, household, world, or social order.",
+    principle:
+      "Arrival turns orientation into drama because the character and reader learn together.",
+    takeaways: [
+      "It naturally introduces rules, hierarchies, customs, and threats.",
+      "The arriving character's desire shapes what the reader notices.",
+      "Arrival should create friction, not just a guided tour.",
+    ],
+    overview:
+      "An arrival opening uses entry as its threshold: a stranger comes to town, a student reaches a school, a guest enters a house, an exile returns, or a traveller crosses into another world. The form lets discovery and disorientation do useful work.",
+    examples: [
+      "A governess reaches an isolated estate and notices which questions no one answers.",
+      "A recruit enters a military academy where the first rule is already being broken.",
+    ],
+    failureModes: ["context-before-pressure", "info-dump"],
+    related: ["mice-quotient", "world-first-opening", "reader-contract"],
+  },
+  {
+    slug: "departure-opening",
+    title: "Departure Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "A character leaves a known world, relationship, place, or identity.",
+    principle:
+      "Departure works when leaving reveals both desire and cost.",
+    takeaways: [
+      "The old world should exert a claim before it is left.",
+      "The departure can be chosen, forced, secret, comic, or catastrophic.",
+      "Leaving should sharpen the story's first question.",
+    ],
+    overview:
+      "A departure opening begins with exit rather than arrival. It places the reader at the moment a character crosses away from a prior life, making the act of leaving a statement of need, pressure, or refusal.",
+    examples: [
+      "A character packs only what they can carry before dawn.",
+      "A prince walks out of a coronation rehearsal and cannot return unchanged.",
+    ],
+    failureModes: ["dead-air-opening", "false-start"],
+    related: ["heros-journey", "inciting-incident", "ordinary-world-opening"],
+  },
+  {
+    slug: "frame-opening",
+    title: "Frame Opening",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "An outer voice, document, memory, interview, trial, or manuscript frames the story.",
+    principle:
+      "A frame opening tells the reader not only what happened, but how it is being received.",
+    takeaways: [
+      "The frame establishes who is telling, to whom, and under what pressure.",
+      "It can create distance, irony, authority, doubt, or testimony.",
+      "The frame must continue to matter after the threshold.",
+    ],
+    overview:
+      "A frame opening begins outside the main action and positions the narrative as told, found, remembered, recorded, judged, translated, or performed. It changes the reader's relation to the events before those events fully begin.",
+    examples: [
+      "An editor's note introduces the manuscript whose reliability is already in question.",
+      "A trial transcript opens before the story returns to the crime.",
+    ],
+    failureModes: ["throat-clearing", "false-start"],
+    related: ["frame-narrative", "narratee", "retrospective-opening"],
+  },
+  {
+    slug: "retrospective-opening",
+    title: "Retrospective Opening",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "A narrator begins after the events and looks back on what happened.",
+    principle:
+      "Retrospection creates double vision: the past as lived and the past as understood.",
+    takeaways: [
+      "The older telling self can add irony, grief, judgement, or suspense.",
+      "Knowing the outcome does not remove tension if meaning remains unresolved.",
+      "The opening should clarify why this story is being told now.",
+    ],
+    overview:
+      "A retrospective opening positions the narrator after the story's events, letting later knowledge color the beginning. It can promise confession, elegy, testimony, warning, memoir, or reconsideration.",
+    examples: [
+      "An older narrator begins with the summer they did not yet know would divide their life.",
+      "A memoiristic voice admits the first memory is probably wrong but necessary.",
+    ],
+    failureModes: ["throat-clearing", "reader-nudge-failure"],
+    related: ["analepsis", "frame-opening", "implied-author"],
+  },
+  {
+    slug: "direct-address-opening",
+    title: "Direct Address Opening",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "The opening immediately turns toward the reader, audience, or narratee.",
+    principle:
+      "Direct address makes the reader part of the threshold situation.",
+    takeaways: [
+      "It can create intimacy, accusation, conspiracy, invitation, or performance.",
+      "The addressee may be the actual reader or a fictional listener.",
+      "The book must sustain or explain the changed distance it creates.",
+    ],
+    overview:
+      "A direct address opening starts by speaking outward. Instead of hiding the communicative act, it foregrounds the relationship between teller and receiver from the first move.",
+    examples: [
+      "The first sentence warns the reader not to believe the official account.",
+      "A narrator begins by addressing a child, judge, lover, or enemy.",
+    ],
+    failureModes: ["immersion-break", "false-start"],
+    related: ["direct-address", "narratee", "intrusive-narrator"],
+  },
+  {
+    slug: "prophetic-opening",
+    title: "Prophetic Opening",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "The opening begins with prophecy, omen, curse, fate, or announced destiny.",
+    principle:
+      "A prophetic opening creates propulsion by making the future exert pressure on the first page.",
+    takeaways: [
+      "The prophecy should shape expectation, not merely decorate atmosphere.",
+      "Its wording becomes part of the reader contract.",
+      "Ambiguous prophecy needs fair paths toward fulfillment.",
+    ],
+    overview:
+      "A prophetic opening places fate, omen, curse, prediction, or destiny at the threshold of the work. It gives the reader an announced pressure to read toward, even when the meaning of the announcement remains unstable.",
+    examples: [
+      "A child is born under a curse whose wording everyone interprets differently.",
+      "A chapter opens with an oracle line that the next scene immediately misreads.",
+    ],
+    failureModes: ["cheated-prophecy", "over-telegraphing"],
+    related: ["equivocal-prophecy", "prophetic-misdirection", "prolepsis"],
+  },
+  {
+    slug: "thesis-opening",
+    title: "Thesis Opening",
+    category: "Openings & Thresholds",
+    level: "Advanced",
+    summary:
+      "The work begins by stating or seeming to state its governing idea.",
+    principle:
+      "A thesis opening must become drama, not remain an essay topic.",
+    takeaways: [
+      "The thesis can be sincere, ironic, partial, or later overturned.",
+      "It gives the reader a conceptual lens before the plot begins.",
+      "The story should test the statement rather than merely prove it.",
+    ],
+    overview:
+      "A thesis opening begins with an aphorism, claim, problem, moral proposition, or conceptual frame. It is common in philosophical fiction, satire, social novels, essays, and voice-driven works where argument is part of the pleasure.",
+    examples: [
+      "The first line declares what happy families have in common, then the novel pressures the claim.",
+      "A narrator opens with a rule about cowardice that their own choices will complicate.",
+    ],
+    failureModes: ["editorializing", "reader-nudge-failure"],
+    related: ["theme", "moral-premise", "reader-contract"],
+  },
+  {
+    slug: "pickup-opening",
+    title: "Pickup Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "A chapter opening answers or continues the previous chapter's unresolved beat.",
+    principle:
+      "A pickup opening turns the page break into held breath rather than reset.",
+    takeaways: [
+      "It is useful after cliffhangers, decisions, threats, and unfinished dialogue.",
+      "The pickup should pay the pause, not dodge it.",
+      "It can answer the immediate question while opening a larger one.",
+    ],
+    overview:
+      "A pickup opening begins a chapter by continuing the pressure created at the prior chapter's end. It respects the reader's carried question and uses the page break as suspense, rhythm, or emphasis.",
+    examples: [
+      "The previous chapter ends with the door opening; the next begins with who stands there.",
+      "A chapter closes on a decision, and the next opens with the first consequence of acting on it.",
+    ],
+    failureModes: ["bait-and-switch-opening", "weak-payoff"],
+    related: ["chapter-hook", "cliffhanger", "transitions"],
+  },
+  {
+    slug: "reset-opening",
+    title: "Reset Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "A chapter opening establishes a new time, place, point of view, or situation after a break.",
+    principle: "Reset should orient quickly enough for the new pressure to matter.",
+    takeaways: [
+      "It helps complex structures remain readable.",
+      "Orientation should be clean but not inert.",
+      "The reset should reveal what changed during the white space.",
+    ],
+    overview:
+      "A reset opening begins a new unit by re-establishing where, when, with whom, and under what pressure the reader now stands. It is especially useful in multi-POV, braided, episodic, or time-jumping structures.",
+    examples: [
+      "A new chapter opens with date, location, and the consequence of the prior scene's choice.",
+      "A POV switch begins by anchoring the character's immediate problem before widening.",
+    ],
+    failureModes: ["context-before-pressure", "dead-air-opening"],
+    related: ["transitions", "scene-break", "pov-discipline"],
+  },
+  {
+    slug: "echo-opening",
+    title: "Echo Opening",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "A chapter opening mirrors a prior image, line, situation, or structure.",
+    principle:
+      "Echo creates continuity by making repetition carry difference.",
+    takeaways: [
+      "The echo should show change, contrast, or deepening.",
+      "It can bind separated timelines, POVs, or thematic strands.",
+      "Exact repetition without pressure feels decorative.",
+    ],
+    overview:
+      "An echo opening begins a chapter by recalling a previous element in altered form. The reader feels pattern across distance, and the new instance measures how the story has changed.",
+    examples: [
+      "A chapter opens with the same sentence as chapter one, but now the speaker means the opposite.",
+      "A peaceful image from early in the book returns damaged after the midpoint.",
+    ],
+    failureModes: ["weak-payoff", "visible-machinery"],
+    related: ["motif", "repetition", "setup-and-payoff"],
+  },
+  {
+    slug: "escalation-opening",
+    title: "Escalation Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary: "A chapter opens by making the current problem worse.",
+    principle:
+      "Escalation at the threshold refreshes reader urgency before the scene settles.",
+    takeaways: [
+      "It can raise cost, compress time, remove an option, or reveal new danger.",
+      "The escalation should change choices, not merely add noise.",
+      "It is a useful antidote to sagging middle chapters.",
+    ],
+    overview:
+      "An escalation opening starts a chapter with worsened pressure. Instead of easing the reader back in, it immediately alters the field of action so the next scene has sharper necessity.",
+    examples: [
+      "The chapter opens with the deadline moved from a week to an hour.",
+      "A safe ally is arrested before the plan can begin.",
+    ],
+    failureModes: ["melodrama", "contrivance"],
+    related: ["escalation", "rising-action", "complication"],
+  },
+  {
+    slug: "aftershock-opening",
+    title: "Aftershock Opening",
+    category: "Openings & Thresholds",
+    level: "Intermediate",
+    summary:
+      "A chapter opens on the consequence of the previous chapter's major event.",
+    principle:
+      "Aftershock keeps big events from becoming isolated spectacle.",
+    takeaways: [
+      "It shows how characters, relationships, and systems absorb impact.",
+      "It can be quieter than the event but should not be slack.",
+      "The consequence should create the next pressure.",
+    ],
+    overview:
+      "An aftershock opening begins after a charged event and lets consequence become the next scene's engine. It is a chapter-level cousin of aftermath opening, focused on continuity of impact rather than delayed cause.",
+    examples: [
+      "After the battle chapter, the next opens with the protagonist unable to lift a cup.",
+      "After a public accusation, the next chapter begins with who refuses to meet the protagonist's eyes.",
+    ],
+    failureModes: ["weak-payoff", "dead-air-opening"],
+    related: ["aftermath-opening", "transitions", "setup-and-payoff"],
+  },
+  {
+    slug: "question-opening",
+    title: "Question Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "A chapter opening poses a local dramatic question for that unit.",
+    principle:
+      "A clear chapter question gives the reader a reason to track the scene.",
+    takeaways: [
+      "The question can be explicit or implied by situation.",
+      "It should be answerable or transformed within a meaningful span.",
+      "Local questions can nest inside larger book questions.",
+    ],
+    overview:
+      "A question opening begins a chapter by establishing what the reader wants to know next: whether a plan works, why someone lied, what changed, who is missing, or what a character will choose. It turns chapter shape into active inquiry.",
+    examples: [
+      "A chapter opens with an unopened verdict envelope on the table.",
+      "The first paragraph reveals that one member of the team did not come back.",
+    ],
+    failureModes: ["false-mystery", "bait-and-switch-opening"],
+    related: ["mystery-and-curiosity", "chapter-hook", "tension"],
+  },
+  {
+    slug: "scene-goal-opening",
+    title: "Scene-Goal Opening",
+    category: "Openings & Thresholds",
+    level: "Foundational",
+    summary:
+      "A chapter or scene opens with a character wanting something immediately legible.",
+    principle:
+      "A visible goal gives the opening shape before the reader knows everything.",
+    takeaways: [
+      "The goal can be practical, emotional, social, moral, or informational.",
+      "A clear want makes obstacles meaningful fast.",
+      "The goal may change, fail, or reveal a deeper need.",
+    ],
+    overview:
+      "A scene-goal opening anchors a new unit by showing what someone is trying to do right now. It is one of the simplest ways to avoid inert setup because desire gives orientation and pressure at the same time.",
+    examples: [
+      "A character enters the office needing one signature before noon.",
+      "A child tries to hide a broken heirloom before their parent returns.",
+    ],
+    failureModes: ["dead-air-opening", "generic-action-opening"],
+    related: ["motivation", "conflict", "stakes"],
+  },
+
+  // ─────────────────────────────────────────────────────────
   // PLOT MECHANICS
   // ─────────────────────────────────────────────────────────
   {
@@ -410,6 +1028,28 @@ export const entries: CraftEntry[] = [
       "A character's secret is real, but is not the secret the plot needed.",
     ],
     related: ["dramatic-irony", "setup-and-payoff", "mystery-and-curiosity"],
+  },
+  {
+    slug: "prophetic-misdirection",
+    title: "Prophetic Misdirection",
+    category: "Plot Mechanics",
+    level: "Intermediate",
+    summary:
+      "A prophecy steers expectation toward a wrong but plausible fulfillment.",
+    principle: "The wording may mislead, but the payoff must still feel fair.",
+    takeaways: [
+      "The prophecy should create a live prediction rather than a vague mood.",
+      "The true fulfillment should be present in the language from the start.",
+      "Misreading can come from character assumption, reader assumption, or genre habit.",
+    ],
+    overview:
+      "Prophetic misdirection uses a prediction, omen, or oracle to guide attention toward one expected outcome while preserving another possible fulfillment. It works best when the reader can reread the original wording and see that the story lied by emphasis rather than by invention.",
+    examples: [
+      "A warning that the kingdom will fall leads everyone to expect invasion, but comes true through abdication.",
+      "An omen seems to promise a chosen one's death, then resolves as the death of the identity they used to inhabit.",
+    ],
+    failureModes: ["cheated-prophecy", "over-telegraphing"],
+    related: ["equivocal-prophecy", "red-herring", "foreshadowing", "twist"],
   },
 
   // ─────────────────────────────────────────────────────────
@@ -1111,6 +1751,29 @@ export const entries: CraftEntry[] = [
     ],
     related: ["point-of-view", "narrative-distance", "voice"],
   },
+  {
+    slug: "strategic-omission",
+    title: "Strategic Omission",
+    category: "Narrative Delivery",
+    level: "Intermediate",
+    summary:
+      "Deliberately leaving out nonessential information so the reader can infer what matters.",
+    principle:
+      "Omission works when the absence sharpens attention instead of creating a hole.",
+    takeaways: [
+      "Withheld material should be recoverable through pressure, pattern, or context.",
+      "Omission can create pace, subtext, mystery, tact, or emotional force.",
+      "The reader should feel invited to infer, not abandoned to guess.",
+    ],
+    overview:
+      "Strategic omission is the craft of not saying what the scene can make the reader understand. It differs from confusion because the prose supplies enough cues for the reader to complete the meaning, image, or emotional situation without being over-managed.",
+    examples: [
+      "A breakup scene never states the relationship is over; the packed suitcase does the work.",
+      "A character's grief is carried by which room they refuse to enter.",
+    ],
+    failureModes: ["under-rendering", "false-economy"],
+    related: ["ellipsis", "subtext", "show-dont-tell", "reader-completion"],
+  },
 
   // ─────────────────────────────────────────────────────────
   // WORLDBUILDING
@@ -1363,6 +2026,52 @@ export const entries: CraftEntry[] = [
       "A criminal whose hope, briefly, the reader catches.",
     ],
     related: ["narrative-distance", "want-vs-need", "characterization"],
+  },
+  {
+    slug: "reader-completion",
+    title: "Reader Completion",
+    category: "Reader Psychology",
+    level: "Intermediate",
+    summary:
+      "The reader mentally completes an image, emotion, or implication from partial cues.",
+    principle:
+      "Participation deepens investment when the page gives the reader enough to finish the pattern.",
+    takeaways: [
+      "Completion depends on specificity, pressure, and trust.",
+      "Readers enjoy supplying what the prose has made available but unstated.",
+      "Too little cue becomes vagueness; too much cue becomes over-control.",
+    ],
+    overview:
+      "Reader completion names the collaborative effect created when prose gives enough selected material for the reader's mind to build the rest. It is the psychological payoff behind less-is-more writing: the page activates imagination rather than replacing it.",
+    examples: [
+      "Three exact details let the reader build the whole room without inventory.",
+      "A withheld apology is understood through posture, silence, and what the characters do not touch.",
+    ],
+    failureModes: ["under-rendering", "interpretive-over-control"],
+    related: ["selective-detail", "negative-space", "subtext", "imagery"],
+  },
+  {
+    slug: "negative-capability",
+    title: "Negative Capability",
+    category: "Reader Psychology",
+    level: "Advanced",
+    summary:
+      "The capacity to remain inside uncertainty, ambiguity, or unresolvedness without forcing premature explanation.",
+    principle:
+      "Some meanings intensify when the work lets mystery remain alive.",
+    takeaways: [
+      "It is not vagueness; it is sustained openness under pressure.",
+      "It can deepen ambiguity, mystery, awe, grief, and contradiction.",
+      "The reader still needs enough form to trust the uncertainty.",
+    ],
+    overview:
+      "Negative capability is the readerly and writerly tolerance for not resolving everything into explanation. In craft terms, it lets a work preserve ambiguity or emotional complexity without rushing to decode itself.",
+    examples: [
+      "A final image resolves the emotional arc while leaving the metaphysical question open.",
+      "A character's contradictory motive remains legible without being reduced to one cause.",
+    ],
+    failureModes: ["vague-minimalism", "false-economy"],
+    related: ["ambiguity", "closure", "deferral", "subtext"],
   },
 
   // ─────────────────────────────────────────────────────────
@@ -1617,6 +2326,121 @@ export const entries: CraftEntry[] = [
       "A scene whose every sentence is haunted by the second chapter.",
     ],
     related: ["pacing", "scene-vs-summary", "compression"],
+  },
+  {
+    slug: "selective-detail",
+    title: "Selective Detail",
+    category: "Prose & Style",
+    level: "Foundational",
+    summary:
+      "A few chosen details let the reader build a fuller picture than inventory can provide.",
+    principle:
+      "The right detail implies the whole; too many details compete for attention.",
+    takeaways: [
+      "Choose details that reveal pressure, relation, mood, or consequence.",
+      "Specificity matters more than quantity.",
+      "The reader should feel the scene expanding beyond what is named.",
+    ],
+    overview:
+      "Selective detail is the less-is-more principle at the level of image and scene. Instead of describing everything, the prose chooses the few details that let the reader's imagination complete the environment, person, or emotional situation.",
+    examples: [
+      "A character's polished shoes and unpaid envelope imply a whole social performance.",
+      "One chipped cup on an otherwise formal table tells more than a paragraph of room inventory.",
+    ],
+    failureModes: ["under-rendering", "over-description"],
+    related: ["sensory-specificity", "imagery", "reader-completion", "iceberg-theory"],
+  },
+  {
+    slug: "evocative-minimalism",
+    title: "Evocative Minimalism",
+    category: "Prose & Style",
+    level: "Intermediate",
+    summary:
+      "Sparse prose that suggests more than it states without becoming thin.",
+    principle:
+      "Minimalism is powerful when what remains is charged.",
+    takeaways: [
+      "Plainness is not emptiness.",
+      "The prose needs pressure, rhythm, and exactness to carry omission.",
+      "A sparse line should open space in the reader, not close down meaning.",
+    ],
+    overview:
+      "Evocative minimalism is a restrained prose mode that uses few words to create a larger felt world. Its strength lies in tension between surface simplicity and implied depth.",
+    examples: [
+      "A scene of grief names only the untouched dinner and the chair left pulled out.",
+      "A farewell is written in short practical sentences whose omissions carry the emotion.",
+    ],
+    failureModes: ["vague-minimalism", "false-economy"],
+    related: ["selective-detail", "compression", "subtext", "transparent-prose"],
+  },
+  {
+    slug: "negative-space",
+    title: "Negative Space",
+    category: "Prose & Style",
+    level: "Intermediate",
+    summary:
+      "What the prose leaves unnamed helps shape what the reader perceives.",
+    principle:
+      "Absence can be a compositional force when the visible details define its edges.",
+    takeaways: [
+      "Silence, white space, omission, and restraint can all create negative space.",
+      "The missing thing must be meaningfully framed by what remains.",
+      "Negative space lets readers participate in image, grief, dread, and implication.",
+    ],
+    overview:
+      "Negative space borrows from visual art to describe the expressive role of what is not directly represented. In prose, the unsaid can shape attention as strongly as the said when surrounding details make the absence legible.",
+    examples: [
+      "A family scene never mentions the dead sibling, but every seating choice points to the empty place.",
+      "A battlefield chapter describes birdsong after the fighting stops and leaves the bodies mostly unnamed.",
+    ],
+    failureModes: ["under-rendering", "vague-minimalism"],
+    related: ["strategic-omission", "reader-completion", "ellipsis", "subtext"],
+  },
+  {
+    slug: "transparent-prose",
+    title: "Transparent Prose",
+    category: "Prose & Style",
+    level: "Intermediate",
+    summary:
+      "Prose that feels like a clear medium for experience rather than a surface asking to be admired.",
+    principle:
+      "Transparency is an effect of control, not the absence of style.",
+    takeaways: [
+      "Transparent prose still depends on diction, rhythm, selection, and POV discipline.",
+      "It supports immersion by keeping attention on experience.",
+      "It fails when plainness becomes generic or when the author's hand becomes visible.",
+    ],
+    overview:
+      "Transparent prose is writing whose craft hides its own scaffolding. The reader feels scene, voice, pressure, and emotion directly, without being repeatedly invited to admire the sentence as sentence.",
+    examples: [
+      "A tense negotiation is rendered in clean, exact sentences that never upstage the stakes.",
+      "A description gives just enough physical context for the reader to move through the room without noticing the description working.",
+    ],
+    failureModes: ["vague-minimalism", "visible-machinery"],
+    related: ["restraint", "selective-detail", "narrative-distance", "diction"],
+  },
+  {
+    slug: "restraint",
+    title: "Restraint",
+    category: "Prose & Style",
+    level: "Foundational",
+    summary:
+      "The discipline of not saying more than the moment can use.",
+    principle:
+      "Restraint trusts pressure, detail, and reader inference to do their work.",
+    takeaways: [
+      "It can govern description, emotion, exposition, dialogue, and theme.",
+      "Restraint is not withholding everything; it is proportion.",
+      "The stronger the scene's pressure, the less explanation it may need.",
+    ],
+    overview:
+      "Restraint is the broad craft virtue behind less-is-more effects. It means choosing proportion: enough detail to embody, enough explanation to orient, enough emotion to land, and enough silence for the reader to enter.",
+    examples: [
+      "A reunion scene lets the characters talk about luggage because the emotional history is already active.",
+      "A violent discovery is described through one practical action rather than a flood of commentary.",
+    ],
+    failureModes: ["false-economy", "over-description"],
+    related: ["selective-detail", "strategic-omission", "subtext", "compression"],
   },
 
   // ─────────────────────────────────────────────────────────
@@ -2233,6 +3057,33 @@ export const entries: CraftEntry[] = [
     related: ["in-medias-res", "mystery-and-curiosity", "reversal"],
   },
   {
+    slug: "causal-loop-closure",
+    title: "Causal-Loop Closure",
+    category: "Narratology",
+    level: "Advanced",
+    summary:
+      "Narrative closure produced by completing a closed chain of cause and effect.",
+    principle: "The end explains the beginning by becoming one of its causes.",
+    takeaways: [
+      "The reader must be able to reconstruct the loop after the reveal.",
+      "Closure should answer why the loop matters, not only how it operates.",
+      "It often changes the fabula by making cause circular rather than linear.",
+    ],
+    overview:
+      "Causal-loop closure names the narratological shape of a plot whose ending folds back into its own cause. Where bootstrap ending is the reader-facing payoff, causal-loop closure describes the arranged structure that makes the sequence self-enclosed.",
+    examples: [
+      "A future warning causes the action that makes the warning necessary.",
+      "The last scene reveals that the escape route existed because the escaped character later built it.",
+    ],
+    failureModes: ["puzzle-box-collapse", "contrivance"],
+    related: [
+      "bootstrap-ending",
+      "fabula-vs-syuzhet",
+      "causality",
+      "narrative-teleology",
+    ],
+  },
+  {
     slug: "analepsis",
     title: "Analepsis",
     category: "Narratology",
@@ -2521,6 +3372,34 @@ export const entries: CraftEntry[] = [
       "A mercy shown early leaves alive the witness who changes the trial.",
     ],
     related: ["setup-and-payoff", "conflict", "coincidence"],
+  },
+  {
+    slug: "bootstrap-ending",
+    title: "Bootstrap Ending",
+    category: "Plot Mechanics",
+    level: "Advanced",
+    summary:
+      "An ending reveals that a crucial cause, object, identity, or message exists because the story's loop produced it.",
+    principle:
+      "A bootstrap ending satisfies when the loop closes cause, character, and meaning at once.",
+    takeaways: [
+      "The ending should make the beginning feel newly caused, not merely revisited.",
+      "Loop logic needs emotional consequence as well as mechanical neatness.",
+      "The strongest versions make the paradox feel inevitable in retrospect.",
+    ],
+    overview:
+      "A bootstrap ending is a causal-loop payoff in which the story's final movement reveals that something apparently prior was generated by the loop itself. The effect can be uncanny, elegant, comic, or tragic depending on whether the closure deepens the story's central pressure.",
+    examples: [
+      "The message that starts the quest is written by the protagonist after completing it.",
+      "The artifact sought through the plot is created only because the search carries it into the past.",
+    ],
+    failureModes: ["puzzle-box-collapse", "visible-machinery"],
+    related: [
+      "causal-loop-closure",
+      "causality",
+      "twist",
+      "inevitable-but-not-predictable",
+    ],
   },
   {
     slug: "coincidence",
@@ -3218,6 +4097,35 @@ export const entries: CraftEntry[] = [
       "A story assembles noir, fairy tale, and academic prose into one surface.",
     ],
     related: ["parody", "intertextuality", "voice"],
+  },
+  {
+    slug: "equivocal-prophecy",
+    title: "Equivocal Prophecy",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary:
+      "A prophecy, omen, or prediction whose phrasing supports more than one fulfillment.",
+    principle:
+      "The line can mislead by emphasis, but it should not need to change its own meaning.",
+    takeaways: [
+      "The ambiguity is usually lexical, syntactic, idiomatic, or contextual.",
+      "The apparent meaning should be plausible enough to drive expectation.",
+      "The fulfilled meaning should feel hidden in plain sight after the reveal.",
+    ],
+    overview:
+      "Equivocal prophecy, also called oracular ambiguity or prophetic equivocation, uses double meaning to make a prediction both misleading and true. Its craft power comes from the gap between what the line seems to promise and what its wording can actually support.",
+    examples: [
+      "\"The whole world will turn to ash\" sounds apocalyptic, then resolves as the world turning to Ash Ketchum.",
+      "No man of woman born sounds universal until the story exploits a narrower birth condition.",
+      "An oracle says a great empire will fall, but does not say whose.",
+    ],
+    failureModes: ["cheated-prophecy", "over-telegraphing"],
+    related: [
+      "ambiguity",
+      "prophetic-misdirection",
+      "foreshadowing",
+      "setup-and-payoff",
+    ],
   },
 
   // ─────────────────────────────────────────────────────────
@@ -4022,6 +4930,792 @@ export const entries: CraftEntry[] = [
   },
 
   // ─────────────────────────────────────────────────────────
+  // READER CONTRACT & PROMISE
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "announced-destination",
+    title: "Announced Destination",
+    category: "Reader Contract & Promise",
+    level: "Intermediate",
+    summary:
+      "A visible endpoint or goal that creates forward pull rather than spoiling the story.",
+    principle:
+      "Knowing where the story is going can intensify the desire to see how it gets there.",
+    takeaways: [
+      "The destination may be announced by title, cover, premise, prophecy, map, or series position.",
+      "The reader's question becomes process, cost, and transformation.",
+      "It fails when the path offers no discovery beyond arrival.",
+    ],
+    overview:
+      "An announced destination is a promised endpoint made visible early, sometimes before page one. It creates propulsion by letting the reader anticipate an event, place, confrontation, or state of affairs while the story controls delay, obstacle, and consequence.",
+    examples: [
+      "A book titled The Siege of Blackwater creates dread around the coming siege.",
+      "A sequel makes clear that the heroes must reach the northern city, but every alliance and loss on the road remains open.",
+    ],
+    failureModes: ["broken-promise", "middle-book-stall"],
+    related: ["promised-destination", "reader-contract", "suspense-vs-surprise"],
+  },
+  {
+    slug: "promised-destination",
+    title: "Promised Destination",
+    category: "Reader Contract & Promise",
+    level: "Intermediate",
+    summary:
+      "A goal the narrative trains the reader to expect as a future fulfilment point.",
+    principle:
+      "A promised destination turns expectation into an engine.",
+    takeaways: [
+      "It can be geographic, emotional, romantic, political, or metaphysical.",
+      "The promise must remain alive through reminders, complications, and changing stakes.",
+      "Arrival should alter meaning, not merely complete itinerary.",
+    ],
+    overview:
+      "A promised destination is the larger pull created when a narrative or series makes the reader hold an anticipated endpoint. Unlike a twist, it is not meant to be hidden. The craft lies in making the known endpoint accrue uncertainty and cost.",
+    examples: [
+      "A fantasy trilogy promises the return to a ruined capital, while each book changes what return would mean.",
+      "A romance promises union, but the story asks what selves the lovers must become first.",
+    ],
+    failureModes: ["promise-drift", "broken-promise"],
+    related: ["announced-destination", "delayed-fulfilment", "narrative-teleology"],
+  },
+  {
+    slug: "paratextual-promise",
+    title: "Paratextual Promise",
+    category: "Reader Contract & Promise",
+    level: "Intermediate",
+    summary:
+      "Expectation created by material around the text: title, cover, subtitle, blurb, map, or series framing.",
+    principle:
+      "The book begins making promises before the first sentence.",
+    takeaways: [
+      "Paratext can define genre, tone, scale, audience, and likely destination.",
+      "A mismatch between paratext and text can feel like betrayal.",
+      "Strong paratext frames the right reading posture without exhausting surprise.",
+    ],
+    overview:
+      "Paratextual promise is the contract made by everything that surrounds the prose: cover design, title, subtitle, jacket copy, series number, map, epigraph, table of contents, and marketing category. These materials shape the reader's horizon before the narrative begins.",
+    examples: [
+      "A cover with a dragon and a burning city promises different pressure than a quiet domestic cover.",
+      "A subtitle promises a true-crime inquiry before the opening chapter establishes voice.",
+    ],
+    failureModes: ["paratext-mismatch", "false-promise"],
+    related: ["reader-contract", "horizon-of-expectation", "genre"],
+  },
+  {
+    slug: "horizon-of-expectation",
+    title: "Horizon of Expectation",
+    category: "Reader Contract & Promise",
+    level: "Advanced",
+    summary:
+      "The set of assumptions a reader brings from genre, culture, prior books, and presentation.",
+    principle:
+      "A reader never arrives empty-handed.",
+    takeaways: [
+      "Expectations come from genre, series memory, marketing, reputation, and cultural literacy.",
+      "The text can fulfil, revise, frustrate, or exploit that horizon.",
+      "Surprise works best against an understood expectation field.",
+    ],
+    overview:
+      "Horizon of expectation is a reception concept for the reader's anticipatory frame. It explains why the same plot event can feel satisfying, shocking, dull, or unfair depending on the expectations the work and its context have activated.",
+    examples: [
+      "A reader of tragedy expects consequence even before knowing the specific error.",
+      "Book two of a series can rely on knowledge book one already installed.",
+    ],
+    related: ["reader-contract", "series-knowledge", "genre"],
+  },
+  {
+    slug: "promise-based-suspense",
+    title: "Promise-Based Suspense",
+    category: "Reader Contract & Promise",
+    level: "Intermediate",
+    summary:
+      "Suspense generated by waiting for a known or promised event to arrive.",
+    principle:
+      "The reader can know what is coming and still need to know how it comes.",
+    takeaways: [
+      "It depends on anticipation rather than concealment.",
+      "The delay must produce cost, complication, or changed meaning.",
+      "It pairs naturally with series fiction, romance, quest, prophecy, and tragedy.",
+    ],
+    overview:
+      "Promise-based suspense is the forward pressure created when the reader expects a future event and reads toward its arrival. The uncertainty is not whether the event belongs to the book, but what shape, cost, and consequence it will have.",
+    examples: [
+      "A prophecy names the battle; the suspense lies in who arrives there and what they have become.",
+      "A chapter title announces a trial, so every prior scene becomes preparation and dread.",
+    ],
+    related: ["suspense-vs-surprise", "announced-destination", "dramatic-irony"],
+  },
+  {
+    slug: "narrative-teleology",
+    title: "Narrative Teleology",
+    category: "Reader Contract & Promise",
+    level: "Advanced",
+    summary:
+      "The sense that a story is aimed toward a meaningful endpoint.",
+    principle:
+      "Teleology makes events feel pulled by an end as well as pushed by causes.",
+    takeaways: [
+      "It can create inevitability, dread, prophecy, or formal completion.",
+      "A teleological story need not be predictable in its path.",
+      "Too rigid a teleology can make characters feel mechanically moved.",
+    ],
+    overview:
+      "Narrative teleology is the directedness of a story toward an end. It is the reader's feeling that events are not merely accumulating, but moving toward a destination, revelation, judgement, or formal completion.",
+    examples: [
+      "A tragedy feels pulled toward recognition long before the character understands it.",
+      "A quest narrative makes each detour meaningful because the destination remains active.",
+    ],
+    related: ["promised-destination", "inevitable-but-not-predictable", "tragedy"],
+  },
+  {
+    slug: "dramatic-question",
+    title: "Dramatic Question",
+    category: "Reader Contract & Promise",
+    level: "Foundational",
+    summary:
+      "The central question the reader is waiting to see answered.",
+    principle:
+      "A story holds attention by teaching the reader which question matters.",
+    takeaways: [
+      "The question may be external, internal, romantic, moral, or thematic.",
+      "A story can carry nested questions at scene, act, book, and series scale.",
+      "Answering the wrong question leaves readers unsatisfied even if events resolve.",
+    ],
+    overview:
+      "The dramatic question is the active uncertainty that organizes reader attention. It can be as concrete as who killed him or as interior as whether she can forgive herself.",
+    examples: [
+      "Will the witness testify before the trial collapses?",
+      "Can the protagonist become honest without losing the life built on lies?",
+    ],
+    failureModes: ["wrong-dramatic-question", "false-promise"],
+    related: ["mystery-and-curiosity", "reader-contract", "closure"],
+  },
+  {
+    slug: "inevitable-but-not-predictable",
+    title: "Inevitable but Not Predictable",
+    category: "Reader Contract & Promise",
+    level: "Advanced",
+    summary:
+      "The ideal ending state: surprising in arrival, necessary in retrospect.",
+    principle:
+      "The reader should not see every step coming, but should feel no other ending would do.",
+    takeaways: [
+      "Inevitability comes from preparation, pressure, and thematic fit.",
+      "Unpredictability comes from live uncertainty in the path.",
+      "The phrase is a useful test for twists, endings, and payoffs.",
+    ],
+    overview:
+      "Inevitable but not predictable describes a satisfying narrative turn or ending. It preserves discovery while making the final shape feel earned by everything that came before.",
+    examples: [
+      "A character's final sacrifice surprises in timing but fits every prior choice.",
+      "A mystery solution is missed by the reader yet makes the clues newly obvious.",
+    ],
+    related: ["setup-and-payoff", "twist", "reversal"],
+  },
+  {
+    slug: "delayed-fulfilment",
+    title: "Delayed Fulfilment",
+    category: "Reader Contract & Promise",
+    level: "Intermediate",
+    summary:
+      "The meaningful postponement of a promised encounter, answer, union, or event.",
+    principle:
+      "Delay works when waiting changes the thing waited for.",
+    takeaways: [
+      "Delay should add pressure, knowledge, cost, or transformation.",
+      "Pure postponement without development becomes stall.",
+      "The fulfilment must register the accumulated waiting.",
+    ],
+    overview:
+      "Delayed fulfilment is the technique of withholding a promised experience until the story has made its arrival more charged. It underlies romance, revenge, quest, mystery, and series architecture.",
+    examples: [
+      "The reunion is delayed until both characters can understand what they lost.",
+      "The monster is kept offstage while every trace changes what the reveal will mean.",
+    ],
+    failureModes: ["middle-book-stall", "promise-drift"],
+    related: ["deferral", "promised-destination", "reader-memory-decay"],
+  },
+  {
+    slug: "series-knowledge",
+    title: "Series Knowledge",
+    category: "Reader Contract & Promise",
+    level: "Intermediate",
+    summary:
+      "Information, trust, and expectation carried forward by returning readers.",
+    principle:
+      "A sequel writes to readers who already know the world is real.",
+    takeaways: [
+      "Series knowledge can reduce setup and increase dramatic irony.",
+      "It can make title, cover, and map function as meaningful promises.",
+      "New-reader access and returning-reader reward must be balanced deliberately.",
+    ],
+    overview:
+      "Series knowledge is the accumulated reader memory of world, character, stakes, rules, and unfinished promises from prior installments. Later books can turn that memory into suspense, irony, dread, and shorthand.",
+    examples: [
+      "Book two names a city and returning readers already know why that name is dangerous.",
+      "A minor object from book one becomes a promise rather than an explanation.",
+    ],
+    failureModes: ["recap-drag", "lore-drag"],
+    related: ["reader-memory-decay", "horizon-of-expectation", "escalating-promise"],
+  },
+  {
+    slug: "escalating-promise",
+    title: "Escalating Promise",
+    category: "Reader Contract & Promise",
+    level: "Intermediate",
+    summary:
+      "A series or story promise that widens, sharpens, or complicates over time.",
+    principle:
+      "A promise should grow more specific as the reader invests more deeply.",
+    takeaways: [
+      "Escalation can change scale, stakes, intimacy, or moral difficulty.",
+      "Each installment should refine what fulfilment would mean.",
+      "Escalation without focus becomes sprawl.",
+    ],
+    overview:
+      "Escalating promise is the way a narrative enlarges or complicates its initial contract. The reader begins by wanting one outcome and gradually understands that the outcome carries deeper cost or broader implication.",
+    examples: [
+      "A search for a missing heir becomes a question of whether monarchy should survive.",
+      "A revenge plot escalates into the cost of becoming the person revenge requires.",
+    ],
+    failureModes: ["promise-drift", "middle-book-stall"],
+    related: ["escalation", "series-knowledge", "reader-contract"],
+  },
+  {
+    slug: "bridge-book",
+    title: "Bridge Book",
+    category: "Reader Contract & Promise",
+    level: "Intermediate",
+    summary:
+      "A middle installment that moves characters and promises from one major state to another.",
+    principle:
+      "A bridge book still needs its own load-bearing arc.",
+    takeaways: [
+      "It may transform alliances, knowledge, geography, or moral position.",
+      "It fails when it exists only to move pieces for the finale.",
+      "The best bridge books make transition feel like consequence.",
+    ],
+    overview:
+      "A bridge book is an installment, often the middle of a trilogy, whose function is repositioning. It connects the initiating promise to final fulfilment, but must still create local dramatic questions, reversals, and payoffs.",
+    examples: [
+      "Book two moves the protagonists from rebellion to exile while revealing what victory would cost.",
+      "A middle volume ends not by resolving the war, but by making the old strategy impossible.",
+    ],
+    failureModes: ["middle-book-stall", "promise-drift"],
+    related: ["series-knowledge", "delayed-fulfilment", "subplot"],
+  },
+
+  // ─────────────────────────────────────────────────────────
+  // WRITER & READER SLANG
+  // ─────────────────────────────────────────────────────────
+  {
+    slug: "winking-at-the-reader",
+    title: "Winking at the Reader",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "A self-aware nod that lets the reader feel the writer or narrator acknowledging the device.",
+    principle:
+      "A wink works when the text wants complicity; it fails when the text wanted transparency.",
+    takeaways: [
+      "It can be comic, metafictional, satirical, or genre-aware.",
+      "It can also puncture immersion in otherwise transparent prose.",
+      "The question is whether the reader is meant to notice the hand.",
+    ],
+    overview:
+      "Winking at the reader is informal shorthand for moments when the prose seems to acknowledge its own trick, convention, joke, or manipulation. It is not inherently bad; it depends on the work's mode and contract.",
+    examples: [
+      "A narrator jokes that this would be a terrible time for a coincidence, just before one arrives.",
+      "A serious realist scene undercuts its own emotion with a knowing aside the book has not trained the reader to expect.",
+    ],
+    failureModes: ["immersion-break", "reader-nudge-failure"],
+    related: ["metafictional-wink", "authorial-intrusion", "reader-contract"],
+  },
+  {
+    slug: "authorial-intrusion",
+    title: "Authorial Intrusion",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "A visible interruption by the authorial or narrator voice into the fictional experience.",
+    principle:
+      "Intrusion is a device when governed; a flaw when accidental.",
+    takeaways: [
+      "Omniscient and comic forms may use intrusion deliberately.",
+      "Transparent prose often treats intrusion as a break in the fictional dream.",
+      "The effect depends on whether the narrative voice has earned the right to comment.",
+    ],
+    overview:
+      "Authorial intrusion is the felt entrance of authorial judgement, explanation, or commentary into the story-world. It can be a formal feature of a voice-driven work or an unwanted reminder that the writer is steering.",
+    examples: [
+      "A narrator pauses a scene to lecture the reader on human vanity.",
+      "The prose explains the moral meaning of a gesture the scene already made clear.",
+    ],
+    failureModes: ["visible-machinery", "immersion-break"],
+    related: ["intrusive-narrator", "editorializing", "implied-author"],
+  },
+  {
+    slug: "intrusive-narrator",
+    title: "Intrusive Narrator",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "A narrator who overtly comments on, interprets, or manages the story for the reader.",
+    principle:
+      "An intrusive narrator must become part of the experience, not an interruption of it.",
+    takeaways: [
+      "The intrusion can create intimacy, irony, comedy, or moral argument.",
+      "It can also flatten inference by doing the reader's work.",
+      "The narrator's authority and personality determine the effect.",
+    ],
+    overview:
+      "An intrusive narrator is a narrating presence that does not pretend to vanish. The voice may address the reader, judge characters, foreshadow outcomes, or explain the tale's design.",
+    examples: [
+      "A Victorian-style narrator tells the reader exactly what to think of a social custom.",
+      "A comic narrator apologizes for skipping the boring part.",
+    ],
+    related: ["authorial-intrusion", "direct-address", "voice"],
+  },
+  {
+    slug: "direct-address",
+    title: "Direct Address",
+    category: "Writer & Reader Slang",
+    level: "Foundational",
+    summary:
+      "The narration speaks directly to the reader or an explicit addressee.",
+    principle:
+      "Address changes the reader from observer into participant, witness, or target.",
+    takeaways: [
+      "It can build intimacy, accusation, conspiracy, or performance.",
+      "It differs from second person, though they often overlap.",
+      "Unprepared direct address can feel like a hand through the screen.",
+    ],
+    overview:
+      "Direct address is a narrating move in which the text turns toward the reader, audience, or narratee. It is a powerful breach of ordinary distance when the surrounding form has not normalized it.",
+    examples: [
+      "Reader, I married him.",
+      "You may think the old man was innocent. You would be wrong.",
+    ],
+    related: ["narratee", "intrusive-narrator", "breaking-the-fourth-wall"],
+  },
+  {
+    slug: "breaking-the-fourth-wall",
+    title: "Breaking the Fourth Wall",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "Acknowledging the audience, medium, or fictionality from inside the work.",
+    principle:
+      "A fourth-wall break changes the boundary between work and audience.",
+    takeaways: [
+      "It can be comic, alienating, intimate, or metafictional.",
+      "It is stronger than ordinary direct address when it admits the constructed frame.",
+      "In transparency-seeking prose, it can rupture immersion abruptly.",
+    ],
+    overview:
+      "Breaking the fourth wall is shorthand from theatre and screen for moments when a work acknowledges the audience or its own artificial frame. In prose, it overlaps with metafiction, direct address, and metalepsis.",
+    examples: [
+      "A character comments on being in chapter twelve.",
+      "A narrator tells the reader the author cannot afford another battle scene.",
+    ],
+    related: ["direct-address", "metalepsis", "metafictional-wink"],
+  },
+  {
+    slug: "metafictional-wink",
+    title: "Metafictional Wink",
+    category: "Writer & Reader Slang",
+    level: "Advanced",
+    summary:
+      "A playful self-aware gesture toward the fiction's own constructedness.",
+    principle:
+      "Metafictional play invites the reader to enjoy the machinery as machinery.",
+    takeaways: [
+      "It works best when the work's contract includes self-awareness.",
+      "It can comment on genre, form, authorship, or reader expectation.",
+      "A wink in the wrong register can shrink the scene's seriousness.",
+    ],
+    overview:
+      "A metafictional wink is a small self-aware moment that points toward the text as made thing. Unlike full metalepsis, it may only brush the frame rather than break through it.",
+    examples: [
+      "A detective complains that locked rooms are never as simple as the books make them.",
+      "A fantasy narrator notes that prophecies rarely include travel logistics.",
+    ],
+    related: ["winking-at-the-reader", "metalepsis", "parody"],
+  },
+  {
+    slug: "heinlein-closer",
+    title: "Heinlein Closer",
+    category: "Writer & Reader Slang",
+    level: "Advanced",
+    summary:
+      "Slang for a speculative ending that snaps the story into a causal loop or paradox payoff.",
+    principle:
+      "The closer should make the premise feel designed, not merely clever.",
+    takeaways: [
+      "It is useful workshop shorthand, not a settled academic term.",
+      "It usually points toward time-loop, identity-loop, or paradox closure.",
+      "The best versions make the ending feel like the story's hidden engine.",
+    ],
+    overview:
+      "A Heinlein closer is informal language for a speculative-fiction ending that resolves by revealing a self-contained causal loop, recursive identity, or paradoxical source. The term is best treated as writer slang pointing toward formal devices such as bootstrap ending and causal-loop closure.",
+    examples: [
+      "The final chapter reveals the mentor, messenger, and protagonist are all products of the same loop.",
+      "A time-travel story ends by showing the mission caused the condition it was trying to prevent.",
+    ],
+    failureModes: ["puzzle-box-collapse", "visible-machinery"],
+    related: [
+      "bootstrap-ending",
+      "causal-loop-closure",
+      "twist",
+      "inevitable-but-not-predictable",
+    ],
+  },
+  {
+    slug: "title-click-ending",
+    title: "Title-Click Ending",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "An ending that makes the title suddenly reveal its full meaning.",
+    principle:
+      "The title click works when recognition deepens the story, not when it only explains a label.",
+    takeaways: [
+      "The title's earlier meaning should remain valid after the click.",
+      "The ending can make the title literal, ironic, doubled, or newly emotional.",
+      "A title click is strongest when it concentrates theme, plot, and feeling at once.",
+    ],
+    overview:
+      "Title-click ending is slang for the moment when the final movement of a story makes its title snap into focus. The pleasure is retrospective: the reader realises the title has been carrying more pressure than it first seemed to carry.",
+    examples: [
+      "The final line reveals that the title's noun names a relationship, not a place.",
+      "A phrase that looked descriptive becomes the literal wording of a vow, curse, or last choice.",
+    ],
+    failureModes: ["weak-payoff", "reader-nudge-failure"],
+    related: ["setup-and-payoff", "revelation", "twist", "reader-contract"],
+  },
+  {
+    slug: "lampshading",
+    title: "Lampshading",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "Calling attention to an implausibility, convention, or convenience so the reader accepts it.",
+    principle:
+      "Naming the problem can reduce resistance, but it does not fix the problem by itself.",
+    takeaways: [
+      "It can create trust by admitting the obvious.",
+      "It often works in comedy, genre, and self-aware forms.",
+      "It fails when acknowledgement substitutes for repair.",
+    ],
+    overview:
+      "Lampshading is a slang term for openly pointing at a shaky premise, trope, coincidence, or convenience. The gesture asks the reader to move on because the work has noticed the issue too.",
+    examples: [
+      "A character says the plan sounds ridiculous, then the plot proceeds anyway.",
+      "The narrator admits the coincidence is unlikely before making it consequential.",
+    ],
+    failureModes: ["visible-machinery", "contrivance"],
+    related: ["hanging-a-lantern", "coincidence", "winking-at-the-reader"],
+  },
+  {
+    slug: "hanging-a-lantern",
+    title: "Hanging a Lantern",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "A workshop phrase for explicitly illuminating a weak spot or convention.",
+    principle:
+      "A lantern helps only if the story can survive the light.",
+    takeaways: [
+      "It is closely related to lampshading.",
+      "It can reassure the reader that a strangeness is intentional.",
+      "It cannot make an unearned payoff earned.",
+    ],
+    overview:
+      "Hanging a lantern means drawing attention to something potentially implausible, convenient, or conventional so the reader sees it as deliberate. The phrase is common in screenwriting and workshop talk.",
+    examples: [
+      "A character points out that the villain's escape route is absurdly convenient.",
+      "A narrator flags a trope before turning it into part of the joke.",
+    ],
+    related: ["lampshading", "reader-nudge", "over-signaled-setup"],
+  },
+  {
+    slug: "reader-nudge",
+    title: "Reader Nudge",
+    category: "Writer & Reader Slang",
+    level: "Foundational",
+    summary:
+      "A visible push that tells the reader how to interpret a moment.",
+    principle:
+      "Guidance becomes a nudge when the reader can feel the pushing.",
+    takeaways: [
+      "A nudge may clarify emphasis or over-control inference.",
+      "It often appears as repeated explanation, pointed phrasing, or unnecessary moral labelling.",
+      "Transparent prose usually needs lighter touch than comic or didactic forms.",
+    ],
+    overview:
+      "Reader nudge is informal shorthand for prose that directs interpretation too visibly. It sits near telling instead of showing, editorializing, and over-signaling.",
+    examples: [
+      "After showing a betrayal, the prose adds that this proved he was not to be trusted.",
+      "A symbol is explained every time it appears.",
+    ],
+    failureModes: ["reader-nudge-failure", "over-signaled-setup"],
+    related: ["editorializing", "show-dont-tell", "telling-instead-of-showing"],
+  },
+  {
+    slug: "elbowing-the-reader",
+    title: "Elbowing the Reader",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "An aggressive form of reader nudge that insists the reader notice the intended joke, point, or setup.",
+    principle:
+      "Inference loses pleasure when the prose keeps poking it.",
+    takeaways: [
+      "It is usually a failure of trust in the reader.",
+      "It can make jokes, clues, and themes feel smaller.",
+      "It often pairs with over-explained irony or repeated setup.",
+    ],
+    overview:
+      "Elbowing the reader is slang for moments where the prose seems to jab the reader and say get it? It is reader nudge with impatience.",
+    examples: [
+      "A comic line is followed by narration that explains why it is ironic.",
+      "A clue receives so much emphasis that the later reveal has no room to surprise.",
+    ],
+    failureModes: ["reader-nudge-failure", "over-telegraphing"],
+    related: ["reader-nudge", "telegraphing", "irony"],
+  },
+  {
+    slug: "editorializing",
+    title: "Editorializing",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "Commentary that tells the reader how to judge material instead of letting the scene carry judgement.",
+    principle:
+      "Judgement lands harder when dramatized than when pasted on top.",
+    takeaways: [
+      "It may be intentional in essays, satire, and voice-driven narration.",
+      "In transparent fiction, it often flattens moral complexity.",
+      "It overlaps with authorial intrusion and reader nudge.",
+    ],
+    overview:
+      "Editorializing occurs when the narration supplies interpretive judgement in a way that feels external to the scene's own pressure. It is not simply opinionated prose; it is commentary that short-circuits reader inference.",
+    examples: [
+      "The narration tells us a choice was cowardly before the consequences reveal it.",
+      "A scene of exploitation pauses so the prose can announce its theme.",
+    ],
+    failureModes: ["reader-nudge-failure", "accidental-theme"],
+    related: ["authorial-intrusion", "theme", "show-dont-tell"],
+  },
+  {
+    slug: "signposting",
+    title: "Signposting",
+    category: "Writer & Reader Slang",
+    level: "Foundational",
+    summary:
+      "Explicit cues that orient the reader toward structure, meaning, or future relevance.",
+    principle:
+      "A signpost should orient without replacing discovery.",
+    takeaways: [
+      "Some signposting is necessary for clarity and long-form memory.",
+      "Too much makes the structure feel mechanical.",
+      "The best signposts belong naturally to the present scene.",
+    ],
+    overview:
+      "Signposting is the use of clear markers that tell the reader where they are or what to track. It can be a strength in complex works, but becomes visible machinery when every future payoff is labelled.",
+    examples: [
+      "A chapter opens with a date and place to stabilize a complex timeline.",
+      "A character repeats a prophecy so often that the ending feels mechanically announced.",
+    ],
+    failureModes: ["over-telegraphing", "visible-machinery"],
+    related: ["reader-memory-decay", "foreshadowing", "over-signaled-setup"],
+  },
+  {
+    slug: "telegraphing",
+    title: "Telegraphing",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "Making a future reveal, turn, or payoff too obvious too early.",
+    principle:
+      "Preparation should create recognition, not prediction without remainder.",
+    takeaways: [
+      "Telegraphing collapses surprise by over-marking the path.",
+      "It is different from an announced destination, where the broad endpoint is meant to be known.",
+      "The failure is usually specificity, repetition, or tonal emphasis.",
+    ],
+    overview:
+      "Telegraphing is workshop slang for visible over-preparation. The reader feels the wire running from setup to payoff and arrives ahead of the story.",
+    examples: [
+      "A minor object is described with such weight that its final use is obvious.",
+      "A character's secret is hinted at with the same phrase in every chapter.",
+    ],
+    failureModes: ["over-telegraphing", "over-signaled-setup"],
+    related: ["foreshadowing", "setup-and-payoff", "announced-destination"],
+  },
+  {
+    slug: "visible-hand-of-the-author",
+    title: "Visible Hand of the Author",
+    category: "Writer & Reader Slang",
+    level: "Advanced",
+    summary:
+      "The reader senses the writer arranging events rather than characters and pressures producing them.",
+    principle:
+      "Design should be felt as inevitability, not as manipulation.",
+    takeaways: [
+      "The visible hand can be desired in metafiction, satire, or omniscient narration.",
+      "It becomes a flaw when the story wants organic immersion.",
+      "It often appears through coincidence, forced choices, and over-explicit theme.",
+    ],
+    overview:
+      "Visible hand of the author is a reader-facing diagnosis: the story's machinery becomes too apparent. The reader stops believing in the internal logic and starts seeing the writer moving pieces.",
+    examples: [
+      "A character takes an implausible action only because the plot needs the next scene.",
+      "A coincidence arrives exactly when the author needs a rescue.",
+    ],
+    failureModes: ["visible-machinery", "contrivance"],
+    related: ["authorial-intrusion", "causality", "inevitable-but-not-predictable"],
+  },
+  {
+    slug: "breaking-immersion",
+    title: "Breaking Immersion",
+    category: "Writer & Reader Slang",
+    level: "Foundational",
+    summary:
+      "Pulling the reader out of the story's felt reality.",
+    principle:
+      "Immersion breaks when the reader notices the wrong thing.",
+    takeaways: [
+      "The cause may be prose, continuity, tone, world logic, slang, or visible authorial hand.",
+      "Some works deliberately break immersion for alienation or comedy.",
+      "A break is damaging when the story depends on transparency.",
+    ],
+    overview:
+      "Breaking immersion is a broad reader phrase for any moment that collapses absorbed reading. The reader becomes aware of error, artifice, mismatch, or manipulation instead of the story's desired pressure.",
+    examples: [
+      "A modern idiom appears in a carefully historical voice.",
+      "A character survives an impossible wound because the plot still needs them.",
+    ],
+    failureModes: ["immersion-break", "continuity-error"],
+    related: ["reader-contract", "visible-hand-of-the-author", "tonal-incoherence"],
+  },
+  {
+    slug: "as-you-know-bob",
+    title: "As You Know, Bob",
+    category: "Writer & Reader Slang",
+    level: "Foundational",
+    summary:
+      "Dialogue where characters explain information they both already know for the reader's benefit.",
+    principle:
+      "Exposition should respect what characters would naturally say.",
+    takeaways: [
+      "It is a common form of disguised info dump.",
+      "The problem is not exposition, but unnatural delivery.",
+      "Conflict, ignorance, teaching, or deception can make exposition speakable.",
+    ],
+    overview:
+      "As You Know, Bob is a workshop phrase for expository dialogue that exists only to inform the reader. It breaks the illusion that characters are speaking to each other.",
+    examples: [
+      "Two siblings explain their shared childhood to each other in detail.",
+      "A scientist tells a colleague basic rules of the project both have run for years.",
+    ],
+    failureModes: ["info-dump", "over-exposition"],
+    related: ["dialogue", "exposition", "talking-heads"],
+  },
+  {
+    slug: "plot-armor",
+    title: "Plot Armor",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "The sense that a character survives or succeeds because the plot protects them.",
+    principle:
+      "Readers accept survival when the story makes cost, skill, luck, or setup credible.",
+    takeaways: [
+      "Plot armor weakens stakes by making danger feel decorative.",
+      "It often appears after repeated consequence-free escapes.",
+      "Genre convention can allow resilience, but not total immunity from cost.",
+    ],
+    overview:
+      "Plot armor is slang for perceived narrative protection. The reader stops fearing for a character because the story's design seems unwilling to let harm land.",
+    examples: [
+      "A protagonist survives every ambush while side characters die to prove danger.",
+      "A character ignores established rules and escapes without explanation or cost.",
+    ],
+    failureModes: ["visible-machinery", "contrivance"],
+    related: ["stakes", "reader-contract", "deus-ex-machina"],
+  },
+  {
+    slug: "idiot-plot",
+    title: "Idiot Plot",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "A plot that works only because characters act implausibly foolishly.",
+    principle:
+      "Mistakes are drama; required stupidity is machinery.",
+    takeaways: [
+      "Characters may make bad choices when motivated, pressured, or limited.",
+      "The failure occurs when obvious actions are ignored only to preserve plot.",
+      "Constraint and knowledge state can turn apparent foolishness into credible error.",
+    ],
+    overview:
+      "Idiot plot is a blunt reader term for plots sustained by preventable stupidity. The issue is not that characters err; it is that their errors serve author convenience rather than character, pressure, or limitation.",
+    examples: [
+      "No one shares crucial information despite having no reason to hide it.",
+      "Experts forget their basic expertise whenever the plot needs danger.",
+    ],
+    failureModes: ["contrivance", "false-mystery"],
+    related: ["character-knowledge-state", "constraint", "causality"],
+  },
+  {
+    slug: "mary-sue",
+    title: "Mary Sue",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "A contested slang term for a character perceived as implausibly idealized or consequence-proof.",
+    principle:
+      "Competence is not the problem; immunity from cost is.",
+    takeaways: [
+      "The term is inconsistently used and often gendered, so it needs care.",
+      "The craft issue is usually unearned centrality, universal admiration, or missing consequence.",
+      "A highly capable character works when pressure, flaw, and cost remain real.",
+    ],
+    overview:
+      "Mary Sue began as fan-culture shorthand for an over-idealized author-insert character. In craft terms, the useful diagnosis is not excellence, but lack of credible limitation, cost, contradiction, or resistance.",
+    examples: [
+      "Every major character admires the protagonist without the story earning that admiration.",
+      "A newcomer masters every skill instantly and corrects experts without consequence.",
+    ],
+    failureModes: ["flat-character", "plot-armor"],
+    related: ["characterization", "fatal-flaw", "motivation"],
+  },
+  {
+    slug: "fridging",
+    title: "Fridging",
+    category: "Writer & Reader Slang",
+    level: "Intermediate",
+    summary:
+      "Harming or killing a character mainly to motivate another character's arc.",
+    principle:
+      "A character's suffering should not exist only as fuel for someone else's importance.",
+    takeaways: [
+      "The term is often used for gendered disposability in genre stories.",
+      "The issue is narrative function, not merely death or harm.",
+      "Agency, interiority, and aftermath determine whether the character was treated as more than a device.",
+    ],
+    overview:
+      "Fridging is slang from comics criticism for a character, often a woman, being injured, killed, or violated primarily to motivate another character. It names a pattern of disposability rather than any single tragic event.",
+    examples: [
+      "A love interest dies only to activate the hero's revenge plot and is never otherwise developed.",
+      "A family member's suffering is treated as backstory fuel rather than a human event with its own weight.",
+    ],
+    failureModes: ["flat-character", "accidental-theme"],
+    related: ["motivation", "stakes", "characterization"],
+  },
+
+  // ─────────────────────────────────────────────────────────
   // FAILURE MODES
   // ─────────────────────────────────────────────────────────
   {
@@ -4068,6 +5762,211 @@ export const entries: CraftEntry[] = [
       "A character's rare skill is emphasised but never affects a decision.",
     ],
     related: ["setup-and-payoff", "chekhovs-gun", "reader-memory-decay"],
+  },
+  {
+    slug: "cheated-prophecy",
+    title: "Cheated Prophecy",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "A prophecy payoff technically fits the words but violates the spirit of the setup.",
+    principle:
+      "Ambiguity is fair when the reader can reread the promise and see the path.",
+    takeaways: [
+      "The fulfilled meaning must be available before the reveal.",
+      "A private definition or last-second loophole usually reads as cheating.",
+      "The payoff should reward attention rather than punish trust.",
+    ],
+    overview:
+      "Cheated prophecy occurs when a prediction resolves through a technicality the story did not prepare. The wording may be defensible in isolation, but the reader feels the story changed the rules of interpretation after taking advantage of their belief.",
+    examples: [
+      "A prophecy depends on a private definition of a word never made available to the reader.",
+      "A foretold death is avoided by declaring sleep a kind of death only after the fact.",
+    ],
+    related: [
+      "equivocal-prophecy",
+      "prophetic-misdirection",
+      "unearned-twist",
+      "reader-contract",
+    ],
+  },
+  {
+    slug: "puzzle-box-collapse",
+    title: "Puzzle-Box Collapse",
+    category: "Failure Modes",
+    level: "Advanced",
+    summary:
+      "A complex reveal or loop ending makes the mechanics more important than the story's human payoff.",
+    principle: "The puzzle should release meaning, not replace it.",
+    takeaways: [
+      "Complex closure still needs emotional and thematic consequence.",
+      "A diagrammable plot is not automatically a satisfying plot.",
+      "If the reveal leaves character pressure unchanged, the machinery has taken over.",
+    ],
+    overview:
+      "Puzzle-box collapse happens when a story's elaborate mechanics overwhelm the reasons readers cared about those mechanics. The ending may explain timelines, loops, clues, or layers, but the explanation arrives without enough cost, feeling, or transformation.",
+    examples: [
+      "The ending explains the time loop but leaves the protagonist's central choice emotionally unchanged.",
+      "A chain of reveals requires diagrams but does not alter theme, cost, or relationship.",
+    ],
+    related: [
+      "bootstrap-ending",
+      "causal-loop-closure",
+      "visible-machinery",
+      "weak-payoff",
+    ],
+  },
+  {
+    slug: "false-start",
+    title: "False Start",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "The opening teaches the reader to expect a story the book does not actually intend to tell.",
+    principle:
+      "An opening promise can evolve, but it cannot vanish without cost.",
+    takeaways: [
+      "False starts often come from a striking scene in the wrong mode.",
+      "The issue is not surprise, but mismatched contract.",
+      "A later pivot needs bridge, consequence, or deliberate reframe.",
+    ],
+    overview:
+      "A false start occurs when the opening establishes a genre, protagonist, question, tone, or engine that the book then abandons unintentionally. The reader's first contract becomes a source of resistance rather than momentum.",
+    examples: [
+      "The opening sells a murder inquiry, but the book becomes a courtship without carrying the inquiry's pressure forward.",
+      "A comic first chapter gives way to transparent tragedy with no tonal bridge.",
+    ],
+    related: ["reader-contract", "false-promise", "bait-and-switch-opening"],
+  },
+  {
+    slug: "throat-clearing",
+    title: "Throat Clearing",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "Prefatory material delays the real beginning without earning its delay.",
+    principle:
+      "The reader should not have to pass through warm-up pages to reach pressure.",
+    takeaways: [
+      "It often appears as abstract setup, backstory, itinerary, or mood-setting.",
+      "Some slowness is fine; inertness is the problem.",
+      "Cutting to desire, disturbance, or charged image often reveals the actual start.",
+    ],
+    overview:
+      "Throat clearing is opening material that prepares to begin instead of beginning. It may contain elegant prose or useful facts, but the reader cannot yet feel why this page is the threshold of the story.",
+    examples: [
+      "A novel spends five pages describing the town before anyone wants, fears, hides, or chooses anything.",
+      "A narrator explains why the story is difficult to tell before giving the reader a reason to listen.",
+    ],
+    related: ["incipit", "prologue", "exposition"],
+  },
+  {
+    slug: "context-before-pressure",
+    title: "Context Before Pressure",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "Background arrives before the reader has a reason to need it.",
+    principle: "Information lands when pressure makes it useful.",
+    takeaways: [
+      "The facts may be relevant later but still premature now.",
+      "Readers remember context better after a question has opened.",
+      "Move context closer to choice, conflict, or consequence.",
+    ],
+    overview:
+      "Context before pressure is an opening problem where history, worldbuilding, relationship explanation, or premise logic precedes the dramatic need for it. The reader receives answers before they have formed questions.",
+    examples: [
+      "The opening explains a dynasty before showing why the heir is in danger.",
+      "A chapter begins with travel logistics before establishing what the journey risks.",
+    ],
+    related: ["exposition", "over-exposition", "reader-memory-decay"],
+  },
+  {
+    slug: "overloaded-opening",
+    title: "Overloaded Opening",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "Too many names, rules, places, stakes, or mysteries arrive before orientation settles.",
+    principle:
+      "The first pages need a graspable thread before they can carry density.",
+    takeaways: [
+      "Density works better after the reader has an anchor.",
+      "One strong question beats six unranked questions.",
+      "Names and rules should arrive through use, pressure, or contrast.",
+    ],
+    overview:
+      "An overloaded opening gives the reader more material than they can organize: cast, terminology, lore, timeline, magic rules, political context, and danger all at once. The result is not richness but unstable attention.",
+    examples: [
+      "A fantasy first page introduces five kingdoms, three artifacts, four ranks, and no immediate desire.",
+      "A thriller opens with multiple agencies, acronyms, locations, and threats before anchoring a person.",
+    ],
+    related: ["info-dump", "world-first-opening", "reader-memory-decay"],
+  },
+  {
+    slug: "generic-action-opening",
+    title: "Generic Action Opening",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "The opening has motion or danger before it has meaning.",
+    principle: "Action grips when the reader can read desire, cost, and difference.",
+    takeaways: [
+      "Chases, fights, and escapes still need character pressure.",
+      "Speed cannot substitute for stakes.",
+      "The scene should reveal why this action belongs to this story.",
+    ],
+    overview:
+      "A generic action opening begins with physical urgency but withholds the context that would make the urgency matter. The reader sees movement but cannot yet attach it to character, cost, theme, or contract.",
+    examples: [
+      "A stranger runs through an alley while bullets fly, but no desire, relationship, or consequence is legible.",
+      "A battle opens the book before the reader knows what would change if either side wins.",
+    ],
+    related: ["cold-open", "character-in-motion-opening", "stakes"],
+  },
+  {
+    slug: "dead-air-opening",
+    title: "Dead-Air Opening",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "A scene begins before desire, pressure, disturbance, or interpretive charge is active.",
+    principle:
+      "Stillness can be powerful, but blankness cannot carry a threshold.",
+    takeaways: [
+      "The problem is not quiet; it is absence of pressure.",
+      "A charged image, want, contradiction, or question can activate stillness.",
+      "Opening too early often creates dead air.",
+    ],
+    overview:
+      "Dead-air opening describes pages where nothing yet seems to be at stake in action, voice, image, mood, mystery, or thought. The prose may be competent, but the reader has no active reason to lean forward.",
+    examples: [
+      "A character wakes, dresses, eats, and leaves without a want or disturbance shaping the routine.",
+      "A chapter describes weather and furniture before any pressure attaches to them.",
+    ],
+    related: ["ordinary-world-opening", "scene-goal-opening", "hook"],
+  },
+  {
+    slug: "bait-and-switch-opening",
+    title: "Bait-and-Switch Opening",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "An opening promise is used to attract attention and then abandoned rather than developed.",
+    principle:
+      "A switch can satisfy only when it transforms the bait into deeper contract.",
+    takeaways: [
+      "The reader may accept reframe, but not disposal.",
+      "The opening engine should leave consequence even if the book changes direction.",
+      "Marketing-like shock openings are especially vulnerable to this failure.",
+    ],
+    overview:
+      "Bait-and-switch opening is a sharper form of false start. The opening offers a premise, protagonist, threat, or mode that seems central, but the book drops it after it has done the work of grabbing attention.",
+    examples: [
+      "A violent prologue promises supernatural horror, but the rest of the book never returns to that danger or its consequences.",
+      "A first chapter centers a compelling POV character who disappears without becoming frame, wound, mystery, or cost.",
+    ],
+    related: ["false-start", "false-promise", "reader-contract"],
   },
   {
     slug: "dropped-thread",
@@ -4359,6 +6258,116 @@ export const entries: CraftEntry[] = [
     related: ["voice", "compression", "diction"],
   },
   {
+    slug: "under-rendering",
+    title: "Under-Rendering",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "The prose gives too little for the reader to picture, feel, or infer the scene.",
+    principle:
+      "Minimalism still needs enough embodied pressure to become experience.",
+    takeaways: [
+      "The reader needs anchors: place, body, object, mood, or consequence.",
+      "Omission fails when the missing material is necessary for orientation.",
+      "The cure is meaningful specificity, not decorative padding.",
+    ],
+    overview:
+      "Under-rendering happens when restraint crosses into insufficiency. The page withholds so much concrete or emotional material that the reader cannot build the intended image, relationship, or pressure.",
+    examples: [
+      "A confrontation consists only of dialogue with no body, room, or changing pressure.",
+      "A supposedly important object is named but never made visible, tactile, or consequential.",
+    ],
+    related: ["white-room-syndrome", "sensory-specificity", "selective-detail"],
+  },
+  {
+    slug: "false-economy",
+    title: "False Economy",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "Cutting so much that clarity, emotion, causality, or embodiment disappears.",
+    principle:
+      "Brevity is useful only when the remaining material still carries the load.",
+    takeaways: [
+      "Efficient prose is not merely shorter prose.",
+      "A missing beat may save words while costing comprehension.",
+      "Economy should preserve the reader's path through cause, feeling, and image.",
+    ],
+    overview:
+      "False economy is the failure state of aggressive cutting. The draft becomes leaner in word count but poorer in legibility, emotional transition, causal connection, or sensory life.",
+    examples: [
+      "A revision removes the sentence that explains why a character changes their mind.",
+      "A scene cuts description so tightly that the reader no longer knows where anyone is.",
+    ],
+    related: ["compression", "restraint", "under-rendering"],
+  },
+  {
+    slug: "vague-minimalism",
+    title: "Vague Minimalism",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "Sparse prose mistakes generic thinness for subtlety.",
+    principle:
+      "Subtlety needs exact cues; vagueness merely withholds.",
+    takeaways: [
+      "Minimal language still needs distinctive nouns, pressures, and relations.",
+      "Abstract restraint often reads as evasion.",
+      "If every scene feels misty in the same way, the prose is not doing enough selection.",
+    ],
+    overview:
+      "Vague minimalism occurs when prose is spare but not evocative. It avoids excess, but also avoids the concrete signals that let readers complete the experience on their own terms.",
+    examples: [
+      "A room is described only as small, old, and sad.",
+      "An emotional exchange is reduced to pauses without any specific behaviour or object carrying the silence.",
+    ],
+    related: ["evocative-minimalism", "selective-detail", "negative-space"],
+  },
+  {
+    slug: "over-description",
+    title: "Over-Description",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "The prose supplies so much detail that the reader has no room to complete the picture.",
+    principle:
+      "Description should guide attention, not occupy all of it.",
+    takeaways: [
+      "Inventory can flatten the very scene it tries to enrich.",
+      "Too many details make it hard to know what matters.",
+      "The strongest description selects, ranks, and releases.",
+    ],
+    overview:
+      "Over-description is the descriptive counterpart to over-explanation. The prose names every visible feature, gesture, or texture until the reader is managing a list rather than imagining a scene.",
+    examples: [
+      "A room description itemizes every object before the scene's pressure is clear.",
+      "A character's clothing is catalogued in full when one revealing detail would do.",
+    ],
+    related: ["selective-detail", "purple-prose", "reader-completion"],
+  },
+  {
+    slug: "interpretive-over-control",
+    title: "Interpretive Over-Control",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "The prose tells the reader exactly what to see, feel, or conclude.",
+    principle:
+      "Meaning lands more strongly when the reader is allowed to participate in making it.",
+    takeaways: [
+      "It often appears as redundant explanation after an already clear scene.",
+      "It can shrink symbols, emotions, jokes, and moral pressure.",
+      "Trusting the reader does not mean removing guidance; it means stopping before control becomes coercion.",
+    ],
+    overview:
+      "Interpretive over-control occurs when the narration closes down the reader's inference by explaining the intended response too tightly. It is the enemy of reader completion: instead of inviting participation, it hands down a verdict.",
+    examples: [
+      "After a character refuses to look at their father, the narration explains exactly what this proves about their childhood.",
+      "A symbol is interpreted on the page each time it appears.",
+    ],
+    related: ["reader-nudge-failure", "editorializing", "reader-completion"],
+  },
+  {
     slug: "melodrama",
     title: "Melodrama",
     category: "Failure Modes",
@@ -4537,5 +6546,313 @@ export const entries: CraftEntry[] = [
       "A novel condemns cruelty while giving cruel characters all the narrative glamour.",
     ],
     related: ["theme", "countertheme", "moral-premise"],
+  },
+  {
+    slug: "broken-promise",
+    title: "Broken Promise",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "The story trains the reader to expect a payoff, then never meaningfully addresses it.",
+    principle:
+      "A promise can be transformed or denied, but it cannot simply evaporate.",
+    takeaways: [
+      "Broken promise damages trust more than ordinary surprise.",
+      "The missing payoff may be plot, theme, relationship, genre, or series-scale fulfilment.",
+      "Subversion still needs acknowledgement and consequence.",
+    ],
+    overview:
+      "Broken promise occurs when the text establishes a destination, question, relationship, genre contract, or future event with enough weight for the reader to track, then lets it vanish or resolves it in a way that does not answer the promise made.",
+    examples: [
+      "A trilogy repeatedly promises a confrontation that happens off-page and changes nothing.",
+      "A cover and opening sell a mystery, but the book abandons the inquiry halfway through.",
+    ],
+    related: ["promised-destination", "reader-contract", "unpaid-setup"],
+  },
+  {
+    slug: "false-promise",
+    title: "False Promise",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "The story sells one kind of experience and delivers another without earning the shift.",
+    principle:
+      "Expectation can be revised, but the reader must be brought along.",
+    takeaways: [
+      "False promise can come from opening pages, genre cues, title, cover, or premise.",
+      "A deliberate genre turn needs preparation.",
+      "Readers feel cheated when the initial contract was only bait.",
+    ],
+    overview:
+      "False promise is the mismatch between the experience the work trains the reader to expect and the experience it actually provides. It is especially damaging when the promise was the reason the reader entered the book.",
+    examples: [
+      "A book begins as a murder inquiry, drops the murder, and never replaces the dramatic question.",
+      "A comic cover and copy mask a bleak tragedy without signalling the tonal turn.",
+    ],
+    related: ["reader-contract", "dramatic-question", "paratextual-promise"],
+  },
+  {
+    slug: "bait-and-switch",
+    title: "Bait and Switch",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "A stronger form of false promise where the reader feels deliberately lured into the wrong book.",
+    principle:
+      "Surprise is welcome; mis-selling is not.",
+    takeaways: [
+      "It often involves genre, protagonist, romance, premise, or advertised conflict.",
+      "A switch can work if the first promise is honoured at a deeper level.",
+      "It fails when the bait is discarded rather than transformed.",
+    ],
+    overview:
+      "Bait and switch is the reader's sense that one experience was used to sell access to another. It is not simply a plot twist; it is a contract problem.",
+    examples: [
+      "A novel marketed and opened as a heist abandons the heist for unrelated court politics.",
+      "A sequel promises the established protagonist, then replaces them without making replacement the point.",
+    ],
+    related: ["false-promise", "paratext-mismatch", "reader-contract"],
+  },
+  {
+    slug: "wrong-dramatic-question",
+    title: "Wrong Dramatic Question",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "The story answers a question the reader was not actually holding.",
+    principle:
+      "Resolution satisfies only if it meets the active question.",
+    takeaways: [
+      "The reader's question may differ from the author's intended question.",
+      "Openings, genre, and emphasis teach the reader what to track.",
+      "A technically resolved plot can still feel unsatisfying if it answers the wrong pressure.",
+    ],
+    overview:
+      "Wrong dramatic question occurs when narrative emphasis and reader curiosity form around one question, while the ending resolves another. The result feels like a miss even when many events are tied off.",
+    examples: [
+      "The reader waits to learn whether the family can forgive, but the ending only reveals who stole the money.",
+      "A survival story resolves a romance subplot while ignoring the survival ethics it foregrounded.",
+    ],
+    related: ["dramatic-question", "closure", "false-promise"],
+  },
+  {
+    slug: "over-telegraphing",
+    title: "Over-Telegraphing",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "The story makes a future reveal, event, or payoff too mechanically visible.",
+    principle:
+      "Preparation should survive rereading, not pre-empty reading.",
+    takeaways: [
+      "It is the failure version of foreshadowing, setup, or signposting.",
+      "The reader arrives at the reveal before the story does.",
+      "Announced destination is not over-telegraphing when the broad endpoint is meant to be known.",
+    ],
+    overview:
+      "Over-telegraphing happens when cues to a future turn become so pointed that the reader feels no discovery. It differs from promise-based suspense because the problem is not known destination, but premature certainty about a specific mechanism or reveal.",
+    examples: [
+      "A supposedly hidden betrayer is marked by ominous glances in every scene.",
+      "A key object is described with identical emphasis three times before its obvious use.",
+    ],
+    related: ["telegraphing", "over-signaled-setup", "foreshadowing"],
+  },
+  {
+    slug: "under-preparing",
+    title: "Under-Preparing",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "A payoff arrives without enough prior promise, groundwork, or reader memory.",
+    principle:
+      "A surprise still needs roots.",
+    takeaways: [
+      "Under-prepared turns feel arbitrary even when exciting.",
+      "The missing work may be causal, emotional, thematic, or world-rule preparation.",
+      "Small reminders can make late payoffs feel earned.",
+    ],
+    overview:
+      "Under-preparing is the inverse of over-telegraphing. The story withholds or neglects the groundwork that would let a later event feel inevitable in retrospect.",
+    examples: [
+      "A character uses a skill at the climax that the story never established.",
+      "A political betrayal changes everything, but the betrayer had no prior pressure or motive.",
+    ],
+    related: ["setup-and-payoff", "weak-payoff", "reader-memory-decay"],
+  },
+  {
+    slug: "promise-drift",
+    title: "Promise Drift",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "A book or series wanders away from the promise that created reader investment.",
+    principle:
+      "Expansion should deepen the promise, not forget it.",
+    takeaways: [
+      "Drift can occur through lore sprawl, subplot accumulation, or tonal migration.",
+      "The promise can evolve if the evolution is legible.",
+      "Readers become restless when old investments stop exerting pressure.",
+    ],
+    overview:
+      "Promise drift is the gradual loss of connection between the story's active pages and the contract that originally pulled the reader forward. It is common in long series and middle installments.",
+    examples: [
+      "A quest series spends a volume on politics that never changes the quest.",
+      "A relationship that anchored the first book disappears from emotional consequence in book two.",
+    ],
+    related: ["promised-destination", "escalating-promise", "dropped-thread"],
+  },
+  {
+    slug: "middle-book-stall",
+    title: "Middle-Book Stall",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "A middle installment functions as connective tissue without its own satisfying movement.",
+    principle:
+      "A bridge still needs arches.",
+    takeaways: [
+      "The book may move pieces without changing pressure.",
+      "A middle installment needs local questions, reversals, and costs.",
+      "Transformation can substitute for final resolution, but not for movement.",
+    ],
+    overview:
+      "Middle-book stall is the trilogy or series problem where an installment delays final fulfilment but does not generate enough independent arc. It feels like waiting room rather than bridge.",
+    examples: [
+      "Characters travel for an entire book and end with the same choices they began with.",
+      "The volume exists mainly to reveal lore needed for the finale.",
+    ],
+    related: ["bridge-book", "saggy-middle", "delayed-fulfilment"],
+  },
+  {
+    slug: "lore-drag",
+    title: "Lore Drag",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "Accumulated world information slows story pressure instead of powering it.",
+    principle:
+      "Lore should behave like pressure, not storage.",
+    takeaways: [
+      "The problem is not deep worldbuilding, but inert delivery.",
+      "Returning readers may enjoy lore only when it changes stakes or interpretation.",
+      "Lore drag often pairs with recap drag in sequels.",
+    ],
+    overview:
+      "Lore drag occurs when mythology, history, rules, maps, factions, or terminology occupy attention without changing desire, conflict, or consequence. The reader learns more but feels less movement.",
+    examples: [
+      "A chapter pauses to explain dynastic history while no current decision depends on it.",
+      "A sequel repeatedly rehearses world rules already understood by returning readers.",
+    ],
+    related: ["iceberg-theory", "verisimilitude", "info-dump"],
+  },
+  {
+    slug: "recap-drag",
+    title: "Recap Drag",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "Sequel exposition over-explains what returning readers already know.",
+    principle:
+      "Refresh memory through consequence, not summary whenever possible.",
+    takeaways: [
+      "New readers need orientation; returning readers need momentum.",
+      "Recap is strongest when embedded in present pressure.",
+      "Repeated explanatory refreshers can make a sequel feel stalled at the threshold.",
+    ],
+    overview:
+      "Recap drag is the slowdown caused by reminding readers of prior-book events, rules, and relationships too heavily. The issue is especially common at the start of sequels.",
+    examples: [
+      "Every returning character is reintroduced with a paragraph of prior plot.",
+      "A magic rule is explained three times before it matters again.",
+    ],
+    related: ["series-knowledge", "reader-memory-decay", "exposition"],
+  },
+  {
+    slug: "reader-nudge-failure",
+    title: "Reader Nudge Failure",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "The prose over-directs interpretation and reduces the reader's pleasure of inference.",
+    principle:
+      "Trust the reader enough to let meaning arrive.",
+    takeaways: [
+      "It often appears as explanation after demonstration.",
+      "It can flatten irony, theme, symbolism, and emotion.",
+      "The cure is usually stronger scene pressure, not subtler lecturing.",
+    ],
+    overview:
+      "Reader nudge failure occurs when the work repeatedly tells the reader what to notice, feel, or conclude. It is the failure state of signposting, editorializing, and thematic emphasis.",
+    examples: [
+      "A scene clearly shows shame, then the narration labels the shame twice.",
+      "A symbol is accompanied by interpretive commentary at every appearance.",
+    ],
+    related: ["reader-nudge", "editorializing", "telling-instead-of-showing"],
+  },
+  {
+    slug: "visible-machinery",
+    title: "Visible Machinery",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "The reader notices the plot, theme, or device operating as machinery rather than experience.",
+    principle:
+      "Craft should create pressure before it advertises construction.",
+    takeaways: [
+      "Visible machinery is not always bad; metafiction and comedy may want it.",
+      "It becomes a flaw when immersion or transparency is the intended effect.",
+      "It often comes from forced causality, obvious setup, or didactic theme.",
+    ],
+    overview:
+      "Visible machinery is the failure state where the story's design becomes too exposed. The reader sees the gears moving characters, clues, symbols, or outcomes into place.",
+    examples: [
+      "A mentor dies exactly when the hero needs motivation, with no independent life or consequence.",
+      "A clue is placed so obviously that the scene stops feeling like a scene.",
+    ],
+    related: ["visible-hand-of-the-author", "contrivance", "over-telegraphing"],
+  },
+  {
+    slug: "immersion-break",
+    title: "Immersion Break",
+    category: "Failure Modes",
+    level: "Foundational",
+    summary:
+      "A moment unintentionally pulls the reader out of the story's intended experience.",
+    principle:
+      "A break in immersion redirects attention from story pressure to story construction.",
+    takeaways: [
+      "Causes include continuity error, tonal mismatch, anachronism, visible authorial hand, or prose misfit.",
+      "Some works intentionally break immersion for alienation or comic effect.",
+      "The failure depends on the contract the work has made.",
+    ],
+    overview:
+      "Immersion break is the reader-facing effect of being ejected from the fictional or rhetorical experience. It is broad, but useful because many different craft failures share this final symptom.",
+    examples: [
+      "A solemn medieval scene uses contemporary office slang without formal reason.",
+      "A plot rescue is so convenient that the reader stops fearing the danger.",
+    ],
+    related: ["breaking-immersion", "reader-contract", "tonal-incoherence"],
+  },
+  {
+    slug: "paratext-mismatch",
+    title: "Paratext Mismatch",
+    category: "Failure Modes",
+    level: "Intermediate",
+    summary:
+      "The title, cover, copy, or presentation promises an experience the text does not provide.",
+    principle:
+      "The threshold of the book is part of the contract.",
+    takeaways: [
+      "Mismatch can be tonal, generic, demographic, or premise-based.",
+      "It may not be the writer's sole responsibility, but it shapes reading.",
+      "The deeper the mismatch, the more the text must re-teach the reader how to read it.",
+    ],
+    overview:
+      "Paratext mismatch is the failure of external presentation and internal experience to align. Readers may feel they were invited into one book and handed another.",
+    examples: [
+      "A cover promises cosy mystery while the book delivers graphic psychological horror.",
+      "A title promises a siege that functions only as a background rumour.",
+    ],
+    related: ["paratextual-promise", "false-promise", "bait-and-switch"],
   },
 ];

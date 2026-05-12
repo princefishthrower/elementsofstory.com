@@ -1,5 +1,6 @@
 import {
   Network,
+  DoorOpen,
   Route,
   Sparkles,
   Quote,
@@ -10,12 +11,14 @@ import {
   BriefcaseBusiness,
   Globe2,
   Brain,
+  Goal,
   Link2,
   PenLine,
   LibraryBig,
   Music2,
   Drama,
   Wrench,
+  MessagesSquare,
   TriangleAlert,
   type LucideIcon,
 } from "lucide-react";
@@ -23,6 +26,7 @@ import type { CraftCategory } from "@/types/craft";
 
 export const categoryIcons: Record<CraftCategory, LucideIcon> = {
   "Structure": Network,
+  "Openings & Thresholds": DoorOpen,
   "Plot Mechanics": Route,
   "Devices": Sparkles,
   "Rhetoric & Figures": Quote,
@@ -32,6 +36,7 @@ export const categoryIcons: Record<CraftCategory, LucideIcon> = {
   "Narratology": Eye,
   "Worldbuilding": Globe2,
   "Reader Psychology": Brain,
+  "Reader Contract & Promise": Goal,
   "Continuity": Link2,
   "Prose & Style": PenLine,
   "Genre & Form": LibraryBig,
@@ -39,6 +44,7 @@ export const categoryIcons: Record<CraftCategory, LucideIcon> = {
   "Drama": Drama,
   "Mechanical": Wrench,
   "Publishing": BriefcaseBusiness,
+  "Writer & Reader Slang": MessagesSquare,
   "Failure Modes": TriangleAlert,
 };
 
@@ -57,6 +63,7 @@ export type CategoryStyle = {
 
 export const CATEGORY_ORDER: CraftCategory[] = [
   "Structure",
+  "Openings & Thresholds",
   "Plot Mechanics",
   "Devices",
   "Rhetoric & Figures",
@@ -66,6 +73,7 @@ export const CATEGORY_ORDER: CraftCategory[] = [
   "Narratology",
   "Worldbuilding",
   "Reader Psychology",
+  "Reader Contract & Promise",
   "Continuity",
   "Prose & Style",
   "Genre & Form",
@@ -73,15 +81,17 @@ export const CATEGORY_ORDER: CraftCategory[] = [
   "Drama",
   "Mechanical",
   "Publishing",
+  "Writer & Reader Slang",
   "Failure Modes",
 ];
 
 // Soft, low-saturation palette — meant to differentiate categories without
 // breaking the editorial monochrome feel. Hues chosen by association:
-// structure→slate, motion→amber, devices→violet, character→rose,
+// structure→slate, openings→purple, motion→amber, devices→violet, character→rose,
 // rhetoric→fuchsia, theme→indigo, voice→teal, narratology→blue,
-// world→emerald, mind→sky, link→cyan, prose→stone, genre→yellow,
-// poetry→pink, drama→red, mechanical→zinc, publishing→lime,
+// world→emerald, mind→sky, promise→green, link→cyan, prose→stone,
+// genre→yellow, poetry→pink, drama→red, mechanical→zinc, publishing→lime,
+// slang→gray,
 // failure→muted orange (not red).
 export const categoryStyles: Record<CraftCategory, CategoryStyle> = {
   "Structure": {
@@ -95,6 +105,18 @@ export const categoryStyles: Record<CraftCategory, CategoryStyle> = {
     tileChip: "bg-slate-200",
     tileBorder: "border-slate-200",
     tileRing: "ring-slate-400",
+  },
+  "Openings & Thresholds": {
+    iconBg: "bg-purple-50",
+    iconText: "text-purple-700",
+    surface: "bg-purple-50/60",
+    accent: "border-l-purple-300",
+    tileBg: "bg-purple-50",
+    tileBgHover: "hover:bg-purple-100",
+    tileBgActive: "bg-purple-100",
+    tileChip: "bg-purple-200",
+    tileBorder: "border-purple-200",
+    tileRing: "ring-purple-400",
   },
   "Plot Mechanics": {
     iconBg: "bg-amber-50",
@@ -204,6 +226,18 @@ export const categoryStyles: Record<CraftCategory, CategoryStyle> = {
     tileBorder: "border-sky-200",
     tileRing: "ring-sky-400",
   },
+  "Reader Contract & Promise": {
+    iconBg: "bg-green-50",
+    iconText: "text-green-700",
+    surface: "bg-green-50/60",
+    accent: "border-l-green-300",
+    tileBg: "bg-green-50",
+    tileBgHover: "hover:bg-green-100",
+    tileBgActive: "bg-green-100",
+    tileChip: "bg-green-200",
+    tileBorder: "border-green-200",
+    tileRing: "ring-green-400",
+  },
   "Continuity": {
     iconBg: "bg-cyan-50",
     iconText: "text-cyan-700",
@@ -287,6 +321,18 @@ export const categoryStyles: Record<CraftCategory, CategoryStyle> = {
     tileChip: "bg-lime-200",
     tileBorder: "border-lime-200",
     tileRing: "ring-lime-400",
+  },
+  "Writer & Reader Slang": {
+    iconBg: "bg-gray-100",
+    iconText: "text-gray-700",
+    surface: "bg-gray-50",
+    accent: "border-l-gray-300",
+    tileBg: "bg-gray-50",
+    tileBgHover: "hover:bg-gray-100",
+    tileBgActive: "bg-gray-100",
+    tileChip: "bg-gray-200",
+    tileBorder: "border-gray-200",
+    tileRing: "ring-gray-400",
   },
   "Failure Modes": {
     iconBg: "bg-orange-50",

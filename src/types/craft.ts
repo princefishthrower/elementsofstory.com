@@ -1,5 +1,6 @@
 export type CraftCategory =
   | "Structure"
+  | "Openings & Thresholds"
   | "Plot Mechanics"
   | "Devices"
   | "Rhetoric & Figures"
@@ -9,6 +10,7 @@ export type CraftCategory =
   | "Narratology"
   | "Worldbuilding"
   | "Reader Psychology"
+  | "Reader Contract & Promise"
   | "Continuity"
   | "Prose & Style"
   | "Genre & Form"
@@ -16,6 +18,7 @@ export type CraftCategory =
   | "Drama"
   | "Mechanical"
   | "Publishing"
+  | "Writer & Reader Slang"
   | "Failure Modes";
 
 export type CraftLevel = "Foundational" | "Intermediate" | "Advanced";
