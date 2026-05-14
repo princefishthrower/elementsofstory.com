@@ -1,8 +1,16 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { LayoutGrid, ArrowUpNarrowWide, ArrowDownWideNarrow } from "lucide-react";
+import {
+  LayoutGrid,
+  ArrowUpNarrowWide,
+  ArrowDownWideNarrow,
+  ChevronDown,
+  Search,
+  X,
+} from "lucide-react";
 import { categoryIcons, categoryStyles, CATEGORY_ORDER } from "@/lib/icons";
+import { genericSearch } from "@/lib/search";
 import { EntryCard } from "@/components/EntryCard";
 import type { CraftCategory, CraftEntry, CraftLevel } from "@/types/craft";
 
@@ -17,27 +25,57 @@ const LEVEL_RANK: Record<CraftLevel, number> = {
 export function EntriesBrowser({ entries }: Props) {
   const [active, setActive] = useState<CraftCategory | null>(null);
   const [sortAsc, setSortAsc] = useState(true);
+  const [query, setQuery] = useState("");
+  const [categoriesExpanded, setCategoriesExpanded] = useState(true);
+  const hasQuery = query.trim() !== "";
+
+  const handleQueryChange = (nextQuery: string) => {
+    const nextHasQuery = nextQuery.trim() !== "";
+    setQuery(nextQuery);
+    if (!nextHasQuery) {
+      setCategoriesExpanded(true);
+      return;
+    }
+    if (!hasQuery) {
+      setCategoriesExpanded(false);
+    }
+  };
+
+  const clearQuery = () => {
+    setQuery("");
+    setCategoriesExpanded(true);
+  };
+
+  const titleMatches = useMemo(
+    () => entries.filter((entry) => genericSearch(entry, ["title"], query)),
+    [entries, query],
+  );
 
   const counts = useMemo(() => {
     const map = new Map<CraftCategory, number>();
-    for (const e of entries) {
+    for (const e of titleMatches) {
       map.set(e.category, (map.get(e.category) ?? 0) + 1);
     }
     return map;
-  }, [entries]);
+  }, [titleMatches]);
 
-  const visibleCategories = CATEGORY_ORDER.filter(
-    (c) => (counts.get(c) ?? 0) > 0,
-  );
+  const visibleCategories = CATEGORY_ORDER.filter((category) => {
+    if (hasQuery) {
+      return (counts.get(category) ?? 0) > 0;
+    }
+    return entries.some((entry) => entry.category === category);
+  });
 
   const filtered = useMemo(() => {
     const list =
-      active === null ? entries : entries.filter((e) => e.category === active);
+      active === null
+        ? titleMatches
+        : titleMatches.filter((e) => e.category === active);
     return [...list].sort((a, b) => {
       const diff = LEVEL_RANK[a.level] - LEVEL_RANK[b.level];
       return sortAsc ? diff : -diff;
     });
-  }, [active, entries, sortAsc]);
+  }, [active, sortAsc, titleMatches]);
 
   return (
     <>
@@ -46,26 +84,86 @@ export function EntriesBrowser({ entries }: Props) {
           Browse by category
         </h2>
 
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          <CategoryTile
-            label="All"
-            count={entries.length}
-            isActive={active === null}
-            anyActive={active !== null}
-            onClick={() => setActive(null)}
-          />
-          {visibleCategories.map((cat) => (
-            <CategoryTile
-              key={cat}
-              category={cat}
-              label={cat}
-              count={counts.get(cat) ?? 0}
-              isActive={active === cat}
-              anyActive={active !== null}
-              onClick={() => setActive(active === cat ? null : cat)}
+        <div className="mt-5 max-w-xl">
+          <label htmlFor="entry-search" className="sr-only">
+            Search entries by title
+          </label>
+          <div className="relative">
+            <Search
+              aria-hidden
+              className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-neutral-400"
+              strokeWidth={1.8}
             />
-          ))}
+            <input
+              id="entry-search"
+              type="search"
+              value={query}
+              onChange={(event) => handleQueryChange(event.target.value)}
+              placeholder="Search entries"
+              className="h-11 w-full rounded-xl border border-neutral-200 bg-white pl-10 pr-10 text-sm text-neutral-900 outline-none transition placeholder:text-neutral-400 hover:border-neutral-300 focus:border-neutral-900 [&::-webkit-search-cancel-button]:appearance-none"
+            />
+            {hasQuery && (
+              <button
+                type="button"
+                onClick={clearQuery}
+                aria-label="Clear search"
+                className="absolute right-2 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-neutral-400 transition hover:bg-neutral-100 hover:text-neutral-700 focus:outline-none focus-visible:bg-neutral-100 focus-visible:text-neutral-900"
+              >
+                <X aria-hidden className="h-4 w-4" strokeWidth={1.8} />
+              </button>
+            )}
+          </div>
         </div>
+
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            aria-controls="category-grid"
+            aria-expanded={categoriesExpanded}
+            onClick={() => setCategoriesExpanded((expanded) => !expanded)}
+            className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white px-3 py-1.5 text-xs font-medium text-neutral-700 transition hover:border-neutral-400 hover:text-neutral-900 focus:outline-none focus-visible:border-neutral-900"
+          >
+            {categoriesExpanded ? "Hide categories" : "Show categories"}
+            <ChevronDown
+              aria-hidden
+              className={`h-3.5 w-3.5 transition ${
+                categoriesExpanded ? "rotate-180" : ""
+              }`}
+              strokeWidth={1.8}
+            />
+          </button>
+          {hasQuery && !categoriesExpanded && (
+            <p className="text-xs text-neutral-500">
+              Categories are hidden while filtering.
+            </p>
+          )}
+        </div>
+
+        {categoriesExpanded && (
+          <div
+            id="category-grid"
+            className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4"
+          >
+            <CategoryTile
+              label="All"
+              count={titleMatches.length}
+              isActive={active === null}
+              anyActive={active !== null}
+              onClick={() => setActive(null)}
+            />
+            {visibleCategories.map((cat) => (
+              <CategoryTile
+                key={cat}
+                category={cat}
+                label={cat}
+                count={counts.get(cat) ?? 0}
+                isActive={active === cat}
+                anyActive={active !== null}
+                onClick={() => setActive(active === cat ? null : cat)}
+              />
+            ))}
+          </div>
+        )}
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-12">
@@ -110,6 +208,11 @@ export function EntriesBrowser({ entries }: Props) {
             <EntryCard key={entry.slug} entry={entry} />
           ))}
         </div>
+        {filtered.length === 0 && (
+          <p className="mt-6 rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-6 text-sm text-neutral-600">
+            No entries match that title.
+          </p>
+        )}
       </section>
     </>
   );
