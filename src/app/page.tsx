@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Hero } from "@/components/Hero";
 import { EntriesBrowser } from "@/components/EntriesBrowser";
 import { getAllEntries } from "@/lib/entries";
@@ -8,7 +9,9 @@ export default function HomePage() {
   return (
     <>
       <Hero entryCount={entries.length} />
-      <EntriesBrowser entries={entries} />
+      <Suspense fallback={null}>
+        <EntriesBrowser entries={entries} />
+      </Suspense>
     </>
   );
 }

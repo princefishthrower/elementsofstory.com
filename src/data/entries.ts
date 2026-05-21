@@ -105,6 +105,7 @@ export const entries: CraftEntry[] = [
     title: "In Medias Res",
     category: "Structure",
     level: "Foundational",
+    aliases: ["In Medias Res Opening", "Middle of the Action"],
     summary: "The story opens inside the action, not before it.",
     principle:
       "Beginning in motion forces the reader to ride the current; orientation arrives along the way.",
@@ -120,7 +121,29 @@ export const entries: CraftEntry[] = [
       "An epic begins on the seventh year of the war.",
       "A chapter starts mid-conversation, the subject of which becomes clear by the end.",
     ],
-    related: ["three-act-structure", "frame-narrative", "scene-vs-summary"],
+    related: ["three-act-structure", "frame-narrative", "cold-open", "scene-vs-summary"],
+  },
+  {
+    slug: "inclusio",
+    title: "Inclusio",
+    category: "Structure",
+    level: "Advanced",
+    aliases: ["Ring Composition", "Frame Composition", "Circular Structure"],
+    summary:
+      "A passage or work closes by returning to its opening word, image, place, or action.",
+    principle: "A return matters when it changes what the beginning means.",
+    takeaways: [
+      "Inclusio can operate at sentence, scene, chapter, or whole-book scale.",
+      "The closing echo should register change, not merely symmetry.",
+      "At large scale, ring composition can make a story feel complete without feeling linear.",
+    ],
+    overview:
+      "Inclusio is a framing pattern in which an opening element returns at the end of a unit. The return may be a phrase, image, place, gesture, or situation. Its craft force lies in making the reader compare first meaning with final meaning.",
+    examples: [
+      "A chapter opens with a character closing his eyes and ends when he opens them changed.",
+      "A journey begins and ends at the same house, but the house no longer means safety.",
+    ],
+    related: ["frame-narrative", "echo-opening", "motif", "repetition"],
   },
   {
     slug: "frame-narrative",
@@ -1669,6 +1692,7 @@ export const entries: CraftEntry[] = [
     title: "Narrative Distance",
     category: "Narrative Delivery",
     level: "Advanced",
+    aliases: ["Psychic Distance"],
     summary:
       "How close the prose stands to a character's immediate experience.",
     principle: "Distance is not fixed; it modulates within paragraphs.",
@@ -1684,13 +1708,19 @@ export const entries: CraftEntry[] = [
       "Medium: 'A horse stood across the field, dark in the long grass.'",
       "Close: 'Ember. The grass had hidden him. He was here.'",
     ],
-    related: ["point-of-view", "free-indirect-discourse", "voice"],
+    related: [
+      "point-of-view",
+      "free-indirect-discourse",
+      "free-direct-discourse",
+      "time-stretch",
+    ],
   },
   {
     slug: "free-indirect-discourse",
     title: "Free Indirect Discourse",
     category: "Narrative Delivery",
     level: "Advanced",
+    aliases: ["Free Indirect Style"],
     summary:
       "Third-person prose that adopts a character's voice and judgement without quoting it.",
     principle:
@@ -1707,7 +1737,92 @@ export const entries: CraftEntry[] = [
       "The fool. Hadn't he been told three times.",
       "The town was beautiful, if you didn't look at it for too long.",
     ],
-    related: ["point-of-view", "narrative-distance", "voice", "irony"],
+    related: [
+      "point-of-view",
+      "narrative-distance",
+      "indirect-discourse",
+      "free-direct-discourse",
+    ],
+  },
+  {
+    slug: "indirect-discourse",
+    title: "Indirect Discourse",
+    category: "Narrative Delivery",
+    level: "Foundational",
+    aliases: ["Reported Speech", "Reported Thought"],
+    summary: "Speech or thought reported by the narrator rather than quoted directly.",
+    principle: "Indirect discourse compresses utterance while preserving its narrative function.",
+    takeaways: [
+      "It is useful when the content matters more than the exact wording.",
+      "It increases narrative distance compared with direct quotation.",
+      "Too much reported speech can flatten dramatic immediacy.",
+    ],
+    overview:
+      "Indirect discourse reports what a character said or thought through the narrator's grammar: he said that he would leave, she wondered whether the door was locked. It trades surface immediacy for economy, control, and distance.",
+    examples: [
+      "He told her he was leaving in the morning.",
+      "She wondered whether anyone had noticed the missing key.",
+    ],
+    related: [
+      "free-indirect-discourse",
+      "free-direct-discourse",
+      "narrative-distance",
+      "scene-vs-summary",
+    ],
+  },
+  {
+    slug: "free-direct-discourse",
+    title: "Free Direct Discourse",
+    category: "Narrative Delivery",
+    level: "Advanced",
+    aliases: ["Free Direct Thought", "Unattributed Interior Thought"],
+    summary:
+      "A character's thought or speech appears directly without quotation or attribution.",
+    principle: "Free direct gives interiority a bare surface.",
+    takeaways: [
+      "It can drop the reader straight into thought without explanatory scaffolding.",
+      "It is usually sharper in short bursts than in long passages.",
+      "The surrounding point of view must make the speaker unmistakable.",
+    ],
+    overview:
+      "Free direct discourse presents a character's words or thoughts as direct language without tags, quotation marks, or first-person framing by the narrator. It sits near interior monologue but often appears as a local flash of unmediated thought.",
+    examples: [
+      "I cannot go back. Not after that.",
+      "No. Not this room. Not again.",
+    ],
+    related: [
+      "free-indirect-discourse",
+      "interior-monologue",
+      "narrative-distance",
+      "stream-of-consciousness",
+    ],
+  },
+  {
+    slug: "time-stretch",
+    title: "Time Stretch",
+    category: "Narrative Delivery",
+    level: "Intermediate",
+    aliases: ["Temporal Expansion", "Time Expansion", "Dilated Moment"],
+    summary:
+      "A brief physical moment expands to hold perception, memory, or thought.",
+    principle: "Clock time can pause when reading time needs pressure.",
+    takeaways: [
+      "It lets interiority, dread, recognition, or memory enter a small action.",
+      "A clear physical frame keeps the expansion anchored.",
+      "Overuse makes scenes feel stalled rather than intensified.",
+    ],
+    overview:
+      "Time stretch occurs when the narration dilates a small action, such as drawing breath or lifting a hand, so the prose can carry inner movement, perception, or memory. It is a local pacing tool: story-time slows while reading-time thickens.",
+    examples: [
+      "A character reaches for a cup and remembers the last hand that touched it.",
+      "The second before a door opens expands into a paragraph of dread.",
+    ],
+    related: [
+      "scene-vs-summary",
+      "prose-movement",
+      "narrative-distance",
+      "inclusio",
+    ],
   },
   {
     slug: "unreliable-narrator",
@@ -1756,6 +1871,7 @@ export const entries: CraftEntry[] = [
     title: "Strategic Omission",
     category: "Narrative Delivery",
     level: "Intermediate",
+    aliases: ["Omission"],
     summary:
       "Deliberately leaving out nonessential information so the reader can infer what matters.",
     principle:
@@ -1772,7 +1888,7 @@ export const entries: CraftEntry[] = [
       "A character's grief is carried by which room they refuse to enter.",
     ],
     failureModes: ["under-rendering", "false-economy"],
-    related: ["ellipsis", "subtext", "show-dont-tell", "reader-completion"],
+    related: ["ellipsis", "iceberg-theory", "subtext", "reader-completion"],
   },
 
   // ─────────────────────────────────────────────────────────
@@ -1849,6 +1965,7 @@ export const entries: CraftEntry[] = [
     title: "Iceberg Theory",
     category: "Worldbuilding",
     level: "Advanced",
+    aliases: ["Iceberg", "Iceberg Principle", "Theory of Omission"],
     summary: "Most of the world should be felt without being stated.",
     principle: "What the writer omits, if known, can be heard.",
     takeaways: [
@@ -1864,7 +1981,7 @@ export const entries: CraftEntry[] = [
       "A short story whose central event happens off-page.",
     ],
     failureModes: ["info-dump", "purple-prose"],
-    related: ["sensory-specificity", "subtext", "compression"],
+    related: ["strategic-omission", "subtext", "compression", "reader-completion"],
   },
   {
     slug: "hard-vs-soft-magic-system",
@@ -2282,7 +2399,7 @@ export const entries: CraftEntry[] = [
       "A scene of mounting fragments before a long, deliberate exhalation.",
       "Speech rendered as quick rhythm against narration's slower one.",
     ],
-    related: ["voice", "tone", "prose-movement"],
+    related: ["parataxis", "fragment", "cadence", "prose-movement"],
   },
   {
     slug: "compression",
@@ -3141,7 +3258,7 @@ export const entries: CraftEntry[] = [
       "A chapter ends before the verdict and the next begins years later.",
       "A memoir leaves a family rupture unnamed until the final third.",
     ],
-    related: ["scene-break", "transitions", "mystery-and-curiosity"],
+    related: ["strategic-omission", "scene-break", "transitions", "mystery-and-curiosity"],
   },
   {
     slug: "stream-of-consciousness",
@@ -3161,7 +3278,7 @@ export const entries: CraftEntry[] = [
       "A character walking through a city moves from shop signs to childhood memory to dread.",
       "A chapter follows thought rather than external sequence.",
     ],
-    related: ["interior-monologue", "free-indirect-discourse", "syntax"],
+    related: ["interior-monologue", "free-direct-discourse", "free-indirect-discourse", "syntax"],
   },
   {
     slug: "interior-monologue",
@@ -3181,7 +3298,12 @@ export const entries: CraftEntry[] = [
       "A character silently rehearses a confession while saying nothing aloud.",
       "A commuter's fear appears as repeated fragments rather than explanation.",
     ],
-    related: ["stream-of-consciousness", "narrative-distance", "identification"],
+    related: [
+      "stream-of-consciousness",
+      "free-direct-discourse",
+      "narrative-distance",
+      "identification",
+    ],
   },
   {
     slug: "metalepsis",
@@ -3916,7 +4038,7 @@ export const entries: CraftEntry[] = [
       "The ruined wedding was not ideal.",
       "She was not unaware of his fear.",
     ],
-    related: ["irony", "subtext", "tone"],
+    related: ["negative-construction", "irony", "subtext", "tone"],
   },
   {
     slug: "oxymoron",
@@ -3976,7 +4098,7 @@ export const entries: CraftEntry[] = [
       "We waited for rain. We waited for news. We waited for the door.",
       "I remember the road, I remember the smoke, I remember nothing after.",
     ],
-    related: ["repetition", "cadence", "sentence-rhythm"],
+    related: ["repetition", "epistrophe", "anadiplosis", "diacope"],
   },
   {
     slug: "epistrophe",
@@ -3996,7 +4118,7 @@ export const entries: CraftEntry[] = [
       "They lied in spring, they lied in court, they lied at the grave.",
       "No money for bread, no money for coal, no money for mercy.",
     ],
-    related: ["anaphora", "repetition", "cadence"],
+    related: ["anaphora", "repetition", "anadiplosis", "epanalepsis"],
   },
   {
     slug: "chiasmus",
@@ -4016,7 +4138,302 @@ export const entries: CraftEntry[] = [
       "She left the city for freedom and found freedom leaving the city.",
       "He shaped the law, and the law shaped him.",
     ],
-    related: ["inversion", "sentence-rhythm", "paradox"],
+    related: ["antimetabole", "antithesis", "inversion", "paradox"],
+  },
+  {
+    slug: "anadiplosis",
+    title: "Anadiplosis",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary:
+      "The last word or phrase of one unit returns at the start of the next.",
+    principle: "A repeated hinge turns one thought into the next.",
+    takeaways: [
+      "It creates chain logic, escalation, or inevitability.",
+      "The repeated term should change pressure as it crosses the hinge.",
+      "Too much chaining becomes sing-song or visibly mechanical.",
+    ],
+    overview:
+      "Anadiplosis links clauses, sentences, or lines by repeating the end of one as the beginning of the next. It is useful when one idea generates another and the prose wants the reader to feel that handoff.",
+    examples: [
+      "Fear became anger. Anger became a plan.",
+      "The door opened into a hall, and the hall opened into rain.",
+    ],
+    related: ["repetition", "anaphora", "epistrophe", "cadence"],
+  },
+  {
+    slug: "epanalepsis",
+    title: "Epanalepsis",
+    category: "Rhetoric & Figures",
+    level: "Advanced",
+    summary:
+      "A word or phrase returns at both the beginning and end of the same unit.",
+    principle: "The repeated frame makes the sentence close on itself.",
+    takeaways: [
+      "It can create closure, irony, emphasis, or fatal circularity.",
+      "The second occurrence should feel altered by what came between.",
+      "It is memorable but conspicuous, so it rewards restraint.",
+    ],
+    overview:
+      "Epanalepsis repeats an opening word or phrase at the end of a clause, sentence, or line. The figure makes the language feel self-enclosing, often turning a statement into an aphorism or verdict.",
+    examples: [
+      "Nothing frightened him now but nothing.",
+      "Home had taught her the cost of home.",
+    ],
+    related: ["inclusio", "repetition", "chiasmus", "cadence"],
+  },
+  {
+    slug: "diacope",
+    title: "Diacope",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary:
+      "A word or phrase repeats with a small interruption between the returns.",
+    principle: "The gap between repetitions lets feeling enter.",
+    takeaways: [
+      "It can sound intimate, desperate, ceremonial, comic, or obsessive.",
+      "The intervening words often sharpen address or emotional pitch.",
+      "Its force depends on rhythm as much as meaning.",
+    ],
+    overview:
+      "Diacope repeats a word or phrase after one or more intervening words. The interruption keeps the repetition from being static; the phrase returns with breath, address, or intensification.",
+    examples: [
+      "The house, the terrible house, waited.",
+      "Stay, just stay until morning.",
+    ],
+    related: ["repetition", "anaphora", "epistrophe", "sentence-rhythm"],
+  },
+  {
+    slug: "polyptoton",
+    title: "Polyptoton",
+    category: "Rhetoric & Figures",
+    level: "Advanced",
+    summary:
+      "Related forms of the same root word repeat in close proximity.",
+    principle: "A word family can make thought feel trapped, playful, or exact.",
+    takeaways: [
+      "It can create wit, emphasis, irony, or conceptual pressure.",
+      "The changed grammatical form should do real semantic work.",
+      "If forced, it sounds like wordplay pasted onto the sentence.",
+    ],
+    overview:
+      "Polyptoton repeats words derived from the same root in different forms. It lets the prose worry a concept from multiple grammatical angles: act and actor, love and lover, judge and judgement.",
+    examples: [
+      "He judged the judges by their eagerness to judge.",
+      "The promise promised less each time she repeated it.",
+    ],
+    related: ["repetition", "diction", "paradox", "cadence"],
+  },
+  {
+    slug: "antimetabole",
+    title: "Antimetabole",
+    category: "Rhetoric & Figures",
+    level: "Advanced",
+    summary:
+      "Words repeat in reverse order, making exact verbal mirror.",
+    principle: "Exact reversal turns syntax into argument.",
+    takeaways: [
+      "It is a stricter subtype of chiasmus.",
+      "The reversal should reveal reciprocity, irony, or moral inversion.",
+      "Because it is highly quotable, it can easily sound over-polished.",
+    ],
+    overview:
+      "Antimetabole repeats the same words in reverse order. Where chiasmus can mirror ideas or structures, antimetabole makes the mirror verbal and exact.",
+    examples: [
+      "She needed power to keep peace, and peace to keep power.",
+      "He did not own the house; the house owned him.",
+    ],
+    related: ["chiasmus", "antithesis", "isocolon", "sentence-rhythm"],
+  },
+  {
+    slug: "antithesis",
+    title: "Antithesis",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary:
+      "Contrasting ideas are set in parallel grammatical form.",
+    principle: "Parallel form makes contrast legible.",
+    takeaways: [
+      "It sharpens conflict by giving opposed ideas equal syntactic weight.",
+      "The grammar should clarify the opposition rather than merely decorate it.",
+      "Too neat a contrast can simplify a more complex emotional reality.",
+    ],
+    overview:
+      "Antithesis places contrasting meanings inside balanced or parallel structure. The reader feels the opposition because the sentence holds both sides in comparable shape.",
+    examples: [
+      "He wanted silence; she wanted an answer.",
+      "The city remembered its victories and forgot its dead.",
+    ],
+    related: ["chiasmus", "juxtaposition", "isocolon", "paradox"],
+  },
+  {
+    slug: "tricolon",
+    title: "Tricolon",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    aliases: ["Tricolon Crescens"],
+    summary:
+      "Three parallel elements create rhythm, progression, or completion.",
+    principle: "Three is the smallest number that feels like a pattern.",
+    takeaways: [
+      "The third element often confirms, twists, or enlarges the sequence.",
+      "A rising third member creates tricolon crescens.",
+      "Empty threes sound formulaic when the progression is only decorative.",
+    ],
+    overview:
+      "Tricolon arranges three parallel words, phrases, clauses, or sentences. Its force comes from patterned recurrence and the reader's expectation that the third beat will complete or transform the set.",
+    examples: [
+      "She packed the map, the knife, and the letter she had sworn to burn.",
+      "He came to bargain, to threaten, to beg.",
+    ],
+    related: ["isocolon", "antithesis", "cadence", "sentence-rhythm"],
+  },
+  {
+    slug: "isocolon",
+    title: "Isocolon",
+    category: "Rhetoric & Figures",
+    level: "Advanced",
+    summary:
+      "Parallel units of roughly equal length create balance and measure.",
+    principle: "Equal shape makes comparison unavoidable.",
+    takeaways: [
+      "It can create ceremonial balance, comedy, judgment, or rhetorical authority.",
+      "The matched lengths should serve meaning, not only sound tidy.",
+      "Strict symmetry can feel artificial in intimate prose.",
+    ],
+    overview:
+      "Isocolon places clauses or phrases of similar length and structure side by side. The balance invites the reader to compare, weigh, or hear formal equivalence.",
+    examples: [
+      "The law was old, the hunger new.",
+      "She gave him a name; he gave her a debt.",
+    ],
+    related: ["tricolon", "antithesis", "chiasmus", "cadence"],
+  },
+  {
+    slug: "asyndeton",
+    title: "Asyndeton",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary:
+      "Expected conjunctions are omitted between parallel words, phrases, or clauses.",
+    principle: "Omission can make a sequence strike faster.",
+    takeaways: [
+      "It accelerates rhythm and can create compression or urgency.",
+      "The missing conjunction makes items feel stacked or simultaneous.",
+      "Too much can make prose clipped in an unintended way.",
+    ],
+    overview:
+      "Asyndeton removes conjunctions where grammar or convention might expect them. The result is a faster, leaner sequence whose relations are carried by punctuation, order, and rhythm.",
+    examples: [
+      "He came, saw, understood too late.",
+      "The room held smoke, cards, silence, a gun.",
+    ],
+    related: ["polysyndeton", "parataxis", "punctuation", "cadence"],
+  },
+  {
+    slug: "polysyndeton",
+    title: "Polysyndeton",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary:
+      "Extra conjunctions accumulate between words, phrases, or clauses.",
+    principle: "Repeated conjunctions make accumulation audible.",
+    takeaways: [
+      "It can slow rhythm, enlarge scale, or create ritual weight.",
+      "The repeated and often matters as much sonically as logically.",
+      "Used carelessly, it bloats pace without adding force.",
+    ],
+    overview:
+      "Polysyndeton repeats conjunctions beyond strict necessity. It can make prose feel biblical, childlike, incantatory, breathless, comic, or overwhelming depending on context.",
+    examples: [
+      "And the rain came, and the river rose, and the lamps went out.",
+      "She brought bread and salt and candles and every key she owned.",
+    ],
+    related: ["asyndeton", "parataxis", "cadence", "repetition"],
+  },
+  {
+    slug: "zeugma",
+    title: "Zeugma",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary:
+      "One word governs two others in different or surprising senses.",
+    principle: "A shared verb can expose a hidden mismatch.",
+    takeaways: [
+      "It often creates wit by making grammar yoke unlike things.",
+      "The incongruity should sharpen meaning, not merely show cleverness.",
+      "It can compress action and emotional consequence into one turn.",
+    ],
+    overview:
+      "Zeugma uses one governing word, often a verb, with two or more objects that do not relate to it in the same way. The figure makes grammatical economy produce conceptual surprise.",
+    examples: [
+      "She lost her keys and her composure.",
+      "He opened the letter and an old wound.",
+    ],
+    related: ["diction", "irony", "compression", "zeugma"],
+  },
+  {
+    slug: "hendiadys",
+    title: "Hendiadys",
+    category: "Rhetoric & Figures",
+    level: "Advanced",
+    summary:
+      "Two joined words express one idea that might otherwise be modifier and noun.",
+    principle: "Doubling can make a single quality feel ceremonially divided.",
+    takeaways: [
+      "It often creates elevation, emphasis, or idiomatic ease.",
+      "The two terms should feel mutually intensifying rather than redundant.",
+      "It is subtle enough that writers often use it without naming it.",
+    ],
+    overview:
+      "Hendiadys expresses one idea through two terms joined by and. Instead of a simple modifier-noun relation, the language splits the idea into a small pair, giving it rhythm or weight.",
+    examples: [
+      "The room was nice and warm.",
+      "He wanted law and order where order was the real desire.",
+    ],
+    related: ["diction", "cadence", "tricolon", "compression"],
+  },
+  {
+    slug: "aposiopesis",
+    title: "Aposiopesis",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary:
+      "A sentence breaks off before completion, leaving the rest implied.",
+    principle: "An unfinished sentence can finish louder in the reader.",
+    takeaways: [
+      "It can signal threat, shock, grief, tact, or unspeakability.",
+      "The interruption must be legible from context.",
+      "Overuse turns pressure into melodramatic punctuation.",
+    ],
+    overview:
+      "Aposiopesis is a deliberate breaking-off of speech or thought. The unfinished syntax lets silence, interruption, fear, or implication carry what grammar refuses to complete.",
+    examples: [
+      "If you touch that door, I will-",
+      "She looked at the cradle and could not say what came next.",
+    ],
+    related: ["ellipsis", "punctuation", "subtext", "dialogue"],
+  },
+  {
+    slug: "synesthesia",
+    title: "Synesthesia",
+    category: "Rhetoric & Figures",
+    level: "Intermediate",
+    summary:
+      "Language blends sensory registers, making one sense describe another.",
+    principle: "Crossed senses can make perception feel newly exact.",
+    takeaways: [
+      "It can intensify image, mood, strangeness, or subjective experience.",
+      "The sensory transfer should clarify feeling rather than blur it.",
+      "Too many crossed senses make description feel decorative.",
+    ],
+    overview:
+      "Synesthesia describes one sensory experience through the terms of another: sound as color, silence as taste, light as texture. It is a compact way to make perception feel embodied and particular.",
+    examples: [
+      "The trumpet's blue note crossed the room.",
+      "The silence tasted of pennies.",
+    ],
+    related: ["imagery", "sensory-specificity", "metaphor", "defamiliarization"],
   },
   {
     slug: "ekphrasis",
@@ -4701,7 +5118,186 @@ export const entries: CraftEntry[] = [
       "A sentence withholds its main verb until the final word.",
       "Fragments make panic feel immediate rather than described.",
     ],
-    related: ["sentence-rhythm", "voice", "diction"],
+    related: ["sentence-rhythm", "parataxis", "hypotaxis", "fragment"],
+  },
+  {
+    slug: "parataxis",
+    title: "Parataxis",
+    category: "Prose & Style",
+    level: "Intermediate",
+    summary:
+      "Clauses or sentences placed side by side with little subordination.",
+    principle: "Parataxis makes relation felt through sequence and pressure.",
+    takeaways: [
+      "It can produce speed, hardness, plainness, or ritual accumulation.",
+      "Meaning often emerges from adjacency rather than explanation.",
+      "Overuse can flatten hierarchy and make every beat feel equally weighted.",
+    ],
+    overview:
+      "Parataxis arranges clauses or sentences beside one another without much grammatical hierarchy. The prose trusts order, rhythm, and juxtaposition to tell the reader how the pieces relate.",
+    examples: [
+      "He ran. The street opened. The siren found him.",
+      "The road ended, the rain came, the horse refused the bridge.",
+    ],
+    related: ["hypotaxis", "asyndeton", "fragment", "sentence-rhythm"],
+  },
+  {
+    slug: "hypotaxis",
+    title: "Hypotaxis",
+    category: "Prose & Style",
+    level: "Intermediate",
+    summary:
+      "Subordinated clauses create hierarchy, qualification, and layered thought.",
+    principle: "Hypotaxis lets syntax show what depends on what.",
+    takeaways: [
+      "It can make causality, memory, argument, or hesitation visible.",
+      "Long hypotactic sentences slow reading time by nesting relation.",
+      "Uncontrolled nesting makes prose hard to parse before it becomes complex.",
+    ],
+    overview:
+      "Hypotaxis uses subordination to arrange ideas in ranked relation: because, although, while, when, which. It is the syntactic mode of qualification, contingency, and layered consciousness.",
+    examples: [
+      "Because the letter had arrived late, and because no one admitted reading it, dinner began badly.",
+      "Although she had promised not to look back, she counted each window as she passed.",
+    ],
+    related: ["parataxis", "periodic-sentence", "cumulative-sentence", "syntax"],
+  },
+  {
+    slug: "fragment",
+    title: "Fragment / Minor Sentence",
+    category: "Prose & Style",
+    level: "Intermediate",
+    aliases: [
+      "Minor Sentence",
+      "Sentence Fragment",
+      "Paratactic Fragmentation",
+      "Staccato Prose",
+      "Punch Prose",
+    ],
+    summary:
+      "A non-clausal unit functions as a sentence for emphasis, rhythm, or voice.",
+    principle: "A fragment works when the missing grammar is supplied by pressure.",
+    takeaways: [
+      "Fragments can quicken pace, isolate perception, or imitate thought.",
+      "They need surrounding syntax to make their force legible.",
+      "At high density they can become mannered or melodramatic.",
+    ],
+    overview:
+      "A fragment or minor sentence is a sentence-like unit that does not contain a full independent clause. In prose, fragments are not merely errors; they can create impact, compression, interiority, and staccato rhythm.",
+    examples: [
+      "Too late.",
+      "The door. The blood on the handle. Her name in his mouth.",
+    ],
+    related: ["parataxis", "punctuation", "sentence-rhythm", "free-direct-discourse"],
+  },
+  {
+    slug: "periodic-sentence",
+    title: "Periodic Sentence",
+    category: "Prose & Style",
+    level: "Advanced",
+    summary:
+      "A sentence delays its main clause or force until the end.",
+    principle: "Delay creates pressure when the ending releases it.",
+    takeaways: [
+      "It can build suspense, ceremony, logic, or withheld judgement.",
+      "The reader must be able to hold the sentence's parts until payoff.",
+      "Too many periodic sentences make prose feel artificially staged.",
+    ],
+    overview:
+      "A periodic sentence withholds its main syntactic or rhetorical completion until late in the sentence. The reader moves through conditions, modifiers, or setup before the sentence lands.",
+    examples: [
+      "After the bells stopped, after the guests had gone, after the last glass broke in the sink, she laughed.",
+      "If the map was wrong, and the river had shifted, and the old road was gone, then they were already lost.",
+    ],
+    related: ["hypotaxis", "cumulative-sentence", "syntax", "cadence"],
+  },
+  {
+    slug: "cumulative-sentence",
+    title: "Cumulative Sentence",
+    category: "Prose & Style",
+    level: "Advanced",
+    aliases: ["Loose Sentence"],
+    summary:
+      "A sentence begins with its main clause, then gathers modifying detail.",
+    principle: "A cumulative sentence advances, then deepens.",
+    takeaways: [
+      "It gives the reader a clear base before adding texture or consequence.",
+      "The trailing phrases can widen image, thought, or emotional pressure.",
+      "Weak cumulative tails feel like afterthought instead of accumulation.",
+    ],
+    overview:
+      "A cumulative sentence states its main clause early and then extends through phrases or clauses that add detail, qualification, motion, or reflection. It is a flexible engine for descriptive and reflective prose.",
+    examples: [
+      "She crossed the room, careful of the broken glass, listening for his step on the stairs.",
+      "The horse waited by the gate, white-eyed, steaming in the cold, already afraid of the road.",
+    ],
+    related: ["periodic-sentence", "hypotaxis", "cadence", "prose-movement"],
+  },
+  {
+    slug: "hyperbaton",
+    title: "Hyperbaton",
+    category: "Prose & Style",
+    level: "Advanced",
+    aliases: ["Inverted Word Order"],
+    summary: "Unusual word order used for emphasis, voice, or heightened style.",
+    principle: "Disordered syntax should reveal an ordered intention.",
+    takeaways: [
+      "It can foreground a word, create archaic elevation, or mark a distinct voice.",
+      "The reader must feel design rather than accident.",
+      "A little inversion can sharpen style; too much becomes parody.",
+    ],
+    overview:
+      "Hyperbaton departs from expected word order. It can create emphasis, rhythm, estrangement, formality, comedy, or a character-specific register when the distortion is controlled.",
+    examples: [
+      "Dark was the house, and darker still the errand.",
+      "Powerful you have become.",
+    ],
+    related: ["syntax", "diction", "voice", "defamiliarization"],
+  },
+  {
+    slug: "negative-construction",
+    title: "Negative Construction",
+    category: "Prose & Style",
+    level: "Intermediate",
+    aliases: ["Negative Syntax", "Not This Not That"],
+    summary:
+      "A sentence or sequence defines meaning by ruling out alternatives.",
+    principle: "Negation calibrates when each refusal narrows the truth.",
+    takeaways: [
+      "It can create precision, irony, dread, or argumentative pressure.",
+      "Repeated negatives become rhythmic and highly visible.",
+      "If overused, it makes prose feel evasive or mannered.",
+    ],
+    overview:
+      "Negative construction uses not, no, never, or ruled-out alternatives to shape meaning by exclusion. It is useful when the prose needs to reject easy categories before naming or implying the harder truth.",
+    examples: [
+      "Not mercy. Not justice. Something smaller and meaner.",
+      "She was not afraid of him; she was afraid of what he made ordinary.",
+    ],
+    related: ["litotes", "diction", "tone", "sentence-rhythm"],
+  },
+  {
+    slug: "cataloguing-litany",
+    title: "Cataloguing / Litany",
+    category: "Prose & Style",
+    level: "Intermediate",
+    aliases: ["Catalogue", "Catalog", "Litany"],
+    summary:
+      "A list becomes rhythm, characterization, worldbuilding, or argument.",
+    principle: "A catalogue works when accumulation changes the reader's sense of scale.",
+    takeaways: [
+      "Lists can create abundance, exhaustion, ritual, comedy, or dread.",
+      "Order matters: a catalogue can rise, collapse, or reveal by sequence.",
+      "Inventory without pressure becomes dead weight.",
+    ],
+    overview:
+      "Cataloguing turns a list into a prose structure. The listed items do more than name contents; through selection, order, rhythm, and escalation, they reveal a mind, a world, a social order, or a pressure.",
+    examples: [
+      "A market paragraph lists spices, tools, debts, rumors, and missing children.",
+      "A character's packed bag reveals the life they think they can carry.",
+    ],
+    failureModes: ["over-description", "lore-drag"],
+    related: ["sensory-specificity", "verisimilitude", "cadence", "compression"],
   },
   {
     slug: "paragraphing",
@@ -4741,7 +5337,7 @@ export const entries: CraftEntry[] = [
       "A phrase of comfort returns later as accusation.",
       "A paragraph repeats the same syntactic opening until the final sentence breaks it.",
     ],
-    related: ["motif", "anaphora", "refrain"],
+    related: ["anaphora", "epistrophe", "diacope", "polyptoton"],
   },
   {
     slug: "punctuation",

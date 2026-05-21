@@ -14,6 +14,14 @@ export function genericSearch<T extends object>(
     if (typeof value === "string" || typeof value === "number") {
       return value.toString().toLowerCase().includes(normalizedQuery);
     }
+    if (Array.isArray(value)) {
+      return value.some((item) => {
+        if (typeof item === "string" || typeof item === "number") {
+          return item.toString().toLowerCase().includes(normalizedQuery);
+        }
+        return false;
+      });
+    }
     return false;
   });
 }

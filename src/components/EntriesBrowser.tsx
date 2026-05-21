@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   LayoutGrid,
   ArrowUpNarrowWide,
@@ -22,12 +23,40 @@ const LEVEL_RANK: Record<CraftLevel, number> = {
   Advanced: 2,
 };
 
+const CATEGORY_QUERY_KEY = "category";
+const CATEGORY_SET = new Set<CraftCategory>(CATEGORY_ORDER);
+
+function getCategoryParam(value: string | null): CraftCategory | null {
+  if (!value) return null;
+  return CATEGORY_SET.has(value as CraftCategory)
+    ? (value as CraftCategory)
+    : null;
+}
+
 export function EntriesBrowser({ entries }: Props) {
-  const [active, setActive] = useState<CraftCategory | null>(null);
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const active = getCategoryParam(searchParams.get(CATEGORY_QUERY_KEY));
   const [sortAsc, setSortAsc] = useState(true);
   const [query, setQuery] = useState("");
   const [categoriesExpanded, setCategoriesExpanded] = useState(true);
   const hasQuery = query.trim() !== "";
+
+  const updateActiveCategory = (nextCategory: CraftCategory | null) => {
+    const nextParams = new URLSearchParams(searchParams.toString());
+
+    if (nextCategory) {
+      nextParams.set(CATEGORY_QUERY_KEY, nextCategory);
+    } else {
+      nextParams.delete(CATEGORY_QUERY_KEY);
+    }
+
+    const queryString = nextParams.toString();
+    router.push(queryString ? `${pathname}?${queryString}` : pathname, {
+      scroll: false,
+    });
+  };
 
   const handleQueryChange = (nextQuery: string) => {
     const nextHasQuery = nextQuery.trim() !== "";
@@ -47,7 +76,10 @@ export function EntriesBrowser({ entries }: Props) {
   };
 
   const titleMatches = useMemo(
-    () => entries.filter((entry) => genericSearch(entry, ["title"], query)),
+    () =>
+      entries.filter((entry) =>
+        genericSearch(entry, ["title", "aliases"], query),
+      ),
     [entries, query],
   );
 
@@ -86,7 +118,7 @@ export function EntriesBrowser({ entries }: Props) {
 
         <div className="mt-5 max-w-xl">
           <label htmlFor="entry-search" className="sr-only">
-            Search entries by title
+            Search entries by title or alias
           </label>
           <div className="relative">
             <Search
@@ -149,7 +181,7 @@ export function EntriesBrowser({ entries }: Props) {
               count={titleMatches.length}
               isActive={active === null}
               anyActive={active !== null}
-              onClick={() => setActive(null)}
+              onClick={() => updateActiveCategory(null)}
             />
             {visibleCategories.map((cat) => (
               <CategoryTile
@@ -159,7 +191,9 @@ export function EntriesBrowser({ entries }: Props) {
                 count={counts.get(cat) ?? 0}
                 isActive={active === cat}
                 anyActive={active !== null}
-                onClick={() => setActive(active === cat ? null : cat)}
+                onClick={() =>
+                  updateActiveCategory(active === cat ? null : cat)
+                }
               />
             ))}
           </div>

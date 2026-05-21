@@ -28,6 +28,7 @@ export type CraftEntry = {
   title: string;
   category: CraftCategory;
   level: CraftLevel;
+  aliases?: string[];
   summary: string;
   principle: string;
   takeaways: string[];
